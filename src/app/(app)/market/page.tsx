@@ -1,10 +1,10 @@
-import Link from "next/link";
 import {
   marketInsights,
   marketJobSources,
   marketTrendSources,
   roadmapPattern,
 } from "@/data/market";
+import { PhaseContinue } from "@/components/phase-continue";
 
 const allMarketSources = [...marketTrendSources, ...marketJobSources];
 
@@ -95,33 +95,7 @@ export default function MarketPage() {
         </div>
       </section>
 
-      <section className="border border-[var(--border)] bg-[var(--surface)] p-6">
-        <p className="text-[10px] uppercase tracking-[0.22em] text-[var(--muted)]">
-          Next in my pattern
-        </p>
-        <h2 className="mt-2 font-[family-name:var(--font-display)] text-2xl">
-          Sector comes next
-        </h2>
-        <p className="mt-3 max-w-2xl text-sm leading-relaxed text-[var(--muted)]">
-          Market is documented. When I add the full Sector pack, it will sit in
-          the same professional format — still written as my research notes, not
-          generic advice.
-        </p>
-        <div className="mt-5 flex flex-wrap gap-3">
-          <Link
-            href="/companies"
-            className="border border-[var(--accent)] px-4 py-2 text-xs uppercase tracking-[0.18em] text-[var(--accent)] transition hover:bg-[var(--accent)] hover:text-[var(--background)]"
-          >
-            Companies by tier →
-          </Link>
-          <Link
-            href="/sources"
-            className="border border-[var(--border)] px-4 py-2 text-xs uppercase tracking-[0.18em] text-[var(--muted)] transition hover:border-[var(--accent)] hover:text-[var(--foreground)]"
-          >
-            Company source library →
-          </Link>
-        </div>
-      </section>
+      <PhaseContinue current="/market" />
     </div>
   );
 }

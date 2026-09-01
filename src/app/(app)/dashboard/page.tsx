@@ -42,7 +42,7 @@ export default async function DashboardPage() {
         <Stat label="Leipzig-local ⭐" value={String(leipzigCount)} />
       </section>
 
-      <section className="grid gap-4 md:grid-cols-3">
+      <section className="grid gap-4 md:grid-cols-2 xl:grid-cols-4">
         <Link
           href="/market"
           className="border border-[var(--accent)] bg-[var(--accent-soft)] p-6 transition hover:border-[var(--accent)]"
@@ -59,31 +59,47 @@ export default async function DashboardPage() {
           </p>
         </Link>
         <Link
+          href="/sectors"
+          className="border border-[var(--accent)] bg-[var(--accent-soft)] p-6 transition hover:border-[var(--accent)]"
+        >
+          <p className="text-[10px] uppercase tracking-[0.22em] text-[var(--accent)]">
+            Step 02 · Done
+          </p>
+          <h3 className="mt-2 font-[family-name:var(--font-display)] text-3xl">
+            Sectors
+          </h3>
+          <p className="mt-2 text-sm text-[var(--muted)]">
+            My six priority sectors with problems, Data/AI use-cases, roles,
+            skills, hubs, and resources.
+          </p>
+        </Link>
+        <Link
+          href="/problems"
+          className="border border-[var(--accent)] bg-[var(--accent-soft)] p-6 transition hover:border-[var(--accent)]"
+        >
+          <p className="text-[10px] uppercase tracking-[0.22em] text-[var(--accent)]">
+            Step 03 · Done
+          </p>
+          <h3 className="mt-2 font-[family-name:var(--font-display)] text-3xl">
+            Business Problems
+          </h3>
+          <p className="mt-2 text-sm text-[var(--muted)]">
+            Pilot-to-production, data quality, AI Act, agentic AI — and where I
+            fit in 2027–28.
+          </p>
+        </Link>
+        <Link
           href="/companies"
           className="border border-[var(--border)] bg-[var(--surface)] p-6 transition hover:border-[var(--accent)]"
         >
           <p className="text-[10px] uppercase tracking-[0.22em] text-[var(--muted)]">
-            Sector · companies
+            Companies
           </p>
           <h3 className="mt-2 font-[family-name:var(--font-display)] text-3xl">
             Tier 1–3 map
           </h3>
           <p className="mt-2 text-sm text-[var(--muted)]">
             My company universe across giants, scale-ups, and startups.
-          </p>
-        </Link>
-        <Link
-          href="/sources"
-          className="border border-[var(--border)] bg-[var(--surface)] p-6 transition hover:border-[var(--accent)]"
-        >
-          <p className="text-[10px] uppercase tracking-[0.22em] text-[var(--muted)]">
-            Diligence stack
-          </p>
-          <h3 className="mt-2 font-[family-name:var(--font-display)] text-3xl">
-            Source library
-          </h3>
-          <p className="mt-2 text-sm text-[var(--muted)]">
-            Dealroom, appliedAI, Northdata, and more — how each helps me.
           </p>
         </Link>
       </section>

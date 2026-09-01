@@ -5,6 +5,8 @@ import { auth } from "@/lib/auth";
 const protectedPrefixes = [
   "/dashboard",
   "/market",
+  "/sectors",
+  "/problems",
   "/companies",
   "/sources",
   "/analytics",
@@ -34,6 +36,8 @@ export const config = {
   matcher: [
     "/dashboard/:path*",
     "/market/:path*",
+    "/sectors/:path*",
+    "/problems/:path*",
     "/companies/:path*",
     "/sources/:path*",
     "/analytics/:path*",

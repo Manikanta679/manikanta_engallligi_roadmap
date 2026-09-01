@@ -15,6 +15,7 @@ import {
   YAxis,
 } from "recharts";
 import { allCompanies } from "@/data/companies";
+import { PhaseContinue } from "@/components/phase-continue";
 
 const COLORS = ["#c4a574", "#6b8f71", "#7a9eb8", "#a67c52", "#5c7a8a", "#8b6914"];
 
@@ -212,6 +213,8 @@ export default function AnalyticsPage() {
           </table>
         </div>
       </div>
+
+      <PhaseContinue current="/analytics" />
     </div>
   );
 }

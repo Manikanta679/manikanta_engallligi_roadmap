@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { allCompanies, tierMeta } from "@/data/companies";
 import { CompanyCard } from "@/components/company-card";
+import { PhaseContinue } from "@/components/phase-continue";
 
 export default function CompaniesPage() {
   return (
@@ -63,6 +64,8 @@ export default function CompaniesPage() {
           </section>
         );
       })}
+
+      <PhaseContinue current="/companies" />
     </div>
   );
 }

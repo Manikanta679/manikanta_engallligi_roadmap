@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { researchSources } from "@/data/sources";
+import { PhaseContinue } from "@/components/phase-continue";
 
 export default function SourcesPage() {
   return (
@@ -74,6 +75,8 @@ export default function SourcesPage() {
           </article>
         ))}
       </div>
+
+      <PhaseContinue current="/sources" />
     </div>
   );
 }
