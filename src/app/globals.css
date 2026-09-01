@@ -1,0 +1,138 @@
+@import "tailwindcss";
+
+:root {
+  --background: #f3efe6;
+  --foreground: #1a1814;
+  --surface: #fffdf8;
+  --surface-muted: #ebe4d6;
+  --border: #d4cbb8;
+  --accent: #8b6914;
+  --accent-soft: rgba(139, 105, 20, 0.12);
+  --muted: #6b6458;
+  --tier1: #8b6914;
+  --tier2: #3d6b4f;
+  --tier3: #3d5a73;
+  --danger: #8b3a3a;
+  --glow: rgba(139, 105, 20, 0.35);
+}
+
+.dark {
+  --background: #050505;
+  --foreground: #f2ebe0;
+  --surface: #111111;
+  --surface-muted: #1a1a1a;
+  --border: #2a2a2a;
+  --accent: #c4a574;
+  --accent-soft: rgba(196, 165, 116, 0.12);
+  --muted: #9a9186;
+  --tier1: #c4a574;
+  --tier2: #6b8f71;
+  --tier3: #7a9eb8;
+  --danger: #c47a7a;
+  --glow: rgba(196, 165, 116, 0.25);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-body);
+  --font-display: var(--font-display);
+  --font-mono: var(--font-mono);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-body), Georgia, serif;
+  min-height: 100vh;
+}
+
+::selection {
+  background: var(--accent-soft);
+  color: var(--foreground);
+}
+
+@keyframes sheen {
+  0% {
+    background-position: 200% center;
+  }
+  100% {
+    background-position: -200% center;
+  }
+}
+
+@keyframes float-y {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.name-sheen {
+  background: linear-gradient(
+    105deg,
+    var(--foreground) 0%,
+    var(--foreground) 40%,
+    var(--accent) 50%,
+    var(--foreground) 60%,
+    var(--foreground) 100%
+  );
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: sheen 5s linear infinite;
+}
+
+.float-slow {
+  animation: float-y 7s ease-in-out infinite;
+}
+
+.float-mid {
+  animation: float-y 5.5s ease-in-out infinite;
+}
+
+.float-fast {
+  animation: float-y 4.2s ease-in-out infinite;
+}
+
+.fade-up {
+  animation: fade-up 0.8s ease-out both;
+}
+
+.grid-noise {
+  background-image:
+    radial-gradient(circle at 20% 20%, var(--accent-soft), transparent 35%),
+    radial-gradient(circle at 80% 10%, rgba(122, 158, 184, 0.08), transparent 30%),
+    linear-gradient(var(--border) 1px, transparent 1px),
+    linear-gradient(90deg, var(--border) 1px, transparent 1px);
+  background-size:
+    auto,
+    auto,
+    48px 48px,
+    48px 48px;
+  background-position: center;
+  opacity: 0.35;
+}
