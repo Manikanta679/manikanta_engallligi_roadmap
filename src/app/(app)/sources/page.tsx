@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { researchSources } from "@/data/sources";
 
 export default function SourcesPage() {
@@ -11,10 +12,17 @@ export default function SourcesPage() {
           Verified sources
         </h1>
         <p className="mt-3 max-w-2xl text-sm text-[var(--muted)]">
-          Every strategic note in this roadmap should stay source-tied. Use these
-          as the living research stack when adding companies or refreshing
-          figures.
+          These are the company-discovery and diligence sources I use for Tier
+          1–3. Every note stays source-tied so I can revisit and update figures
+          with confidence. For Market & Trends sources (WEF, Bitkom, job
+          boards), I keep a dedicated Market page.
         </p>
+        <Link
+          href="/market"
+          className="mt-4 inline-block text-xs uppercase tracking-[0.18em] text-[var(--accent)] hover:underline"
+        >
+          Open Market & Trends →
+        </Link>
       </section>
 
       <div className="space-y-3">
@@ -26,7 +34,7 @@ export default function SourcesPage() {
             <div className="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">
               <div className="min-w-0 flex-1">
                 <p className="text-[10px] uppercase tracking-[0.2em] text-[var(--accent)]">
-                  Source {String(index + 1).padStart(2, "0")}
+                  Source {index + 1}
                 </p>
                 <h2 className="mt-1 font-[family-name:var(--font-display)] text-2xl">
                   {source.name}
@@ -34,8 +42,14 @@ export default function SourcesPage() {
                 <p className="mt-2 text-sm leading-relaxed text-[var(--muted)]">
                   {source.description}
                 </p>
+                <p className="mt-3 text-sm leading-relaxed text-[var(--muted)]">
+                  <span className="text-[var(--foreground)]">
+                    How it helped me:{" "}
+                  </span>
+                  {source.howItHelpedMe}
+                </p>
                 <p className="mt-3 text-xs uppercase tracking-[0.14em] text-[var(--foreground)]">
-                  Best for: {source.bestFor}
+                  Best for me: {source.bestFor}
                 </p>
                 <div className="mt-3 flex flex-wrap gap-2">
                   {source.tierRelevance.map((t) => (

@@ -513,12 +513,12 @@ const seeds: CompanySeed[] = [
     valuation: "~$18B class (verify) — adjacent, not core target sector",
     tags: ["deutschlandsstipendium"],
     brief:
-      "Defence AI company; listed for market awareness. Treat as adjacent unless your values/strategy explicitly include defence.",
+      "Defence AI company; listed for market awareness. I treat it as adjacent unless my values/strategy explicitly include defence.",
     europeFocus:
       "Munich defence-tech scale — mark as non-core unless intentional.",
     overrides: {
       enjoymentFit:
-        "Only pursue if defence domain aligns with your ethics and long-term roadmap; otherwise keep as market awareness only.",
+        "I only pursue this if the defence domain aligns with my ethics and long-term roadmap; otherwise I keep it as market awareness only.",
     },
     imageHint: "defence ai",
   },

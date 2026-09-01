@@ -9,12 +9,14 @@ import {
   Library,
   ChartColumn,
   LogOut,
+  TrendingUp,
 } from "lucide-react";
 import { ThemeToggle } from "@/components/theme-toggle";
 import { cn } from "@/lib/utils";
 
 const links = [
   { href: "/dashboard", label: "Dashboard", icon: LayoutDashboard },
+  { href: "/market", label: "Market", icon: TrendingUp },
   { href: "/companies", label: "Companies", icon: Building2 },
   { href: "/analytics", label: "Analytics", icon: ChartColumn },
   { href: "/sources", label: "Sources", icon: Library },

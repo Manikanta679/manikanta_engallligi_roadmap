@@ -88,7 +88,7 @@ export default function AnalyticsPage() {
           Analytics studio
         </p>
         <h1 className="mt-2 font-[family-name:var(--font-display)] text-4xl tracking-[0.04em] sm:text-5xl">
-          Graphs from your dataset
+          Graphs from my dataset
         </h1>
         <p className="mt-3 max-w-2xl text-sm text-[var(--muted)]">
           Compare tiers, sectors, recurring skills, and location density across

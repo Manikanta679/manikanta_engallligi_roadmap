@@ -67,11 +67,11 @@ const SECTORS: Record<SectorKey, SectorProfile> = {
       "German/English",
     ],
     enjoymentFit:
-      "Strong fit if you enjoy productized engineering, platform thinking, and measurable impact on enterprise workflows.",
+      "I see a strong fit here when I want productized engineering, platform thinking, and measurable impact on enterprise workflows.",
     investments:
       "AI features in core products, cloud-native refactoring, developer experience, cybersecurity, and industry vertical solutions for EU markets.",
     strategy2to3Years:
-      "Ship AI-assisted product lines, deepen EU sovereign/cloud offerings, expand partner channels, and defend share against hyperscaler suites — verify on investor days / annual reports.",
+      "Ship AI-assisted product lines, deepen EU sovereign/cloud offerings, expand partner channels, and defend share against hyperscaler suites  -  verify on investor days / annual reports.",
   },
   cloud: {
     sells:
@@ -102,11 +102,11 @@ const SECTORS: Record<SectorKey, SectorProfile> = {
       "Security",
     ],
     enjoymentFit:
-      "Ideal if you like large-scale systems, customer architectures, and applied AI on real infrastructure.",
+      "This fits me when I want large-scale systems, customer architectures, and applied AI on real infrastructure.",
     investments:
       "EU data centers, generative AI stacks, industry clouds, sustainability of compute, and partner enablement.",
     strategy2to3Years:
-      "Grow AI workload share, expand EU sovereign options, win enterprise migrations, and tighten cost/performance leadership — check latest earnings + EU region announcements.",
+      "Grow AI workload share, expand EU sovereign options, win enterprise migrations, and tighten cost/performance leadership  -  check latest earnings + EU region announcements.",
   },
   ai: {
     sells:
@@ -118,7 +118,7 @@ const SECTORS: Record<SectorKey, SectorProfile> = {
     problems:
       "Reliability/hallucinations, evaluation, data privacy (GDPR), go-to-market vs hyperscalers, GPU cost, and proving ROI.",
     aiValue:
-      "Core product is AI — value in agents, RAG, evaluation, fine-tuning, multimodal pipelines, and workflow embedding.",
+      "Core product is AI  -  value in agents, RAG, evaluation, fine-tuning, multimodal pipelines, and workflow embedding.",
     rolesHiring: [
       "ML Engineer",
       "Applied Scientist",
@@ -137,11 +137,11 @@ const SECTORS: Record<SectorKey, SectorProfile> = {
       "Product Sense",
     ],
     enjoymentFit:
-      "Best fit if you want maximum ownership on AI problems and fast learning curves at scale-ups/startups.",
+      "This fits me when I want maximum ownership on AI problems and a fast learning curve at scale-ups/startups.",
     investments:
       "Model quality, agent frameworks, enterprise security/compliance, EU data handling, and go-to-market partnerships.",
     strategy2to3Years:
-      "Move from pilots to production ARR, harden enterprise features, expand vertical use-cases, and raise/efficiently deploy capital — confirm via Dealroom/Crunchbase + company blogs.",
+      "Move from pilots to production ARR, harden enterprise features, expand vertical use-cases, and raise/efficiently deploy capital  -  confirm via Dealroom/Crunchbase + company blogs.",
   },
   consulting: {
     sells:
@@ -170,11 +170,11 @@ const SECTORS: Record<SectorKey, SectorProfile> = {
       "Domain Knowledge",
     ],
     enjoymentFit:
-      "Fit if you enjoy variety, client exposure, structured problem-solving, and fast skill breadth over deep product ownership.",
+      "This fits me when I want variety, client exposure, structured problem-solving, and skill breadth over deep product ownership.",
     investments:
       "AI delivery assets (BCG X / QuantumBlack-style), alliances with hyperscalers, industry IP, and talent academies.",
     strategy2to3Years:
-      "Scale AI & digital practices, deepen tech partnerships, and shift toward productized accelerators — validate in firm annual reviews and practice launches.",
+      "Scale AI & digital practices, deepen tech partnerships, and shift toward productized accelerators  -  validate in firm annual reviews and practice launches.",
   },
   "it-services": {
     sells:
@@ -204,11 +204,11 @@ const SECTORS: Record<SectorKey, SectorProfile> = {
       "Client Communication",
     ],
     enjoymentFit:
-      "Good entry path for structured learning and visa-friendly hiring; enjoyment depends on project quality and AI exposure.",
+      "This can be a structured entry path for me, including more visa-friendly hiring - my enjoyment depends on project quality and AI exposure.",
     investments:
       "GenAI delivery centers, cloud partnerships, industry solutions, and European delivery hubs.",
     strategy2to3Years:
-      "Re-skill workforce for AI delivery, win transformation deals, and protect margins with automation — track annual reports and DE job postings.",
+      "Re-skill workforce for AI delivery, win transformation deals, and protect margins with automation  -  track annual reports and DE job postings.",
   },
   logistics: {
     sells:
@@ -237,11 +237,11 @@ const SECTORS: Record<SectorKey, SectorProfile> = {
       "Domain Logistics",
     ],
     enjoymentFit:
-      "Excellent if you like real-world optimization problems with clear KPI impact (cost, time, CO₂).",
+      "This works for me when I want real-world optimization problems with clear KPI impact (cost, time, CO2).",
     investments:
       "Network automation, green logistics, digital freight platforms, and AI for planning/visibility.",
     strategy2to3Years:
-      "Digitize core networks, cut emissions intensity, and expand platform offerings — confirm via company sustainability + capital market updates.",
+      "Digitize core networks, cut emissions intensity, and expand platform offerings  -  confirm via company sustainability + capital market updates.",
   },
   retail: {
     sells:
@@ -269,11 +269,11 @@ const SECTORS: Record<SectorKey, SectorProfile> = {
       "Causal Inference basics",
     ],
     enjoymentFit:
-      "Strong if you like consumer-scale data problems and measurable conversion/ops outcomes.",
+      "This fits me when I want consumer-scale data problems and measurable conversion/ops outcomes.",
     investments:
       "E-commerce tech, retail media, automation in warehouses/stores, and AI personalization.",
     strategy2to3Years:
-      "Grow online share, retail media, and AI-driven ops efficiency — verify in annual reports and investor presentations.",
+      "Grow online share, retail media, and AI-driven ops efficiency  -  verify in annual reports and investor presentations.",
   },
   banking: {
     sells:
@@ -301,11 +301,11 @@ const SECTORS: Record<SectorKey, SectorProfile> = {
       "Cloud Security",
     ],
     enjoymentFit:
-      "Fit if you enjoy high-stakes regulated ML problems and measurable risk/ops impact.",
+      "This fits me when I want high-stakes regulated ML problems and measurable risk/ops impact.",
     investments:
       "Core modernization, digital banking, AI risk/fraud, and EU payments innovation.",
     strategy2to3Years:
-      "Digitalize customer journeys, harden risk AI, and cut cost-to-serve — validate via bank strategy updates and BaFin-relevant disclosures.",
+      "Digitalize customer journeys, harden risk AI, and cut cost-to-serve  -  validate via bank strategy updates and BaFin-relevant disclosures.",
   },
   insurance: {
     sells:
@@ -332,11 +332,11 @@ const SECTORS: Record<SectorKey, SectorProfile> = {
       "Cloud Data Platforms",
     ],
     enjoymentFit:
-      "Great if you like probabilistic modeling with real financial outcomes.",
+      "This fits me when I want probabilistic modeling with real financial outcomes.",
     investments:
       "Digital claims, parametric products, climate analytics, and GenAI for ops.",
     strategy2to3Years:
-      "Automate claims end-to-end, improve underwriting AI, and expand specialty risk — check investor days.",
+      "Automate claims end-to-end, improve underwriting AI, and expand specialty risk  -  check investor days.",
   },
   automotive: {
     sells:
@@ -364,11 +364,11 @@ const SECTORS: Record<SectorKey, SectorProfile> = {
       "Functional Safety basics",
     ],
     enjoymentFit:
-      "High if you want industrial AI + software meeting physical products.",
+      "This is high-interest for me when I want industrial AI plus software meeting physical products.",
     investments:
       "Software-defined vehicles, battery/EV, autonomous features, and digital factories.",
     strategy2to3Years:
-      "Scale SDV platforms, protect margins in EV mix, and localize software competence centers — confirm OEM strategy papers.",
+      "Scale SDV platforms, protect margins in EV mix, and localize software competence centers  -  confirm OEM strategy papers.",
   },
   industrial: {
     sells:
@@ -396,11 +396,11 @@ const SECTORS: Record<SectorKey, SectorProfile> = {
       "Domain Manufacturing",
     ],
     enjoymentFit:
-      "Excellent for applied AI with tangible factory KPIs — strong Leipzig/Mittelstand angle.",
+      "Excellent for applied AI with tangible factory KPIs  -  strong Leipzig/Mittelstand angle.",
     investments:
       "Smart factory, robotics, energy efficiency, and industrial software platforms.",
     strategy2to3Years:
-      "Attach more software/services to hardware, scale AI quality/maintenance offerings — verify hidden-champion annual reports.",
+      "Attach more software/services to hardware, scale AI quality/maintenance offerings  -  verify hidden-champion annual reports.",
   },
   energy: {
     sells:
@@ -427,7 +427,7 @@ const SECTORS: Record<SectorKey, SectorProfile> = {
       "Cloud",
     ],
     enjoymentFit:
-      "Strong if climate + optimization problems motivate you.",
+      "This fits me when climate and optimization problems motivate my work choices.",
     investments:
       "Renewables, storage, grid digitalization, and flexibility platforms.",
     strategy2to3Years:
@@ -458,11 +458,11 @@ const SECTORS: Record<SectorKey, SectorProfile> = {
       "GXP awareness",
     ],
     enjoymentFit:
-      "High impact if you care about science + rigorous validation culture.",
+      "This is high-impact for me when I want science plus a rigorous validation culture.",
     investments:
       "AI discovery platforms, specialty pipelines, and digital trials.",
     strategy2to3Years:
-      "Integrate AI into R&D and ops while protecting pipeline value — confirm pipeline updates and IR materials.",
+      "Integrate AI into R&D and ops while protecting pipeline value  -  confirm pipeline updates and IR materials.",
   },
   "health-tech": {
     sells:
@@ -489,11 +489,11 @@ const SECTORS: Record<SectorKey, SectorProfile> = {
       "Product Design",
     ],
     enjoymentFit:
-      "Fit if you want AI with clinical stakes and careful evidence culture.",
+      "This fits me when I want AI with clinical stakes and a careful evidence culture.",
     investments:
       "Clinical AI validation, interoperability, and EU market expansion.",
     strategy2to3Years:
-      "Prove clinical/economic value and scale regulated products — check company clinical publications and MDR status.",
+      "Prove clinical/economic value and scale regulated products  -  check company clinical publications and MDR status.",
   },
   fintech: {
     sells:
@@ -520,11 +520,11 @@ const SECTORS: Record<SectorKey, SectorProfile> = {
       "Compliance awareness",
     ],
     enjoymentFit:
-      "Great for high-velocity product + ML with clear financial KPIs.",
+      "This is great for me when I want high-velocity product plus ML with clear financial KPIs.",
     investments:
       "AI risk engines, EU expansion, banking licenses/partnerships, and platform APIs.",
     strategy2to3Years:
-      "Path to profitability, regulated expansion, and AI differentiation — verify funding rounds and company blogs.",
+      "Path to profitability, regulated expansion, and AI differentiation  -  verify funding rounds and company blogs.",
   },
   telecom: {
     sells:
@@ -551,11 +551,11 @@ const SECTORS: Record<SectorKey, SectorProfile> = {
       "MLOps",
     ],
     enjoymentFit:
-      "Fit if large-scale network + AI ops problems appeal to you.",
+      "This fits me when large-scale network plus AI ops problems appeal to me.",
     investments:
       "5G/fiber, edge compute, AI ops, and enterprise digital services.",
     strategy2to3Years:
-      "Monetize networks via digital/IT services and AI ops efficiency — check operator strategy updates.",
+      "Monetize networks via digital/IT services and AI ops efficiency  -  check operator strategy updates.",
   },
   aerospace: {
     sells:
@@ -581,11 +581,11 @@ const SECTORS: Record<SectorKey, SectorProfile> = {
       "Domain Aerospace",
     ],
     enjoymentFit:
-      "High if complex engineering systems and quality AI excite you.",
+      "This is high-interest for me when complex engineering systems and quality AI excite me.",
     investments:
       "Production digitalization, next-gen aircraft programs, and services growth.",
     strategy2to3Years:
-      "Stabilize production rates and digitize industrial system — confirm OEM communications.",
+      "Stabilize production rates and digitize industrial system  -  confirm OEM communications.",
   },
   semiconductor: {
     sells:
@@ -611,11 +611,11 @@ const SECTORS: Record<SectorKey, SectorProfile> = {
       "Data Analysis",
     ],
     enjoymentFit:
-      "Exceptional if deep-tech + precision problems motivate you.",
+      "This is exceptional for me when deep-tech and precision problems motivate me.",
     investments:
       "Next-node lithography, capacity expansion, and software/process intelligence.",
     strategy2to3Years:
-      "Execute technology roadmap and capacity — follow ASML/peer capital market days.",
+      "Execute technology roadmap and capacity  -  follow ASML/peer capital market days.",
   },
   defence: {
     sells:
@@ -641,11 +641,11 @@ const SECTORS: Record<SectorKey, SectorProfile> = {
       "Clearance-aware processes",
     ],
     enjoymentFit:
-      "Only if mission domain aligns with your values; note adjacency vs your core sector preference.",
+      "I only pursue this if the mission domain aligns with my values; I note it as adjacent vs my core sector preference.",
     investments:
       "AI capabilities, production scale, and allied-market expansion.",
     strategy2to3Years:
-      "Scale production and AI products under European defence demand — verify company disclosures carefully.",
+      "Scale production and AI products under European defence demand  -  verify company disclosures carefully.",
   },
   biotech: {
     sells:
@@ -674,7 +674,7 @@ const SECTORS: Record<SectorKey, SectorProfile> = {
     investments:
       "Pipeline advancement and platform AI partnerships.",
     strategy2to3Years:
-      "Advance clinical programs and partnerships — follow trial readouts and filings.",
+      "Advance clinical programs and partnerships  -  follow trial readouts and filings.",
   },
   accelerator: {
     sells:
@@ -699,11 +699,11 @@ const SECTORS: Record<SectorKey, SectorProfile> = {
       "Domain curiosity",
     ],
     enjoymentFit:
-      "Useful as a source engine for Leipzig startups rather than a long-term employer target.",
+      "I use this mainly as a source engine for Leipzig startups rather than a long-term employer target.",
     investments:
       "Regional deep-tech/AI cohorts and corporate partner programs.",
     strategy2to3Years:
-      "Grow portfolio density in AI/industrial tech for Mitteldeutschland — track SpinLab/TGFS announcements.",
+      "Grow portfolio density in AI/industrial tech for Mitteldeutschland  -  track SpinLab/TGFS announcements.",
   },
 };
 
@@ -802,7 +802,7 @@ export function buildCompany(
       {
         title: "Official website",
         url: seed.website,
-        note: "Primary company source — verify latest figures here",
+        note: "Primary company source  -  verify latest figures here",
       },
       {
         title: "Northdata",

@@ -179,7 +179,7 @@ const seeds: CompanySeed[] = [
       "Strategic for academic-industry bridge in Saxony.",
     overrides: {
       enjoymentFit:
-        "Excellent if you want a thesis path into AI with local industry links — treat as research gateway more than classic employer.",
+        "Excellent for me if I want a thesis path into AI with local industry links — I treat this as a research gateway more than a classic employer.",
       strategy2to3Years:
         "Expand AI competence center activity across Dresden/Leipzig — follow ScaDS.AI publications and partner calls.",
     },

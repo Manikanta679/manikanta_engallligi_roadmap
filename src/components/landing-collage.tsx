@@ -69,7 +69,7 @@ export function LandingCollage() {
       {tiles.map((tile) => (
         <div
           key={tile.label}
-          className={`absolute hidden overflow-hidden border border-white/10 bg-gradient-to-br sm:block ${tile.tone} ${tile.className}`}
+          className={`absolute hidden overflow-hidden border border-black/10 bg-gradient-to-br dark:border-white/10 sm:block ${tile.tone} ${tile.className}`}
           style={{ animationDelay: tile.delay }}
         >
           <div className="flex h-full items-end p-3">

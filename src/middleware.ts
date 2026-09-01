@@ -4,6 +4,7 @@ import { auth } from "@/lib/auth";
 
 const protectedPrefixes = [
   "/dashboard",
+  "/market",
   "/companies",
   "/sources",
   "/analytics",
@@ -32,6 +33,7 @@ export default auth((req) => {
 export const config = {
   matcher: [
     "/dashboard/:path*",
+    "/market/:path*",
     "/companies/:path*",
     "/sources/:path*",
     "/analytics/:path*",

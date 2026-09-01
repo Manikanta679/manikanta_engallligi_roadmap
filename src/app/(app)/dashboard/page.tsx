@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { allCompanies, tierMeta } from "@/data/companies";
 import { researchSources } from "@/data/sources";
+import { marketJobSources, marketTrendSources } from "@/data/market";
 import { auth } from "@/lib/auth";
 
 export default async function DashboardPage() {
@@ -14,10 +15,8 @@ export default async function DashboardPage() {
   const leipzigCount = allCompanies.filter((c) =>
     c.tags.includes("leipzig-local"),
   ).length;
-  const aiCount = allCompanies.filter(
-    (c) =>
-      c.sector.toLowerCase().includes("ai") || c.tags.includes("ai-focus"),
-  ).length;
+  const marketSourceCount =
+    marketTrendSources.length + marketJobSources.length;
 
   return (
     <div className="space-y-10">
@@ -26,19 +25,67 @@ export default async function DashboardPage() {
           Dashboard
         </p>
         <h1 className="mt-2 font-[family-name:var(--font-display)] text-4xl tracking-[0.04em] sm:text-5xl">
-          Welcome back{session?.user?.name ? `, ${session.user.name.split(" ")[0]}` : ""}
+          Welcome back
+          {session?.user?.name ? `, ${session.user.name.split(" ")[0]}` : ""}
         </h1>
         <p className="mt-3 max-w-2xl text-sm leading-relaxed text-[var(--muted)]">
-          Your private multi-year career operating system — companies by tier,
-          source-backed briefs, strategy notes, and analytics for decisions.
+          My private multi-year career operating system — Market → Sector →
+          Problems → Role → Skills → Project/Internship → Thesis → Job — with
+          companies, sources, and analytics I can revisit anytime.
         </p>
       </section>
 
       <section className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
         <Stat label="Companies tracked" value={String(allCompanies.length)} />
-        <Stat label="Research sources" value={String(researchSources.length)} />
+        <Stat label="Market sources" value={String(marketSourceCount)} />
+        <Stat label="Company sources" value={String(researchSources.length)} />
         <Stat label="Leipzig-local ⭐" value={String(leipzigCount)} />
-        <Stat label="AI-tagged entries" value={String(aiCount)} />
+      </section>
+
+      <section className="grid gap-4 md:grid-cols-3">
+        <Link
+          href="/market"
+          className="border border-[var(--accent)] bg-[var(--accent-soft)] p-6 transition hover:border-[var(--accent)]"
+        >
+          <p className="text-[10px] uppercase tracking-[0.22em] text-[var(--accent)]">
+            Step 01 · Done
+          </p>
+          <h3 className="mt-2 font-[family-name:var(--font-display)] text-3xl">
+            Market & Trends
+          </h3>
+          <p className="mt-2 text-sm text-[var(--muted)]">
+            WEF, Bitkom, GTAI, Stanford, job boards — written as my research
+            notes with how each source helped me.
+          </p>
+        </Link>
+        <Link
+          href="/companies"
+          className="border border-[var(--border)] bg-[var(--surface)] p-6 transition hover:border-[var(--accent)]"
+        >
+          <p className="text-[10px] uppercase tracking-[0.22em] text-[var(--muted)]">
+            Sector · companies
+          </p>
+          <h3 className="mt-2 font-[family-name:var(--font-display)] text-3xl">
+            Tier 1–3 map
+          </h3>
+          <p className="mt-2 text-sm text-[var(--muted)]">
+            My company universe across giants, scale-ups, and startups.
+          </p>
+        </Link>
+        <Link
+          href="/sources"
+          className="border border-[var(--border)] bg-[var(--surface)] p-6 transition hover:border-[var(--accent)]"
+        >
+          <p className="text-[10px] uppercase tracking-[0.22em] text-[var(--muted)]">
+            Diligence stack
+          </p>
+          <h3 className="mt-2 font-[family-name:var(--font-display)] text-3xl">
+            Source library
+          </h3>
+          <p className="mt-2 text-sm text-[var(--muted)]">
+            Dealroom, appliedAI, Northdata, and more — how each helps me.
+          </p>
+        </Link>
       </section>
 
       <section>
@@ -67,10 +114,10 @@ export default async function DashboardPage() {
         </div>
       </section>
 
-      <section className="grid gap-4 md:grid-cols-2">
+      <section>
         <Link
           href="/analytics"
-          className="border border-[var(--border)] bg-[var(--surface)] p-6 transition hover:border-[var(--accent)]"
+          className="block border border-[var(--border)] bg-[var(--surface)] p-6 transition hover:border-[var(--accent)]"
         >
           <p className="text-[10px] uppercase tracking-[0.22em] text-[var(--muted)]">
             Visualizations
@@ -78,24 +125,9 @@ export default async function DashboardPage() {
           <h3 className="mt-2 font-[family-name:var(--font-display)] text-3xl">
             Analytics studio
           </h3>
-          <p className="mt-2 text-sm text-[var(--muted)]">
-            Compare sectors, skills, locations, and tier mix from the company
-            dataset.
-          </p>
-        </Link>
-        <Link
-          href="/sources"
-          className="border border-[var(--border)] bg-[var(--surface)] p-6 transition hover:border-[var(--accent)]"
-        >
-          <p className="text-[10px] uppercase tracking-[0.22em] text-[var(--muted)]">
-            Verified research
-          </p>
-          <h3 className="mt-2 font-[family-name:var(--font-display)] text-3xl">
-            Source library
-          </h3>
-          <p className="mt-2 text-sm text-[var(--muted)]">
-            Dealroom, appliedAI, Northdata, Unternehmensregister, SpinLab, and
-            more — with what each unlocks.
+          <p className="mt-2 max-w-2xl text-sm text-[var(--muted)]">
+            I compare sectors, skills, locations, and tier mix from the company
+            dataset I maintain.
           </p>
         </Link>
       </section>

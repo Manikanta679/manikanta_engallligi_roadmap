@@ -93,17 +93,107 @@ body {
 .name-sheen {
   background: linear-gradient(
     105deg,
-    var(--foreground) 0%,
-    var(--foreground) 40%,
-    var(--accent) 50%,
-    var(--foreground) 60%,
-    var(--foreground) 100%
+    #1a1814 0%,
+    #1a1814 38%,
+    #6b4f12 50%,
+    #1a1814 62%,
+    #1a1814 100%
   );
   background-size: 200% auto;
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
   animation: sheen 5s linear infinite;
+}
+
+.dark .name-sheen {
+  background: linear-gradient(
+    105deg,
+    #f2ebe0 0%,
+    #f2ebe0 40%,
+    #c4a574 50%,
+    #f2ebe0 60%,
+    #f2ebe0 100%
+  );
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.landing-shell {
+  background: #f3efe6;
+  color: #1a1814;
+}
+
+.dark .landing-shell {
+  background: #000000;
+  color: #f2ebe0;
+}
+
+.landing-eyebrow {
+  color: rgba(26, 24, 20, 0.55);
+}
+
+.dark .landing-eyebrow {
+  color: rgba(255, 255, 255, 0.55);
+}
+
+.landing-copy {
+  color: rgba(26, 24, 20, 0.68);
+}
+
+.dark .landing-copy {
+  color: rgba(255, 255, 255, 0.65);
+}
+
+.landing-footer {
+  color: rgba(26, 24, 20, 0.45);
+}
+
+.dark .landing-footer {
+  color: rgba(255, 255, 255, 0.45);
+}
+
+.landing-btn-primary {
+  border-color: #6b4f12;
+  background: rgba(107, 79, 18, 0.1);
+  color: #6b4f12;
+}
+
+.landing-btn-primary:hover {
+  background: #6b4f12;
+  color: #f3efe6;
+}
+
+.dark .landing-btn-primary {
+  border-color: #c4a574;
+  background: rgba(196, 165, 116, 0.1);
+  color: #c4a574;
+}
+
+.dark .landing-btn-primary:hover {
+  background: #c4a574;
+  color: #000000;
+}
+
+.landing-btn-secondary {
+  border-color: rgba(26, 24, 20, 0.2);
+  color: rgba(26, 24, 20, 0.7);
+}
+
+.landing-btn-secondary:hover {
+  border-color: rgba(26, 24, 20, 0.5);
+  color: #1a1814;
+}
+
+.dark .landing-btn-secondary {
+  border-color: rgba(255, 255, 255, 0.2);
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.dark .landing-btn-secondary:hover {
+  border-color: rgba(255, 255, 255, 0.5);
+  color: #ffffff;
 }
 
 .float-slow {

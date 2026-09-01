@@ -52,5 +52,6 @@ export interface ResearchSource {
   url: string;
   bestFor: string;
   description: string;
+  howItHelpedMe: string;
   tierRelevance: ("1" | "2" | "3" | "all")[];
 }

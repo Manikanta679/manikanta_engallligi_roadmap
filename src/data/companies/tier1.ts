@@ -340,7 +340,7 @@ const seeds: CompanySeed[] = [
     brief:
       "World’s leading logistics group (Deutsche Post DHL): express, global forwarding, supply chain, and e-commerce logistics.",
     europeFocus:
-      "German HQ; Leipzig hub is strategically relevant for your location.",
+      "German HQ; Leipzig hub is strategically relevant for my location.",
     overrides: {
       strategy2to3Years:
         "Automation, sustainable aviation fuel/green logistics, and digital twinning of networks — verify DHL Group strategy house publications.",
@@ -573,7 +573,7 @@ const seeds: CompanySeed[] = [
     brief:
       "Premium automotive OEM investing heavily in electrification, software-defined vehicles, and digital manufacturing.",
     europeFocus:
-      "Munich HQ + Leipzig production — direct geographic relevance for your roadmap.",
+      "Munich HQ + Leipzig production — direct geographic relevance for my roadmap.",
     overrides: {
       strategy2to3Years:
         "NEUE KLASSE EV/architecture ramp, software stacks, and Leipzig production relevance — verify BMW Group reports.",

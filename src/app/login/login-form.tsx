@@ -10,7 +10,7 @@ export default function LoginForm() {
   const router = useRouter();
   const params = useSearchParams();
   const callbackUrl = params.get("callbackUrl") || "/dashboard";
-  const [email, setEmail] = useState("manikanta@roadmap.local");
+  const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
@@ -101,9 +101,7 @@ export default function LoginForm() {
         </form>
 
         <p className="mt-6 text-xs leading-relaxed text-[var(--muted)]">
-          Local defaults: <code>manikanta@roadmap.local</code> /{" "}
-          <code>Roadmap2026!</code> — change via <code>ROADMAP_USERS</code> in{" "}
-          <code>.env.local</code> before sharing.
+          Invite-only access. If you&apos;re on the list, you&apos;re in.
         </p>
       </div>
     </div>
