@@ -12,6 +12,7 @@ import {
   TrendingUp,
   Layers,
   CircleAlert,
+  Briefcase,
 } from "lucide-react";
 import { ThemeToggle } from "@/components/theme-toggle";
 import { cn } from "@/lib/utils";
@@ -21,6 +22,7 @@ const links = [
   { href: "/market", label: "Market", icon: TrendingUp },
   { href: "/sectors", label: "Sectors", icon: Layers },
   { href: "/problems", label: "Problems", icon: CircleAlert },
+  { href: "/roles", label: "Roles", icon: Briefcase },
   { href: "/companies", label: "Companies", icon: Building2 },
   { href: "/analytics", label: "Analytics", icon: ChartColumn },
   { href: "/sources", label: "Sources", icon: Library },

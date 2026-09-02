@@ -365,7 +365,7 @@ export const roadmapPattern = [
   { key: "sector", label: "Sector", done: true },
   { key: "problems", label: "Business Problems", done: true },
   { key: "role", label: "Role", done: true },
-  { key: "skills", label: "Skills", done: true },
+  { key: "skills", label: "Skills", done: false },
   { key: "project", label: "Project / Internship", done: false },
   { key: "thesis", label: "Master's Thesis", done: false },
   { key: "job", label: "Job", done: false },

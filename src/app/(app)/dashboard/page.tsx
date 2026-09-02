@@ -42,7 +42,7 @@ export default async function DashboardPage() {
         <Stat label="Leipzig-local ⭐" value={String(leipzigCount)} />
       </section>
 
-      <section className="grid gap-4 md:grid-cols-2 xl:grid-cols-4">
+      <section className="grid gap-4 md:grid-cols-2 xl:grid-cols-5">
         <Link
           href="/market"
           className="border border-[var(--accent)] bg-[var(--accent-soft)] p-6 transition hover:border-[var(--accent)]"
@@ -86,6 +86,21 @@ export default async function DashboardPage() {
           <p className="mt-2 text-sm text-[var(--muted)]">
             Pilot-to-production, data quality, AI Act, agentic AI — and where I
             fit in 2027–28.
+          </p>
+        </Link>
+        <Link
+          href="/roles"
+          className="border border-[var(--accent)] bg-[var(--accent-soft)] p-6 transition hover:border-[var(--accent)]"
+        >
+          <p className="text-[10px] uppercase tracking-[0.22em] text-[var(--accent)]">
+            Step 04 · Done
+          </p>
+          <h3 className="mt-2 font-[family-name:var(--font-display)] text-3xl">
+            Roles
+          </h3>
+          <p className="mt-2 text-sm text-[var(--muted)]">
+            Business Data Analyst entry → Decision Scientist / Translator by
+            2029 — my priorities mapped.
           </p>
         </Link>
         <Link
