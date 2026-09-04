@@ -6,6 +6,7 @@ const phaseFlow = [
   { href: "/problems", label: "Problems" },
   { href: "/roles", label: "Roles" },
   { href: "/skills", label: "Skills" },
+  { href: "/projects", label: "Projects" },
   { href: "/companies", label: "Companies" },
   { href: "/analytics", label: "Analytics" },
   { href: "/sources", label: "Sources" },

@@ -17,7 +17,7 @@ import {
 import { allCompanies } from "@/data/companies";
 import { PhaseContinue } from "@/components/phase-continue";
 
-const COLORS = ["#c4a574", "#6b8f71", "#7a9eb8", "#a67c52", "#5c7a8a", "#8b6914"];
+const COLORS = ["#e09a45", "#9aa097", "#7ba7c4", "#c47a28", "#6d5a78", "#eceae4"];
 
 export default function AnalyticsPage() {
   const [view, setView] = useState<"tiers" | "sectors" | "skills" | "locations">(

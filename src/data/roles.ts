@@ -41,8 +41,6 @@ export const rolePositioning = {
   title: "What I am optimizing for",
   oneLiner:
     "I am not becoming a Data Scientist. I am becoming the person who handles the data, presents what it means, and helps leadership decide — starting as a Business Data Analyst in logistics or retail, growing into a Decision Scientist or Analytics Translator by 2029.",
-  sweetSpot:
-    "My sweet spot: roughly 45% technical / 55% business at entry, shifting to 35% technical / 65% business by year 3.",
   want: [
     "SQL + Python + dashboards — hands on data",
     "Present findings to managers and teams",

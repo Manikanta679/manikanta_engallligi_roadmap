@@ -1,86 +1,186 @@
 "use client";
 
-const tiles = [
+type Tone = "gold" | "steel" | "sage" | "sand" | "slate";
+
+type Tile = {
+  title: string;
+  className: string;
+  delay: string;
+  tone: Tone;
+};
+
+const toneStyles: Record<
+  Tone,
+  { border: string; glow: string; title: string; wash: string }
+> = {
+  gold: {
+    border: "border-[#c4a574]/50",
+    glow: "shadow-[0_0_22px_rgba(196,165,116,0.2)]",
+    title: "text-[#c4a574]",
+    wash: "bg-[radial-gradient(circle_at_30%_20%,rgba(196,165,116,0.26),transparent_58%)]",
+  },
+  steel: {
+    border: "border-[#7a9eb8]/50",
+    glow: "shadow-[0_0_22px_rgba(122,158,184,0.2)]",
+    title: "text-[#7a9eb8]",
+    wash: "bg-[radial-gradient(circle_at_30%_20%,rgba(122,158,184,0.26),transparent_58%)]",
+  },
+  sage: {
+    border: "border-[#6b8f71]/50",
+    glow: "shadow-[0_0_22px_rgba(107,143,113,0.2)]",
+    title: "text-[#6b8f71]",
+    wash: "bg-[radial-gradient(circle_at_30%_20%,rgba(107,143,113,0.26),transparent_58%)]",
+  },
+  sand: {
+    border: "border-[#d4a574]/45",
+    glow: "shadow-[0_0_20px_rgba(212,165,116,0.16)]",
+    title: "text-[#d4a574]",
+    wash: "bg-[radial-gradient(circle_at_30%_20%,rgba(212,165,116,0.2),transparent_58%)]",
+  },
+  slate: {
+    border: "border-[#9aa8b8]/45",
+    glow: "shadow-[0_0_18px_rgba(154,168,184,0.14)]",
+    title: "text-[#a8b4c4]",
+    wash: "bg-[radial-gradient(circle_at_30%_20%,rgba(154,168,184,0.18),transparent_58%)]",
+  },
+};
+
+/** Name-only floating labels around the hero */
+const tiles: Tile[] = [
   {
-    label: "SAP",
-    tone: "from-amber-900/80 to-stone-900/90",
-    className: "left-[6%] top-[14%] h-28 w-40 float-slow",
+    title: "Market",
+    className:
+      "left-[5%] top-[12%] h-16 w-16 float-slow sm:left-[7%] sm:h-[4.5rem] sm:w-[4.5rem]",
     delay: "0s",
+    tone: "steel",
   },
   {
-    label: "AI",
-    tone: "from-slate-700/80 to-black/90",
-    className: "right-[8%] top-[12%] h-36 w-28 float-mid",
-    delay: "0.4s",
+    title: "Sectors",
+    className:
+      "right-[5%] top-[11%] h-[4.25rem] w-[4.25rem] float-mid sm:right-[8%]",
+    delay: "0.35s",
+    tone: "gold",
   },
   {
-    label: "BMW",
-    tone: "from-zinc-700/70 to-zinc-950/90",
-    className: "left-[12%] bottom-[18%] h-32 w-44 float-fast",
-    delay: "0.8s",
+    title: "SQL",
+    className:
+      "left-[12%] top-[40%] h-14 w-14 float-fast sm:left-[15%] sm:h-16 sm:w-16",
+    delay: "0.7s",
+    tone: "sage",
   },
   {
-    label: "Berlin",
-    tone: "from-stone-600/60 to-black/85",
-    className: "right-[14%] bottom-[16%] h-24 w-36 float-slow",
-    delay: "1.1s",
-  },
-  {
-    label: "Celonis",
-    tone: "from-emerald-950/70 to-black/90",
-    className: "left-[22%] top-[28%] h-20 w-28 float-mid opacity-70",
+    title: "Roles",
+    className: "right-[9%] top-[38%] h-14 w-14 float-slow sm:right-[13%] sm:h-16 sm:w-16",
     delay: "0.2s",
+    tone: "sand",
   },
   {
-    label: "Leipzig",
-    tone: "from-sky-950/60 to-black/90",
-    className: "right-[24%] top-[34%] h-24 w-32 float-fast opacity-75",
-    delay: "1.4s",
-  },
-  {
-    label: "DHL",
-    tone: "from-yellow-950/50 to-black/90",
-    className: "left-[4%] top-[48%] h-24 w-24 float-slow opacity-60",
-    delay: "0.6s",
-  },
-  {
-    label: "Data",
-    tone: "from-neutral-700/50 to-black/90",
-    className: "right-[5%] top-[48%] h-40 w-24 float-mid opacity-55",
-    delay: "1.7s",
-  },
-  {
-    label: "n8n",
-    tone: "from-orange-950/50 to-black/85",
-    className: "left-[40%] top-[10%] h-16 w-24 float-fast opacity-50",
+    title: "Problems",
+    className:
+      "left-[4%] bottom-[24%] h-[4.25rem] w-[4.25rem] float-mid sm:left-[8%]",
     delay: "0.9s",
+    tone: "gold",
   },
   {
-    label: "ASML",
-    tone: "from-indigo-950/40 to-black/90",
-    className: "right-[38%] bottom-[10%] h-20 w-28 float-slow opacity-50",
+    title: "Skills",
+    className:
+      "right-[5%] bottom-[22%] h-16 w-16 float-fast sm:right-[8%] sm:h-[4.5rem] sm:w-[4.5rem]",
+    delay: "1.1s",
+    tone: "steel",
+  },
+  {
+    title: "SAP",
+    className: "left-[30%] top-[9%] hidden h-14 w-14 float-mid md:block",
+    delay: "0.5s",
+    tone: "sand",
+  },
+  {
+    title: "Python",
+    className: "right-[30%] top-[8%] hidden h-14 w-14 float-slow lg:block",
+    delay: "1.3s",
+    tone: "sage",
+  },
+  {
+    title: "Leipzig",
+    className: "left-[24%] bottom-[11%] hidden h-14 w-14 float-fast md:block",
+    delay: "0.4s",
+    tone: "steel",
+  },
+  {
+    title: "Berlin",
+    className: "right-[24%] bottom-[10%] hidden h-14 w-14 float-mid md:block",
+    delay: "1.5s",
+    tone: "gold",
+  },
+  {
+    title: "BMW",
+    className: "left-[44%] top-[7%] hidden h-12 w-12 float-slow xl:block",
+    delay: "0.8s",
+    tone: "slate",
+  },
+  {
+    title: "DHL",
+    className: "right-[42%] bottom-[7%] hidden h-12 w-12 float-fast xl:block",
     delay: "1.2s",
+    tone: "sand",
+  },
+  {
+    title: "Frankfurt",
+    className: "left-[2%] top-[58%] hidden h-12 w-[4.75rem] float-mid lg:block",
+    delay: "1.6s",
+    tone: "steel",
+  },
+  {
+    title: "Munich",
+    className: "right-[2%] top-[58%] hidden h-12 w-14 float-slow lg:block",
+    delay: "0.6s",
+    tone: "sage",
   },
 ];
 
-export function LandingCollage() {
+export function LandingCollage({
+  density = "full",
+}: {
+  density?: "full" | "soft";
+}) {
+  const visible =
+    density === "soft"
+      ? tiles.filter(
+          (t, i) =>
+            i % 2 === 0 ||
+            ["Sectors", "Skills", "SQL", "Berlin"].includes(t.title),
+        )
+      : tiles;
+
   return (
-    <div className="pointer-events-none absolute inset-0 overflow-hidden">
-      {tiles.map((tile) => (
-        <div
-          key={tile.label}
-          className={`absolute hidden overflow-hidden border border-black/10 bg-gradient-to-br dark:border-white/10 sm:block ${tile.tone} ${tile.className}`}
-          style={{ animationDelay: tile.delay }}
-        >
-          <div className="flex h-full items-end p-3">
-            <span className="text-[10px] uppercase tracking-[0.22em] text-white/70">
-              {tile.label}
-            </span>
+    <div
+      className="pointer-events-none absolute inset-0 overflow-hidden"
+      aria-hidden
+    >
+      {/* Soft readability veil — keep light so skyline stays visible */}
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(5,5,5,0.25)_0%,transparent_62%)]" />
+
+      {visible.map((tile) => {
+        const t = toneStyles[tile.tone];
+        return (
+          <div
+            key={tile.title}
+            className={`absolute overflow-hidden border bg-[var(--surface)]/80 backdrop-blur-[2px] ${t.border} ${t.glow} ${tile.className} ${
+              density === "soft" ? "opacity-65" : ""
+            }`}
+            style={{ animationDelay: tile.delay }}
+          >
+            <div className={`absolute inset-0 ${t.wash}`} />
+            <div className="relative flex h-full items-center justify-center px-2">
+              <p
+                className={`font-[family-name:var(--font-display)] text-center text-sm leading-none tracking-wide sm:text-base ${t.title}`}
+              >
+                {tile.title}
+              </p>
+            </div>
           </div>
-          <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(255,255,255,0.12),transparent_45%)]" />
-        </div>
-      ))}
-      <div className="absolute inset-y-0 right-[2%] hidden w-[18%] bg-gradient-to-l from-white/5 to-transparent md:block" />
+        );
+      })}
     </div>
   );
 }

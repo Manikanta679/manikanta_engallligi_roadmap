@@ -59,7 +59,7 @@ export function SkillsInsightsCharts() {
                   contentStyle={tooltipStyle}
                   formatter={(v) => [`${v}`, "Weight"]}
                 />
-                <Bar dataKey="weight" fill="#7a9eb8" radius={[0, 4, 4, 0]} />
+                <Bar dataKey="weight" fill="#7ba7c4" radius={[0, 4, 4, 0]} />
               </BarChart>
             </ResponsiveContainer>
           </div>
@@ -134,8 +134,8 @@ export function SkillsInsightsCharts() {
                 type="monotone"
                 dataKey="technical"
                 name="Technical %"
-                stroke="#7a9eb8"
-                fill="#7a9eb8"
+                stroke="#7ba7c4"
+                fill="#7ba7c4"
                 fillOpacity={0.25}
               />
               <Area

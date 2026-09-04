@@ -37,9 +37,6 @@ export default function RolesPage() {
           {rolePositioning.title}
         </h2>
         <p className="mt-3 text-sm leading-relaxed">{rolePositioning.oneLiner}</p>
-        <p className="mt-3 text-sm text-[var(--muted)]">
-          {rolePositioning.sweetSpot}
-        </p>
         <div className="mt-5 border border-[var(--border)] bg-[var(--background)]/50 p-4">
           <p className="text-[10px] uppercase tracking-[0.18em] text-[var(--accent)]">
             What I want

@@ -102,7 +102,7 @@ export function RolesInsightsCharts() {
               <Bar
                 dataKey="demand2027"
                 name="2027 demand index (0–100)"
-                fill="#7a9eb8"
+                fill="#7ba7c4"
                 radius={[3, 3, 0, 0]}
               />
               <Bar
@@ -114,7 +114,7 @@ export function RolesInsightsCharts() {
               <Bar
                 dataKey="wageLift"
                 name="Wage lift %"
-                fill="#6b8f71"
+                fill="#9aa097"
                 radius={[3, 3, 0, 0]}
               />
             </BarChart>

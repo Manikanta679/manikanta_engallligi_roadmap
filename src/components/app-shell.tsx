@@ -14,6 +14,7 @@ import {
   CircleAlert,
   Briefcase,
   Wrench,
+  FolderKanban,
 } from "lucide-react";
 import { ThemeToggle } from "@/components/theme-toggle";
 import { cn } from "@/lib/utils";
@@ -25,6 +26,7 @@ const links = [
   { href: "/problems", label: "Problems", icon: CircleAlert },
   { href: "/roles", label: "Roles", icon: Briefcase },
   { href: "/skills", label: "Skills", icon: Wrench },
+  { href: "/projects", label: "Projects", icon: FolderKanban },
   { href: "/companies", label: "Companies", icon: Building2 },
   { href: "/analytics", label: "Analytics", icon: ChartColumn },
   { href: "/sources", label: "Sources", icon: Library },

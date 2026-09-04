@@ -468,19 +468,19 @@ export const destinationSkills: SkillItem[] = [
 ];
 
 export const screeningTech = [
-  { item: "SQL demonstrated (live or take-home)", weight: 95 },
-  { item: "Power BI / Tableau they can click", weight: 92 },
-  { item: "Python analysis (clean, reproducible)", weight: 88 },
-  { item: "Git repo with documented analysis", weight: 82 },
-  { item: "Cloud / dbt signal (nice → strong by 2028)", weight: 70 },
+  { item: "SQL", weight: 95 },
+  { item: "Power BI / Tableau", weight: 92 },
+  { item: "Python", weight: 88 },
+  { item: "Git", weight: 82 },
+  { item: "Cloud / dbt", weight: 70 },
 ];
 
 export const screeningBusiness = [
-  { item: "Projects framed as business decisions", weight: 96 },
-  { item: "Clear storytelling in interview", weight: 94 },
-  { item: "German B2 (or honest B1 + plan)", weight: 90 },
-  { item: "Domain-relevant case (logistics/retail)", weight: 86 },
-  { item: "Stakeholder / Agile delivery proof", weight: 78 },
+  { item: "Business decisions", weight: 96 },
+  { item: "Storytelling", weight: 94 },
+  { item: "German B2", weight: 90 },
+  { item: "Domain case", weight: 86 },
+  { item: "Stakeholder delivery", weight: 78 },
 ];
 
 export const skillsBalanceTimeline = [
@@ -496,9 +496,8 @@ export const skillsTimelinePhases = [
     title: "Phase 1 — Foundation",
     when: "Sem 2 · Oct 2026 – Mar 2027",
     tech: [
-      "Power BI (2 dashboards)",
+      "Power BI",
       "SQL advanced practice",
-      "ICE → pipeline + dashboard",
       "Azure connect for Power BI",
     ],
     business: [

@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { allCompanies, tierMeta } from "@/data/companies";
+import { allProjects } from "@/data/projects";
 import { researchSources } from "@/data/sources";
 import { marketJobSources, marketTrendSources } from "@/data/market";
 import { auth } from "@/lib/auth";
@@ -39,6 +40,7 @@ export default async function DashboardPage() {
         <Stat label="Companies tracked" value={String(allCompanies.length)} />
         <Stat label="Market sources" value={String(marketSourceCount)} />
         <Stat label="Company sources" value={String(researchSources.length)} />
+        <Stat label="Projects catalogued" value={String(allProjects.length)} />
         <Stat label="Leipzig-local ⭐" value={String(leipzigCount)} />
       </section>
 
@@ -116,6 +118,21 @@ export default async function DashboardPage() {
           <p className="mt-2 text-sm text-[var(--muted)]">
             Crucial → important → destination stack for 2027–30, with my top
             five focus.
+          </p>
+        </Link>
+        <Link
+          href="/projects"
+          className="border border-[var(--accent)] bg-[var(--accent-soft)] p-6 transition hover:border-[var(--accent)]"
+        >
+          <p className="text-[10px] uppercase tracking-[0.22em] text-[var(--accent)]">
+            Step 06 · Open
+          </p>
+          <h3 className="mt-2 font-[family-name:var(--font-display)] text-3xl">
+            Projects / Internship
+          </h3>
+          <p className="mt-2 text-sm text-[var(--muted)]">
+            Europe catalogue — List 1 and List 2 — tagged to Problems A–F, SQL
+            + Power BI + a business case.
           </p>
         </Link>
         <Link
