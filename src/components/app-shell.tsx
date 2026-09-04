@@ -13,6 +13,7 @@ import {
   Layers,
   CircleAlert,
   Briefcase,
+  Wrench,
 } from "lucide-react";
 import { ThemeToggle } from "@/components/theme-toggle";
 import { cn } from "@/lib/utils";
@@ -23,6 +24,7 @@ const links = [
   { href: "/sectors", label: "Sectors", icon: Layers },
   { href: "/problems", label: "Problems", icon: CircleAlert },
   { href: "/roles", label: "Roles", icon: Briefcase },
+  { href: "/skills", label: "Skills", icon: Wrench },
   { href: "/companies", label: "Companies", icon: Building2 },
   { href: "/analytics", label: "Analytics", icon: ChartColumn },
   { href: "/sources", label: "Sources", icon: Library },

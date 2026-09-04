@@ -4,7 +4,6 @@ import {
   marketForces,
   rolePhaseResources,
   rolePositioning,
-  skillTiers,
   spectrumZones,
   targetRoles,
 } from "@/data/roles";
@@ -172,63 +171,6 @@ export default function RolesPage() {
           </p>
         </div>
         <RolesInsightsCharts />
-      </section>
-
-      <section className="space-y-4">
-        <div>
-          <h2 className="font-[family-name:var(--font-display)] text-3xl">
-            Skills signal for these roles
-          </h2>
-          <p className="mt-2 max-w-3xl text-sm text-[var(--muted)]">
-            Three different lanes — scan must-haves, differentiators, and later
-            destination skills separately.
-          </p>
-        </div>
-        <div className="grid gap-4 lg:grid-cols-3">
-          {skillTiers.map((tier, index) => (
-            <article
-              key={tier.tier}
-              className={`border p-5 ${
-                index === 0
-                  ? "border-[var(--accent)] bg-[var(--accent-soft)]"
-                  : index === 1
-                    ? "border-[var(--border)] bg-[var(--surface)]"
-                    : "border-dashed border-[var(--border)] bg-[var(--background)]"
-              }`}
-            >
-              <p
-                className={`text-[10px] uppercase tracking-[0.18em] ${
-                  index === 0 ? "text-[var(--accent)]" : "text-[var(--muted)]"
-                }`}
-              >
-                {index === 0
-                  ? "Must have now"
-                  : index === 1
-                    ? "Gets interviews"
-                    : "Build toward 2028–29"}
-              </p>
-              <h3 className="mt-2 font-[family-name:var(--font-display)] text-2xl">
-                {tier.tier.replace(/^Tier \d+ — /, "")}
-              </h3>
-              <div className="mt-4 space-y-3">
-                {tier.rows.map((row) => (
-                  <div
-                    key={row.skill}
-                    className="border border-[var(--border)] bg-[var(--background)]/80 p-3"
-                  >
-                    <p className="text-sm font-medium leading-snug">{row.skill}</p>
-                    <p className="mt-1 text-xs leading-relaxed text-[var(--muted)]">
-                      {row.why}
-                    </p>
-                    <p className="mt-2 text-[10px] uppercase tracking-[0.14em] text-[var(--accent)]">
-                      {row.status}
-                    </p>
-                  </div>
-                ))}
-              </div>
-            </article>
-          ))}
-        </div>
       </section>
 
       <section className="space-y-4">
