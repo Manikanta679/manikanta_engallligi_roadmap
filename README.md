@@ -15,7 +15,7 @@ Private, authenticated career roadmap for Germany and nearby Europe. Built with 
 
 <br/>
 
-[![Live Website](https://img.shields.io/badge/LIVE_WEBSITE-2563EB?style=for-the-badge&logo=googlechrome&logoColor=white)](https://manikanta-engalligi-roadmap-two.vercel.app)
+[![Live Website](https://img.shields.io/badge/LIVE_WEBSITE-2563EB?style=for-the-badge&logo=googlechrome&logoColor=white)](https://manikanta-career-roadmap.vercel.app)
 [![GitHub](https://img.shields.io/badge/VIEW_REPO-111111?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Manikanta679/manikanta_engallligi_roadmap)
 
 </div>
@@ -26,13 +26,13 @@ Private, authenticated career roadmap for Germany and nearby Europe. Built with 
 
 <div align="center">
 
-<a href="https://manikanta-engalligi-roadmap-two.vercel.app">
+<a href="https://manikanta-career-roadmap.vercel.app">
   <img src="docs/readme-preview.png" alt="Open the live Career Roadmap site" width="920" />
 </a>
 
 <br/>
 
-**[Open the live site →](https://manikanta-engalligi-roadmap-two.vercel.app)**
+**[Open the live site →](https://manikanta-career-roadmap.vercel.app)**
 
 </div>
 
@@ -52,7 +52,7 @@ Login is required. There is no public sign-up. Ask me for access.
 
 ## Where to open it
 
-**Live site:** [https://manikanta-engalligi-roadmap-two.vercel.app](https://manikanta-engalligi-roadmap-two.vercel.app)
+**Live site:** [https://manikanta-career-roadmap.vercel.app](https://manikanta-career-roadmap.vercel.app)
 
 1. Open the link.
 2. Click **Login**.
