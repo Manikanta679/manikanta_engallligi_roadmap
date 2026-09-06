@@ -1,15 +1,80 @@
+<div align="center">
+
 # Manikanta Engalligi — Career Roadmap
 
-Private, authenticated career roadmap for European Tier 1–3 companies, with source library and analytics.
+**Business Data Analyst • Decision Scientist • Analytics Translator**
 
-## Stack
+Private, authenticated career roadmap for Germany and nearby Europe. Built with **Next.js**, **TypeScript**, and **Tailwind CSS**.
 
-- Next.js (App Router) + TypeScript + Tailwind CSS
-- NextAuth (credentials, email allowlist)
-- Recharts (analytics)
-- Light / dark mode (`next-themes`)
+<br/>
 
-## Run locally
+[![Next.js](https://img.shields.io/badge/Next.js-black?style=for-the-badge&logo=nextdotjs&logoColor=white)](https://nextjs.org)
+[![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwindcss&logoColor=white)](https://tailwindcss.com)
+[![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://vercel.com)
+
+<br/>
+
+[![Live Website](https://img.shields.io/badge/LIVE_WEBSITE-2563EB?style=for-the-badge&logo=googlechrome&logoColor=white)](https://manikanta-engalligi-roadmap-two.vercel.app)
+[![GitHub](https://img.shields.io/badge/VIEW_REPO-111111?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Manikanta679/manikanta_engallligi_roadmap)
+
+</div>
+
+---
+
+## Preview
+
+<div align="center">
+
+<img src="docs/readme-preview.png" alt="Career Roadmap landing page" width="920" />
+
+</div>
+
+---
+
+## About the project
+
+This is my private career roadmap. It is not a public portfolio.
+
+It maps **Market → Sectors → Problems → Roles → Skills → Projects → Companies → Target Location → Job**.
+
+Leipzig is for study only. Job cities I research: **NRW first**, then **Zurich / Zug**, later **Amsterdam / Rotterdam**.
+
+Login is required. There is no public sign-up. Ask me for access.
+
+---
+
+## Where to open it
+
+**Live site:** [https://manikanta-engalligi-roadmap-two.vercel.app](https://manikanta-engalligi-roadmap-two.vercel.app)
+
+1. Open the link.
+2. Click **Login**.
+3. Use the email and password I give you.
+
+---
+
+## What is inside
+
+| Page | What you see |
+| --- | --- |
+| Dashboard | Overview and shortcuts |
+| Market | Labour-market notes and sources |
+| Sectors | Industries I am targeting |
+| Problems | Business problems A–F |
+| Roles | Roles I am aiming for |
+| Skills | Skills I need |
+| Projects | Project catalogue |
+| Companies | Tier 1 / 2 / 3 cards and full briefs |
+| Target Location | Cities I will move toward from Leipzig |
+| Analytics | Charts from the same data |
+| Sources | All research links |
+
+Light / dark mode is the sun icon in the header.
+
+---
+
+## Run locally (optional)
 
 ```bash
 npm install
@@ -18,48 +83,20 @@ npm run dev
 
 Open [http://localhost:3000](http://localhost:3000).
 
-### Default local login
-
-| Email | Password |
-| --- | --- |
-| `manikanta@roadmap.local` | `Roadmap2026!` |
-| `member@roadmap.local` | `Roadmap2026!` |
-
-Change users in `.env.local`:
+Create `.env.local`:
 
 ```env
-AUTH_SECRET=your-long-random-secret
-ROADMAP_USERS=you@email.com:YourPassword:Your Name|friend@email.com:Pass:Friend Name
+AUTH_SECRET=put-a-long-random-string-here
+ROADMAP_USERS=you@email.com:YourPassword:Your Name
 ```
 
-## App map
+Do not commit `.env.local`.
 
-1. **Landing** — cinematic entry with highlighted name
-2. **Login** — allowlisted email access
-3. **Dashboard** — overview counts + shortcuts
-4. **Companies** — Tier 1 / 2 / 3 separately; company detail with 8 questions, HQ, investments, 2–3y strategy, official link, sources
-5. **Analytics** — bar/pie charts for tiers, sectors, skills, locations
-6. **Sources** — verified research websites
+---
 
-## Extend company data
+## Stack
 
-Edit:
-
-- `src/data/companies/tier1.ts`
-- `src/data/companies/tier2.ts`
-- `src/data/companies/tier3.ts`
-- `src/data/sources.ts`
-
-Sector defaults live in `src/data/sectorProfiles.ts` — override per company for source-specific notes.
-
-## Git
-
-`.env.local` is gitignored. Commit code, not secrets. Push when ready:
-
-```bash
-git init   # if needed inside this folder
-git add .
-git commit -m "Initial career roadmap app"
-git remote add origin <your-repo-url>
-git push -u origin main
-```
+- Next.js (App Router) + TypeScript + Tailwind CSS
+- NextAuth (email allowlist)
+- Recharts
+- Deployed on Vercel
