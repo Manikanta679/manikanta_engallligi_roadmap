@@ -26,7 +26,13 @@ Private, authenticated career roadmap for Germany and nearby Europe. Built with 
 
 <div align="center">
 
-<img src="docs/readme-preview.png" alt="Career Roadmap landing page" width="920" />
+<a href="https://manikanta-engalligi-roadmap-two.vercel.app">
+  <img src="docs/readme-preview.png" alt="Open the live Career Roadmap site" width="920" />
+</a>
+
+<br/>
+
+**[Open the live site →](https://manikanta-engalligi-roadmap-two.vercel.app)**
 
 </div>
 
