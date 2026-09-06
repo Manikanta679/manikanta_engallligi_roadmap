@@ -29,7 +29,7 @@ export const researchSources: ResearchSource[] = [
     url: "https://startup-mitteldeutschland.de/search/location/startup-datenbank/",
     bestFor: "My Leipzig / Saxony local startups",
     description:
-      "Regional startup database for Leipzig, Dresden, Halle. This helps me because proximity matters in my roadmap — I can verify ⭐ Leipzig-local companies instead of only chasing Berlin brands.",
+      "Regional startup database for Leipzig, Dresden, Halle. This helps me because proximity matters in my roadmap — I can verify Leipzig-local companies instead of only chasing Berlin brands.",
     howItHelpedMe:
       "It is good for me as my local deal-flow base while I study and look for nearby projects/internships.",
     tierRelevance: ["3"],

@@ -15,6 +15,7 @@ import {
   Briefcase,
   Wrench,
   FolderKanban,
+  MapPin,
 } from "lucide-react";
 import { ThemeToggle } from "@/components/theme-toggle";
 import { cn } from "@/lib/utils";
@@ -28,6 +29,7 @@ const links = [
   { href: "/skills", label: "Skills", icon: Wrench },
   { href: "/projects", label: "Projects", icon: FolderKanban },
   { href: "/companies", label: "Companies", icon: Building2 },
+  { href: "/locations", label: "Target Location", icon: MapPin },
   { href: "/analytics", label: "Analytics", icon: ChartColumn },
   { href: "/sources", label: "Sources", icon: Library },
 ];

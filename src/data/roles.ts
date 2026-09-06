@@ -106,7 +106,7 @@ export const myPriorities: MyPriority[] = [
     entryLevel: "best",
     entryLabel: "Best entry",
     growsTo: "Decision Scientist → Analytics Translator",
-    fit: "★★★ Core path",
+    fit: "Core path",
     note: "Data + present + decide — my main plan.",
   },
   {
@@ -115,7 +115,7 @@ export const myPriorities: MyPriority[] = [
     entryLevel: "strong",
     entryLabel: "Strong entry",
     growsTo: "Senior BI / metric owner → Business Data Analyst ladder",
-    fit: "★★★ Same ladder",
+    fit: "Same ladder",
     note: "Same path as 01, more dashboard-heavy.",
   },
   {
@@ -124,7 +124,7 @@ export const myPriorities: MyPriority[] = [
     entryLevel: "possible",
     entryLabel: "Entry if hybrid",
     growsTo: "Hybrid AE + domain → Decision Scientist",
-    fit: "★★★ If business-facing",
+    fit: "If business-facing",
     note: "Keep stakeholder work — not pure pipeline.",
   },
   {
@@ -133,7 +133,7 @@ export const myPriorities: MyPriority[] = [
     entryLevel: "hard",
     entryLabel: "Hard at entry",
     growsTo: "Analytics Translator → Senior Consultant",
-    fit: "★★★ Destination",
+    fit: "Destination",
     note: "Needs 1–2 yrs proof from 01 / 03 / 05 first.",
   },
   {
@@ -142,7 +142,7 @@ export const myPriorities: MyPriority[] = [
     entryLevel: "skip",
     entryLabel: "Not primary",
     growsTo: "Platform Lead / Architect (if forced)",
-    fit: "★ Too infra",
+    fit: "Too infra",
     note: "Skip as primary — little presenting.",
   },
   {
@@ -151,7 +151,7 @@ export const myPriorities: MyPriority[] = [
     entryLevel: "possible",
     entryLabel: "Possible fallback",
     growsTo: "Tech Lead / EM",
-    fit: "★★ Wrong direction",
+    fit: "Wrong direction",
     note: "I have the background — not the goal.",
   },
   {
@@ -160,7 +160,7 @@ export const myPriorities: MyPriority[] = [
     entryLevel: "possible",
     entryLabel: "Possible fallback",
     growsTo: "Same as full stack",
-    fit: "★ Engineering track",
+    fit: "Engineering track",
     note: "Same as 02 — not Data + Business.",
   },
 ];
@@ -207,12 +207,12 @@ export const targetRoles: TargetRole[] = [
       "Git, reproducible analysis",
     ],
     sectorFit: [
-      { sector: "Logistics", fit: "95%", companies: "DHL, DB, ORSOFT", example: "Why are delays clustering on Route X?" },
-      { sector: "Retail", fit: "90%", companies: "Spread Group, REWE, Zalando", example: "Which category to restock this week?" },
-      { sector: "Consulting", fit: "85%", companies: "Capgemini, Accenture", example: "Client dashboard + workshop" },
-      { sector: "Industrial", fit: "75%", companies: "BMW Leipzig", example: "Production KPI reporting" },
-      { sector: "Banking", fit: "60%", companies: "N26", example: "Higher German bar" },
-      { sector: "Energy", fit: "65%", companies: "E.ON", example: "More domain-heavy" },
+      { sector: "Logistics", fit: "95%", companies: "DHL Leipzig, DB, ORSOFT; NRW: Schenker, IML, Lufthansa; later Picnic / Port of Rotterdam", example: "Why are delays clustering on Route X?" },
+      { sector: "Retail", fit: "90%", companies: "Spread Group, REWE Digital Cologne, Zalando, dm Karlsruhe", example: "Which category to restock this week?" },
+      { sector: "Consulting", fit: "85%", companies: "Capgemini Düsseldorf, Accenture", example: "Client dashboard + workshop" },
+      { sector: "Industrial", fit: "75%", companies: "BMW Leipzig; NRW watch Henkel / Ford; SAP Walldorf / BASF Mannheim", example: "Production KPI reporting" },
+      { sector: "Banking", fit: "60%", companies: "N26 now; Zurich UBS / Swiss Re later; Amsterdam Adyen later", example: "Higher German / Swiss bar" },
+      { sector: "Energy", fit: "65%", companies: "E.ON Essen, EnBW Karlsruhe", example: "More domain-heavy" },
     ],
     whyItSuitsMe: [
       "ICE delay project = this role’s output (forecast → insight → recommendation)",
@@ -594,14 +594,14 @@ export const consultingAltPath = [
 
 export const sectorRoleMatrix = [
   {
-    sector: "Logistics ⭐",
+    sector: "Logistics",
     entry: "Business Data Analyst",
     mid: "Analytics Engineer (hybrid)",
     destination: "Decision Scientist (ops)",
     companies: "DHL, DB, ORSOFT, MAIA",
   },
   {
-    sector: "Retail ⭐",
+    sector: "Retail",
     entry: "Business Data Analyst",
     mid: "Product Analyst",
     destination: "Decision Scientist (demand/pricing)",
@@ -646,8 +646,8 @@ export const spectrumZones = [
   { label: "AI Business Analyst", side: "zone" as const },
   { label: "Process Intel. Consultant", side: "zone" as const },
   { label: "Business Data Analyst", side: "business" as const },
-  { label: "Decision Scientist ★", side: "business" as const },
-  { label: "Analytics Translator ★", side: "business" as const },
+  { label: "Decision Scientist", side: "business" as const },
+  { label: "Analytics Translator", side: "business" as const },
 ];
 
 export const finalTargets = {
@@ -702,52 +702,52 @@ export const skillTiers = [
 export const assetRoleMap = [
   {
     asset: "ICE Train Delay Prediction",
-    businessDa: "★★★",
-    analyticsEng: "★★★",
-    decisionSci: "★★★",
-    translator: "★★",
+    businessDa: "Strong",
+    analyticsEng: "Strong",
+    decisionSci: "Strong",
+    translator: "Medium",
   },
   {
     asset: "DevOps (CI/CD, Docker, Git)",
-    businessDa: "★★",
-    analyticsEng: "★★★",
-    decisionSci: "★★",
-    translator: "★★",
+    businessDa: "Medium",
+    analyticsEng: "Strong",
+    decisionSci: "Medium",
+    translator: "Medium",
   },
   {
     asset: "Full-stack (React, .NET)",
-    businessDa: "★★",
-    analyticsEng: "★★",
-    decisionSci: "★",
-    translator: "★",
+    businessDa: "Medium",
+    analyticsEng: "Medium",
+    decisionSci: "Low",
+    translator: "Low",
   },
   {
     asset: "Agile / Scrum leadership",
-    businessDa: "★★★",
-    analyticsEng: "★★",
-    decisionSci: "★★★",
-    translator: "★★★",
+    businessDa: "Strong",
+    analyticsEng: "Medium",
+    decisionSci: "Strong",
+    translator: "Strong",
   },
   {
     asset: "SQL + Python",
-    businessDa: "★★★",
-    analyticsEng: "★★★",
-    decisionSci: "★★★",
-    translator: "★★",
+    businessDa: "Strong",
+    analyticsEng: "Strong",
+    decisionSci: "Strong",
+    translator: "Medium",
   },
   {
     asset: "M.Sc. Big Data & AI",
-    businessDa: "★★★",
-    analyticsEng: "★★★",
-    decisionSci: "★★★",
-    translator: "★★★",
+    businessDa: "Strong",
+    analyticsEng: "Strong",
+    decisionSci: "Strong",
+    translator: "Strong",
   },
   {
     asset: "Love presenting",
-    businessDa: "★★★",
-    analyticsEng: "★★",
-    decisionSci: "★★★",
-    translator: "★★★",
+    businessDa: "Strong",
+    analyticsEng: "Medium",
+    decisionSci: "Strong",
+    translator: "Strong",
   },
 ];
 
@@ -861,6 +861,11 @@ export const rolePhaseResources: RoleResource[] = [
   { name: "SAP Value of AI Germany 2026", url: "https://news.sap.com/germany/files/2026/07/08/SAP-Value-of-AI-2026-Germany-1.pdf", useFor: "Quality + governance gap" },
   { name: "Xebia — Analytics Translator", url: "https://xebia.com/articles/analytics-translator-the-must-have-role/", useFor: "Three jobs translators do" },
   { name: "Entgeltatlas (official BA)", url: "https://web.arbeitsagentur.de/entgeltatlas/", useFor: "Neutral salary check" },
+  { name: "Scale-up.NRW / wirtschaft.nrw", url: "https://www.wirtschaft.nrw/nrw-verlaengert-wachstums-und-skalierungsprogramm-bis-2029", useFor: "NRW hiring / scale-up region" },
+  { name: "Greater Zurich Area", url: "https://www.greaterzuricharea.com/", useFor: "Zurich / Zug role market" },
+  { name: "SEM — working in Switzerland", url: "https://www.sem.admin.ch/sem/en/home/themen/arbeit.html", useFor: "Zurich work-permit bar" },
+  { name: "NeuronFeed Germany", url: "https://neuronfeed.com/country/germany", useFor: "Germany hiring / funding news" },
+  { name: "Tech.eu", url: "https://tech.eu", useFor: "European tech news including DACH" },
 ];
 
 export function getTargetRole(slug: string) {

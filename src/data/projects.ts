@@ -82,8 +82,10 @@ export const projectSectors = [
 ] as const;
 
 export const projectHubs = [
-  "Munich", "Berlin", "Frankfurt", "Hamburg", "Amsterdam", "Paris",
-  "Dublin", "Zurich", "Barcelona", "Milan", "Warsaw", "Prague", "Vienna", "Copenhagen",
+  "Munich", "Berlin", "Frankfurt", "Hamburg",
+  "Düsseldorf", "Cologne", "Dortmund", "Essen", "Duisburg", "Bonn",
+  "Amsterdam", "Paris",
+  "Dublin", "Zurich", "Zug", "Barcelona", "Milan", "Warsaw", "Prague", "Vienna", "Copenhagen",
 ];
 
 export const projectPathNote =

@@ -37,7 +37,7 @@ export const tierMeta = {
   },
   3: {
     title: "Tier 3 — Startups",
-    subtitle: "Most responsibility · fastest learning · English-friendly · Leipzig ⭐",
+    subtitle: "Most responsibility · fastest learning · English-friendly",
     accent: "#7a9eb8",
   },
 } as const;

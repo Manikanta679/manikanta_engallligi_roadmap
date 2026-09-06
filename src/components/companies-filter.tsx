@@ -17,7 +17,8 @@ export function CompaniesFilter({ companies }: { companies: Company[] }) {
   );
 
   const filtered = companies.filter((c) => {
-    const hay = `${c.name} ${c.sector} ${c.headquarters} ${c.brief}`.toLowerCase();
+    const hay =
+      `${c.name} ${c.sector} ${c.headquarters} ${c.locations.join(" ")} ${c.brief}`.toLowerCase();
     const matchesQ = !q || hay.includes(q.toLowerCase());
     const matchesSector = sector === "all" || c.sector === sector;
     return matchesQ && matchesSector;

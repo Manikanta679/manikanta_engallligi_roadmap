@@ -6,7 +6,10 @@ export type CompanyTag =
   | "mitteldeutschland"
   | "visa-friendly"
   | "unicorn"
-  | "leipzig-local";
+  | "leipzig-local"
+  | "nrw-hub"
+  | "zurich-hub"
+  | "nl-hub";
 
 export interface SourceRef {
   title: string;

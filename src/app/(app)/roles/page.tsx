@@ -152,7 +152,7 @@ export default function RolesPage() {
             title="More business"
             items={[
               ...spectrumZones.filter((z) => z.side === "business"),
-              { label: "AI & Digital Consultant ★", side: "business" as const },
+              { label: "AI & Digital Consultant", side: "business" as const },
             ]}
           />
         </div>

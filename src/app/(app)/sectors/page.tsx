@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { crossSectorResources, sectors } from "@/data/sectors";
 import { roadmapPattern } from "@/data/market";
+import { hubResources, newsResources } from "@/data/priorityHubs";
 import { PhaseContinue } from "@/components/phase-continue";
 
 export default function SectorsPage() {
@@ -15,8 +16,8 @@ export default function SectorsPage() {
         </h1>
         <p className="mt-3 max-w-3xl text-sm leading-relaxed text-[var(--muted)]">
           I mapped these sectors from market research plus my own notes —
-          priority order, local Leipzig options, and where Data/AI creates value.
-          Open any sector for the full breakdown.
+          priority order and where Data/AI creates value. Open any sector for
+          the full breakdown.
         </p>
       </section>
 
@@ -60,7 +61,7 @@ export default function SectorsPage() {
               </span>
               {sector.starred ? (
                 <span className="text-[10px] uppercase tracking-[0.14em] text-[var(--accent)]">
-                  ⭐ Core
+                  Core
                 </span>
               ) : (
                 <span className="text-[10px] uppercase tracking-[0.14em] text-[var(--muted)]">
@@ -87,7 +88,8 @@ export default function SectorsPage() {
           Master resources I use across sectors
         </h2>
         <div className="space-y-3">
-          {crossSectorResources.map((resource, index) => (
+          {[...crossSectorResources, ...hubResources, ...newsResources].map(
+            (resource, index) => (
             <article
               key={resource.url}
               className="border border-[var(--border)] bg-[var(--surface)] p-5"

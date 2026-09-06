@@ -56,15 +56,16 @@ const seeds: CompanySeed[] = [
   {
     name: "Microsoft",
     sector: "Software/Cloud",
-    locations: ["Munich", "Berlin"],
-    headquarters: "Redmond, USA (EU hubs: Munich, Berlin)",
-    headquartersHighlight: "Munich & Berlin — major DE engineering/sales hubs",
+    locations: ["Munich", "Berlin", "Zurich"],
+    headquarters: "Redmond, USA (EU hubs: Munich, Berlin, Zurich)",
+    headquartersHighlight: "Zurich 🇨🇭 Target destination + Munich & Berlin DE hubs",
+    tags: ["zurich-hub", "visa-friendly"],
     website: "https://www.microsoft.com",
     domain: "microsoft.com",
     brief:
       "Hyperscale cloud (Azure), productivity (M365), developer platforms (GitHub), and Copilot AI across enterprise software.",
     europeFocus:
-      "Large German presence; Azure EU regions and enterprise Copilot rollouts across DACH.",
+      "Large German presence; Azure EU regions; Microsoft hyperscalers planned in Bergheim / Bedburg (Rheinisches Revier, NRW) next to Cologne / Düsseldorf.",
     overrides: {
       strategy2to3Years:
         "Scale Copilot monetization, Azure AI capacity in EU, and security portfolio — confirm via Microsoft earnings and Azure region updates.",
@@ -80,7 +81,8 @@ const seeds: CompanySeed[] = [
     sector: "Software/Cloud/AI",
     locations: ["Munich", "Berlin", "Zurich"],
     headquarters: "Mountain View, USA (EU: Zurich major engineering)",
-    headquartersHighlight: "Zurich 🇨🇭 engineering hub + Munich/Berlin DE offices",
+    headquartersHighlight: "Zurich 🇨🇭 Priority destination — largest Google engineering site outside the US",
+    tags: ["zurich-hub", "visa-friendly"],
     website: "https://about.google",
     domain: "google.com",
     brief:
@@ -106,9 +108,10 @@ const seeds: CompanySeed[] = [
   {
     name: "IBM",
     sector: "Software/Consulting",
-    locations: ["Ehningen"],
-    headquarters: "Armonk, USA (DE: Ehningen near Stuttgart)",
-    headquartersHighlight: "Ehningen — IBM Deutschland hub / mainframe & hybrid cloud",
+    locations: ["Ehningen", "Rüschlikon", "Zurich"],
+    headquarters: "Armonk, USA (DE: Ehningen; CH: Rüschlikon)",
+    headquartersHighlight: "Rüschlikon 🇨🇭 Target — IBM Research + Ehningen DE hub",
+    tags: ["zurich-hub", "visa-friendly"],
     website: "https://www.ibm.com",
     domain: "ibm.com",
     brief:
@@ -122,7 +125,8 @@ const seeds: CompanySeed[] = [
     sector: "IT Services/Telecom",
     locations: ["Bonn", "Frankfurt", "Leipzig"],
     headquarters: "Bonn, Germany",
-    headquartersHighlight: "Bonn HQ — Leipzig relevant for DE ops/IT",
+    headquartersHighlight: "Bonn Priority NRW HQ — Leipzig relevant for DE ops/IT",
+    tags: ["nrw-hub"],
     website: "https://www.t-systems.com",
     domain: "t-systems.com",
     brief:
@@ -260,9 +264,10 @@ const seeds: CompanySeed[] = [
   {
     name: "Deloitte / KPMG / PwC",
     sector: "Consulting",
-    locations: ["Frankfurt", "Munich", "Berlin"],
-    headquarters: "Big4 DE hubs: Frankfurt, Munich, Berlin",
-    headquartersHighlight: "Frankfurt financial hub + Munich/Berlin",
+    locations: ["Frankfurt", "Munich", "Berlin", "Düsseldorf"],
+    headquarters: "Big4 DE hubs: Frankfurt, Munich, Berlin, Düsseldorf",
+    headquartersHighlight: "Frankfurt + Düsseldorf Priority NRW consulting belt",
+    tags: ["nrw-hub"],
     website: "https://www2.deloitte.com",
     domain: "deloitte.com",
     brief:
@@ -274,9 +279,10 @@ const seeds: CompanySeed[] = [
   {
     name: "Capgemini",
     sector: "Consulting/IT",
-    locations: ["Berlin", "Frankfurt", "Paris"],
+    locations: ["Berlin", "Frankfurt", "Düsseldorf", "Paris"],
     headquarters: "Paris, France",
-    headquartersHighlight: "Paris HQ — strong DE delivery (Berlin/Frankfurt)",
+    headquartersHighlight: "Paris HQ — DE delivery incl. Düsseldorf Priority NRW",
+    tags: ["nrw-hub"],
     website: "https://www.capgemini.com",
     domain: "capgemini.com",
     brief:
@@ -370,7 +376,8 @@ const seeds: CompanySeed[] = [
     sector: "Logistics",
     locations: ["Essen"],
     headquarters: "Essen, Germany",
-    headquartersHighlight: "Essen HQ",
+    headquartersHighlight: "Essen Priority NRW — freight HQ (verify live ownership after DSV deal)",
+    tags: ["nrw-hub"],
     website: "https://www.dbschenker.com",
     domain: "dbschenker.com",
     brief:
@@ -382,9 +389,10 @@ const seeds: CompanySeed[] = [
   {
     name: "Kühne + Nagel",
     sector: "Logistics",
-    locations: ["Schindellegi"],
+    locations: ["Schindellegi", "Zurich", "Hamburg"],
     headquarters: "Schindellegi, Switzerland",
-    headquartersHighlight: "Schindellegi 🇨🇭 HQ",
+    headquartersHighlight: "Schindellegi / Zurich area 🇨🇭 Priority destination — control-tower forwarding",
+    tags: ["zurich-hub"],
     website: "https://www.kuehne-nagel.com",
     domain: "kuehne-nagel.com",
     brief:
@@ -398,7 +406,8 @@ const seeds: CompanySeed[] = [
     sector: "Aviation",
     locations: ["Cologne", "Frankfurt"],
     headquarters: "Cologne, Germany",
-    headquartersHighlight: "Cologne HQ — Frankfurt major hub",
+    headquartersHighlight: "Cologne Priority NRW HQ — Frankfurt major ops hub",
+    tags: ["nrw-hub"],
     website: "https://www.lufthansagroup.com",
     domain: "lufthansagroup.com",
     brief:
@@ -410,8 +419,8 @@ const seeds: CompanySeed[] = [
   {
     name: "Maersk / DSV",
     sector: "Logistics",
-    locations: ["Copenhagen"],
-    headquarters: "Copenhagen, Denmark (Maersk); DSV Denmark/global",
+    locations: ["Copenhagen", "Rotterdam"],
+    headquarters: "Copenhagen, Denmark (Maersk); DSV Denmark/global; Rotterdam terminals",
     headquartersHighlight: "Copenhagen 🇩🇰 — integrated logistics giants",
     website: "https://www.maersk.com",
     domain: "maersk.com",
@@ -454,7 +463,8 @@ const seeds: CompanySeed[] = [
     sector: "Retail",
     locations: ["Cologne", "Essen"],
     headquarters: "Cologne (REWE) / Essen area (Aldi Nord context)",
-    headquartersHighlight: "Cologne / Essen — German grocery giants",
+    headquartersHighlight: "Cologne / Essen Priority NRW — REWE Digital + grocery scale",
+    tags: ["nrw-hub"],
     website: "https://www.rewe-group.com",
     domain: "rewe-group.com",
     brief:
@@ -466,11 +476,12 @@ const seeds: CompanySeed[] = [
   {
     name: "Ahold Delhaize / Inditex / Carrefour",
     sector: "Retail",
-    locations: ["Netherlands", "Spain", "France"],
-    headquarters: "NL / ES / FR respectively",
-    headquartersHighlight: "Pan-EU retail champions (NL 🇳🇱 / ES 🇪🇸 / FR 🇫🇷)",
+    locations: ["Zaandam", "Amsterdam", "Netherlands", "Spain", "France"],
+    headquarters: "Zaandam 🇳🇱 / ES / FR",
+    headquartersHighlight: "Amsterdam / Zaandam 🇳🇱 Target destination — Pan-EU retail",
     website: "https://www.aholddelhaize.com",
     domain: "aholddelhaize.com",
+    tags: ["nl-hub", "visa-friendly"],
     brief:
       "Large European retail groups spanning grocery and fashion with advanced supply-chain and e-comm operations.",
     europeFocus:
@@ -522,11 +533,12 @@ const seeds: CompanySeed[] = [
   {
     name: "ING / BNP Paribas / Santander",
     sector: "Banking",
-    locations: ["Netherlands", "France", "Spain"],
-    headquarters: "NL 🇳🇱 / FR 🇫🇷 / ES 🇪🇸",
-    headquartersHighlight: "Major EU retail & wholesale banks",
+    locations: ["Amsterdam", "Netherlands", "France", "Spain"],
+    headquarters: "Amsterdam 🇳🇱 / FR 🇫🇷 / ES 🇪🇸",
+    headquartersHighlight: "Amsterdam 🇳🇱 Target destination — EU retail & wholesale banks",
     website: "https://www.ing.com",
     domain: "ing.com",
+    tags: ["nl-hub", "visa-friendly"],
     brief:
       "Leading European banks with digital retail strength (ING) and broad universal banking franchises.",
     europeFocus:
@@ -538,7 +550,8 @@ const seeds: CompanySeed[] = [
     sector: "Banking/Insurance",
     locations: ["Zurich"],
     headquarters: "Zurich, Switzerland",
-    headquartersHighlight: "Zurich 🇨🇭 — global wealth & insurance hub",
+    headquartersHighlight: "Zurich 🇨🇭 Priority destination — wealth & insurance Decision Scientist door",
+    tags: ["zurich-hub"],
     website: "https://www.ubs.com",
     domain: "ubs.com",
     brief:
@@ -645,7 +658,8 @@ const seeds: CompanySeed[] = [
     sector: "Industrial automation",
     locations: ["Zurich"],
     headquarters: "Zurich, Switzerland",
-    headquartersHighlight: "Zurich 🇨🇭 HQ",
+    headquartersHighlight: "Zurich 🇨🇭 Priority destination — robotics & electrification HQ",
+    tags: ["zurich-hub"],
     website: "https://global.abb",
     domain: "abb.com",
     brief:
@@ -687,7 +701,8 @@ const seeds: CompanySeed[] = [
     sector: "Energy",
     locations: ["Essen"],
     headquarters: "Essen, Germany",
-    headquartersHighlight: "Essen — German energy majors",
+    headquartersHighlight: "Essen Priority NRW — German energy capital",
+    tags: ["nrw-hub"],
     website: "https://www.eon.com",
     domain: "eon.com",
     brief:
@@ -785,9 +800,10 @@ const seeds: CompanySeed[] = [
     sector: "Health-tech",
     locations: ["Amsterdam", "Eindhoven"],
     headquarters: "Amsterdam / Eindhoven, Netherlands",
-    headquartersHighlight: "Amsterdam / Eindhoven 🇳🇱",
+    headquartersHighlight: "Amsterdam 🇳🇱 Target destination — health-tech",
     website: "https://www.philips.com",
     domain: "philips.com",
+    tags: ["nl-hub", "visa-friendly"],
     brief:
       "Health technology company focused on imaging, monitoring, and enterprise informatics.",
     europeFocus:
@@ -807,6 +823,907 @@ const seeds: CompanySeed[] = [
     europeFocus:
       "French industrial-tech leader with strong EU sustainability narrative.",
     imageHint: "energy management",
+  },
+  {
+    name: "Henkel",
+    sector: "Industrial/Consumer",
+    locations: ["Düsseldorf"],
+    headquarters: "Düsseldorf, Germany",
+    headquartersHighlight: "Düsseldorf Priority NRW — adhesives + consumer HQ",
+    website: "https://www.henkel.com",
+    domain: "henkel.com",
+    tags: ["nrw-hub"],
+    brief:
+      "Adhesive technologies and consumer brands. Demand-center analytics, plant data, and CX sit in one HQ city.",
+    europeFocus:
+      "Düsseldorf DAX name — marketing funnel + shop-floor data. Secondary industrial lane after Leipzig plants.",
+    imageHint: "adhesives manufacturing",
+  },
+  {
+    name: "Bayer",
+    sector: "Pharma",
+    locations: ["Leverkusen"],
+    headquarters: "Leverkusen, Germany",
+    headquartersHighlight: "Leverkusen Priority NRW — pharma / agri HQ",
+    website: "https://www.bayer.com",
+    domain: "bayer.com",
+    tags: ["nrw-hub"],
+    brief:
+      "Pharma and crop science. Regulated data, clinical/quality analytics, and EU AI Act on high-risk systems.",
+    europeFocus:
+      "NRW chemicals/pharma belt next to Cologne. Watch, not my 2027 first door.",
+    imageHint: "pharma research",
+  },
+  {
+    name: "thyssenkrupp",
+    sector: "Industrial",
+    locations: ["Essen"],
+    headquarters: "Essen, Germany",
+    headquartersHighlight: "Essen Priority NRW — steel / industrial HQ",
+    website: "https://www.thyssenkrupp.com",
+    domain: "thyssenkrupp.com",
+    tags: ["nrw-hub"],
+    brief:
+      "Steel and industrial engineering. Plant data quality, predictive maintenance, and energy-intensive production.",
+    europeFocus:
+      "Ruhr industrial core next to E.ON/RWE. Same city labour market as energy HQs.",
+    imageHint: "steel plant",
+  },
+  {
+    name: "ERGO",
+    sector: "Insurance",
+    locations: ["Düsseldorf"],
+    headquarters: "Düsseldorf, Germany",
+    headquartersHighlight: "Düsseldorf Priority NRW — insurance HQ",
+    website: "https://www.ergo.com",
+    domain: "ergo.com",
+    tags: ["nrw-hub"],
+    brief:
+      "Major German insurer. Claims, CX agents (Cognigy loop), and EU AI Act on service bots.",
+    europeFocus:
+      "NRW insurance door — regulated analytics without Frankfurt wholesale banking.",
+    imageHint: "insurance claims",
+  },
+  {
+    name: "Swiss Re",
+    sector: "Insurance",
+    locations: ["Zurich"],
+    headquarters: "Zurich, Switzerland",
+    headquartersHighlight: "Zurich 🇨🇭 Priority destination — global reinsurance",
+    website: "https://www.swissre.com",
+    domain: "swissre.com",
+    tags: ["zurich-hub"],
+    brief:
+      "Global reinsurance. Risk models, climate analytics, and explainability under Swiss/EU rules.",
+    europeFocus:
+      "Zurich destination with UBS / Zurich Insurance. 2028–30 after a German role + sponsor.",
+    imageHint: "reinsurance risk",
+  },
+  {
+    name: "Metro AG",
+    sector: "Retail/Wholesale",
+    locations: ["Düsseldorf"],
+    headquarters: "Düsseldorf, Germany",
+    headquartersHighlight: "Düsseldorf Target NRW — wholesale HQ",
+    website: "https://www.metroag.de",
+    domain: "metroag.de",
+    tags: ["nrw-hub"],
+    brief:
+      "Cash-and-carry / wholesale. Demand, pricing, and B2B analytics at HQ scale.",
+    europeFocus:
+      "Düsseldorf wholesale giant next to Henkel / ERGO — retail analytics without a Berlin move.",
+    sources: [
+      { title: "Official site", url: "https://www.metroag.de" },
+      { title: "Careers", url: "https://jobs.metroag.de" },
+    ],
+    imageHint: "wholesale retail",
+  },
+  {
+    name: "Uniper",
+    sector: "Energy",
+    locations: ["Düsseldorf"],
+    headquarters: "Düsseldorf, Germany",
+    headquartersHighlight: "Düsseldorf Target NRW — energy trading HQ",
+    website: "https://www.uniper.energy",
+    domain: "uniper.energy",
+    tags: ["nrw-hub", "visa-friendly"],
+    brief:
+      "Energy generation and trading. Time-series, risk, and trading analytics. English common on trading teams.",
+    europeFocus:
+      "Düsseldorf energy-trading door next to the Essen E.ON / RWE belt.",
+    sources: [
+      { title: "Official site", url: "https://www.uniper.energy" },
+      { title: "Careers", url: "https://www.uniper.energy/careers" },
+    ],
+    imageHint: "energy trading",
+  },
+  {
+    name: "Vodafone Germany",
+    sector: "Telecom",
+    locations: ["Düsseldorf"],
+    headquarters: "Düsseldorf, Germany",
+    headquartersHighlight: "Düsseldorf Target NRW — telco HQ",
+    website: "https://www.vodafone.de",
+    domain: "vodafone.de",
+    tags: ["nrw-hub", "visa-friendly"],
+    brief:
+      "German mobile/broadband operator. Customer analytics, network data, CX. Some digital squads hire in English.",
+    europeFocus:
+      "UK-rooted group with a large Düsseldorf campus — telco analytics without a Bonn-only bet.",
+    sources: [
+      { title: "Official site", url: "https://www.vodafone.de" },
+      { title: "Careers", url: "https://careers.vodafone.com" },
+    ],
+    imageHint: "telecom network",
+  },
+  {
+    name: "Ceconomy / MediaMarktSaturn",
+    sector: "Retail",
+    locations: ["Düsseldorf"],
+    headquarters: "Düsseldorf, Germany",
+    headquartersHighlight: "Düsseldorf Target NRW — electronics retail HQ",
+    website: "https://www.ceconomy.de",
+    domain: "ceconomy.de",
+    tags: ["nrw-hub"],
+    brief:
+      "Consumer-electronics retail. Pricing, assortment, and omnichannel analytics.",
+    europeFocus:
+      "Düsseldorf retail HQ next to Metro — store + digital data problems.",
+    sources: [
+      { title: "Official site", url: "https://www.ceconomy.de" },
+      { title: "Careers", url: "https://www.ceconomy.de/en/career" },
+    ],
+    imageHint: "electronics retail",
+  },
+  {
+    name: "ARAG",
+    sector: "Insurance",
+    locations: ["Düsseldorf"],
+    headquarters: "Düsseldorf, Germany",
+    headquartersHighlight: "Düsseldorf Target NRW — legal insurance HQ",
+    website: "https://www.arag.com",
+    domain: "arag.com",
+    tags: ["nrw-hub"],
+    brief:
+      "Legal / insurance group. Claims and legal-process analytics under EU AI Act.",
+    europeFocus:
+      "Düsseldorf insurance cluster next to ERGO — regulated analytics without Frankfurt.",
+    sources: [
+      { title: "Official site", url: "https://www.arag.com" },
+      { title: "Careers", url: "https://www.arag.com/en/career" },
+    ],
+    imageHint: "legal insurance",
+  },
+  {
+    name: "HSBC Germany",
+    sector: "Banking",
+    locations: ["Düsseldorf"],
+    headquarters: "Düsseldorf, Germany",
+    headquartersHighlight: "Düsseldorf Target NRW — international bank",
+    website: "https://www.about.hsbc.de",
+    domain: "hsbc.de",
+    tags: ["nrw-hub", "visa-friendly"],
+    brief:
+      "International bank with a large Düsseldorf base. Risk / KYC / reporting — English is the working language in many teams.",
+    europeFocus:
+      "Best Düsseldorf English banking door. Higher bar than a Werkstudent at a Mittelstand.",
+    sources: [
+      { title: "Official site", url: "https://www.about.hsbc.de" },
+      { title: "Careers", url: "https://www.hsbc.com/careers" },
+    ],
+    imageHint: "international banking",
+  },
+  {
+    name: "Ford-Werke",
+    sector: "Automotive",
+    locations: ["Cologne"],
+    headquarters: "Cologne, Germany",
+    headquartersHighlight: "Cologne Target NRW — European plant / ops",
+    website: "https://www.ford.de",
+    domain: "ford.de",
+    tags: ["nrw-hub", "visa-friendly"],
+    brief:
+      "Cologne plant and European ops. Production quality, supply-chain, and shop-floor analytics. English common as a US OEM.",
+    europeFocus:
+      "Strongest English industrial door in Cologne next to REWE / DeepL.",
+    sources: [
+      { title: "Official site", url: "https://www.ford.de" },
+      { title: "Careers", url: "https://www.careers.ford.com" },
+    ],
+    imageHint: "auto plant cologne",
+  },
+  {
+    name: "DEVK",
+    sector: "Insurance",
+    locations: ["Cologne"],
+    headquarters: "Cologne, Germany",
+    headquartersHighlight: "Cologne Target NRW — insurance HQ",
+    website: "https://www.devk.de",
+    domain: "devk.de",
+    tags: ["nrw-hub"],
+    brief:
+      "Cologne insurer. Claims, pricing, and regulated analytics without Frankfurt wholesale banking.",
+    europeFocus:
+      "Cologne insurance belt with Gothaer / AXA — German-heavier than ERGO’s Cognigy loop.",
+    sources: [
+      { title: "Official site", url: "https://www.devk.de" },
+      { title: "Careers", url: "https://www.devk.de/karriere" },
+    ],
+    imageHint: "insurance cologne",
+  },
+  {
+    name: "Gothaer",
+    sector: "Insurance",
+    locations: ["Cologne"],
+    headquarters: "Cologne, Germany",
+    headquartersHighlight: "Cologne Target NRW — insurance HQ",
+    website: "https://www.gothaer.de",
+    domain: "gothaer.de",
+    tags: ["nrw-hub"],
+    brief:
+      "Cologne insurer. Same regulated path as DEVK / ERGO — claims and customer analytics.",
+    europeFocus:
+      "NRW insurance door. German day-to-day; useful if I want insurance without Düsseldorf.",
+    sources: [
+      { title: "Official site", url: "https://www.gothaer.de" },
+      { title: "Careers", url: "https://www.gothaer.de/karriere" },
+    ],
+    imageHint: "insurance group",
+  },
+  {
+    name: "AXA Germany",
+    sector: "Insurance",
+    locations: ["Cologne"],
+    headquarters: "Cologne, Germany",
+    headquartersHighlight: "Cologne Target NRW — AXA Deutschland",
+    website: "https://www.axa.de",
+    domain: "axa.de",
+    tags: ["nrw-hub"],
+    brief:
+      "Large insurer with a strong Cologne presence. Governance + claims analytics.",
+    europeFocus:
+      "International group, local German office. Specialist teams can be more English than DEVK.",
+    sources: [
+      { title: "Official site", url: "https://www.axa.de" },
+      { title: "Careers", url: "https://www.axa.de/karriere" },
+    ],
+    imageHint: "axa insurance",
+  },
+  {
+    name: "RTL Deutschland",
+    sector: "Media",
+    locations: ["Cologne"],
+    headquarters: "Cologne, Germany",
+    headquartersHighlight: "Cologne Target NRW — TV / streaming HQ",
+    website: "https://www.rtl.de",
+    domain: "rtl.de",
+    tags: ["nrw-hub"],
+    brief:
+      "TV / streaming group. Audience, content, and advertising analytics.",
+    europeFocus:
+      "Cologne media cluster — product-analyst flavour next to DeepL / REWE.",
+    sources: [
+      { title: "Official site", url: "https://www.rtl.de" },
+      { title: "Careers", url: "https://karriere.rtl.de" },
+    ],
+    imageHint: "broadcast media",
+  },
+  {
+    name: "Deutz",
+    sector: "Industrial",
+    locations: ["Cologne"],
+    headquarters: "Cologne, Germany",
+    headquartersHighlight: "Cologne Target NRW — engines / industrial HQ",
+    website: "https://www.deutz.com",
+    domain: "deutz.com",
+    tags: ["nrw-hub"],
+    brief:
+      "Engine manufacturer. Production KPIs and predictive maintenance.",
+    europeFocus:
+      "Cologne industrial Mittelstand next to Ford — German-heavier shop floor.",
+    sources: [
+      { title: "Official site", url: "https://www.deutz.com" },
+      { title: "Careers", url: "https://www.deutz.com/en/career" },
+    ],
+    imageHint: "industrial engines",
+  },
+  {
+    name: "Lanxess",
+    sector: "Industrial/Chemicals",
+    locations: ["Cologne"],
+    headquarters: "Cologne, Germany",
+    headquartersHighlight: "Cologne Target NRW — specialty chemicals",
+    website: "https://lanxess.com",
+    domain: "lanxess.com",
+    tags: ["nrw-hub"],
+    brief:
+      "Specialty chemicals. Plant data quality and process analytics on the Cologne / Leverkusen belt.",
+    europeFocus:
+      "Same chemicals belt as Bayer / Covestro — Problem B on the shop floor.",
+    sources: [
+      { title: "Official site", url: "https://lanxess.com" },
+      { title: "Careers", url: "https://lanxess.com/en/career" },
+    ],
+    imageHint: "chemicals plant",
+  },
+  {
+    name: "Evonik",
+    sector: "Industrial/Chemicals",
+    locations: ["Essen"],
+    headquarters: "Essen, Germany",
+    headquartersHighlight: "Essen Target NRW — specialty chemicals HQ",
+    website: "https://www.evonik.com",
+    domain: "evonik.com",
+    tags: ["nrw-hub"],
+    brief:
+      "Specialty chemicals. Process data, quality, and energy-intensity analytics.",
+    europeFocus:
+      "Essen chemicals next to E.ON / RWE / thyssenkrupp — one Ruhr labour market.",
+    sources: [
+      { title: "Official site", url: "https://www.evonik.com" },
+      { title: "Careers", url: "https://careers.evonik.com" },
+    ],
+    imageHint: "specialty chemicals",
+  },
+  {
+    name: "Hochtief",
+    sector: "Industrial/Construction",
+    locations: ["Essen"],
+    headquarters: "Essen, Germany",
+    headquartersHighlight: "Essen Target NRW — contractor HQ",
+    website: "https://www.hochtief.com",
+    domain: "hochtief.com",
+    tags: ["nrw-hub"],
+    brief:
+      "Large contractor. Project-control, cost, and operations analytics.",
+    europeFocus:
+      "Essen industrial services next to energy HQs. German-heavier than consulting.",
+    sources: [
+      { title: "Official site", url: "https://www.hochtief.com" },
+      { title: "Careers", url: "https://www.hochtief.com/career" },
+    ],
+    imageHint: "construction analytics",
+  },
+  {
+    name: "Deichmann",
+    sector: "Retail",
+    locations: ["Essen"],
+    headquarters: "Essen, Germany",
+    headquartersHighlight: "Essen Target NRW — shoe retail HQ",
+    website: "https://www.deichmann.com",
+    domain: "deichmann.com",
+    tags: ["nrw-hub"],
+    brief:
+      "Europe’s large shoe retailer. Assortment, pricing, and customer analytics.",
+    europeFocus:
+      "Essen retail next to Aldi Nord context — analyst volume without Berlin e-comm brands.",
+    sources: [
+      { title: "Official site", url: "https://www.deichmann.com" },
+      { title: "Careers", url: "https://jobs.deichmann.com" },
+    ],
+    imageHint: "shoe retail",
+  },
+  {
+    name: "Klöckner & Co",
+    sector: "Industrial",
+    locations: ["Duisburg"],
+    headquarters: "Duisburg, Germany",
+    headquartersHighlight: "Duisburg Target NRW — steel distribution HQ",
+    website: "https://www.kloeckner.com",
+    domain: "kloeckner.com",
+    tags: ["nrw-hub"],
+    brief:
+      "Steel distribution. Inventory, pricing, and supply-chain visibility.",
+    europeFocus:
+      "Duisburg steel-trade door next to duisport and thyssenkrupp.",
+    sources: [
+      { title: "Official site", url: "https://www.kloeckner.com" },
+      { title: "Careers", url: "https://www.kloeckner.com/en/career" },
+    ],
+    imageHint: "steel distribution",
+  },
+  {
+    name: "duisport",
+    sector: "Logistics",
+    locations: ["Duisburg"],
+    headquarters: "Duisburg, Germany",
+    headquartersHighlight: "Duisburg Target NRW — inland port",
+    website: "https://www.duisport.de",
+    domain: "duisport.de",
+    tags: ["nrw-hub"],
+    brief:
+      "Europe’s largest inland port. Rail/barge visibility and terminal analytics.",
+    europeFocus:
+      "China–Europe rail/barge gateway — same problem family as DHL / Schenker.",
+    sources: [
+      { title: "Official site", url: "https://www.duisport.de" },
+      { title: "Careers", url: "https://www.duisport.de/karriere" },
+    ],
+    imageHint: "inland port",
+  },
+  {
+    name: "Signal Iduna",
+    sector: "Insurance",
+    locations: ["Dortmund"],
+    headquarters: "Dortmund, Germany",
+    headquartersHighlight: "Dortmund Target NRW — insurance HQ",
+    website: "https://www.signal-iduna.de",
+    domain: "signal-iduna.de",
+    tags: ["nrw-hub"],
+    brief:
+      "Insurer with a Dortmund HQ. Claims and customer analytics.",
+    europeFocus:
+      "Ruhr insurance door next to adesso / IML — German-heavier than Zurich.",
+    sources: [
+      { title: "Official site", url: "https://www.signal-iduna.de" },
+      { title: "Careers", url: "https://karriere.signal-iduna.de" },
+    ],
+    imageHint: "insurance dortmund",
+  },
+  {
+    name: "Covestro",
+    sector: "Industrial/Chemicals",
+    locations: ["Leverkusen"],
+    headquarters: "Leverkusen, Germany",
+    headquartersHighlight: "Leverkusen Target NRW — materials / plastics",
+    website: "https://www.covestro.com",
+    domain: "covestro.com",
+    tags: ["nrw-hub"],
+    brief:
+      "Materials / plastics. Plant data and quality on the Bayer / Lanxess belt.",
+    europeFocus:
+      "Leverkusen chemicals — Problem B, not a chatbot demo.",
+    sources: [
+      { title: "Official site", url: "https://www.covestro.com" },
+      { title: "Careers", url: "https://www.covestro.com/en/career" },
+    ],
+    imageHint: "materials plant",
+  },
+  {
+    name: "DHL Data & AI",
+    sector: "Logistics/AI",
+    locations: ["Bonn"],
+    headquarters: "Bonn, Germany",
+    headquartersHighlight: "Bonn Target NRW — group Data & AI service line",
+    website: "https://www.dhl.com",
+    domain: "dhl.com",
+    tags: ["nrw-hub", "visa-friendly"],
+    brief:
+      "DHL Group service line for data, analytics, and AI. International team. English is a real working language. Best Bonn English door.",
+    europeFocus:
+      "Same group as the Leipzig hub — corporate/data HQ lane in Bonn after I shift.",
+    sources: [
+      { title: "Official site", url: "https://www.dhl.com" },
+      { title: "Careers", url: "https://careers.dhl.com" },
+    ],
+    imageHint: "logistics ai",
+  },
+  {
+    name: "Deutsche Welle",
+    sector: "Media",
+    locations: ["Bonn"],
+    headquarters: "Bonn, Germany",
+    headquartersHighlight: "Bonn Target NRW — international broadcaster",
+    website: "https://www.dw.com",
+    domain: "dw.com",
+    tags: ["nrw-hub"],
+    brief:
+      "International broadcaster. Audience and content analytics. German-heavier than DHL Data & AI.",
+    europeFocus:
+      "Bonn public-media door. Useful only if I want media analytics next to Telekom / DHL.",
+    sources: [
+      { title: "Official site", url: "https://www.dw.com" },
+      { title: "Careers", url: "https://www.dw.com/en/about-dw/working-at-dw/s-31542" },
+    ],
+    imageHint: "broadcast news",
+  },
+  {
+    name: "Meta Zurich",
+    sector: "Software/AI",
+    locations: ["Zurich"],
+    headquarters: "Menlo Park, USA (EU engineering: Zurich)",
+    headquartersHighlight: "Zurich 🇨🇭 Target destination — engineering / Reality Labs",
+    website: "https://www.metacareers.com",
+    domain: "meta.com",
+    tags: ["zurich-hub", "visa-friendly"],
+    brief:
+      "English engineering / Reality Labs presence. Hard fresher door. Not a 2027 Werkstudent plan.",
+    europeFocus:
+      "Zurich Big Tech belt with Google / Microsoft / Apple. Sponsor required.",
+    sources: [
+      { title: "Official site", url: "https://www.metacareers.com" },
+    ],
+    imageHint: "big tech engineering",
+  },
+  {
+    name: "Apple Zurich",
+    sector: "Software/AI",
+    locations: ["Zurich"],
+    headquarters: "Cupertino, USA (EU engineering: Zurich)",
+    headquartersHighlight: "Zurich 🇨🇭 Target destination — Siri / health / ML",
+    website: "https://www.apple.com/careers/ch/",
+    domain: "apple.com",
+    tags: ["zurich-hub", "visa-friendly"],
+    brief:
+      "English engineering site (Siri / health / ML). Hard fresher door.",
+    europeFocus:
+      "Same Zurich Big Tech cluster. Research from Semester 3; apply later with a sponsor.",
+    sources: [
+      { title: "Official site", url: "https://www.apple.com/careers/ch/" },
+    ],
+    imageHint: "apple engineering",
+  },
+  {
+    name: "Julius Baer",
+    sector: "Banking",
+    locations: ["Zurich"],
+    headquarters: "Zurich, Switzerland",
+    headquartersHighlight: "Zurich 🇨🇭 Target destination — private bank",
+    website: "https://www.juliusbaer.com",
+    domain: "juliusbaer.com",
+    tags: ["zurich-hub"],
+    brief:
+      "Private bank. Client and risk analytics. High bar.",
+    europeFocus:
+      "Zurich wealth door next to UBS. Specialist 2028–30, not a first job.",
+    sources: [
+      { title: "Official site", url: "https://www.juliusbaer.com" },
+      { title: "Careers", url: "https://www.juliusbaer.com/en/careers" },
+    ],
+    imageHint: "private banking",
+  },
+  {
+    name: "Swiss Life",
+    sector: "Insurance",
+    locations: ["Zurich"],
+    headquarters: "Zurich, Switzerland",
+    headquartersHighlight: "Zurich 🇨🇭 Target destination — life insurance",
+    website: "https://www.swisslife.com",
+    domain: "swisslife.com",
+    tags: ["zurich-hub"],
+    brief:
+      "Life insurance. Actuarial and customer analytics.",
+    europeFocus:
+      "Zurich insurance cluster with Swiss Re / Zurich Insurance.",
+    sources: [
+      { title: "Official site", url: "https://www.swisslife.com" },
+      { title: "Careers", url: "https://www.swisslife.com/en/home/career.html" },
+    ],
+    imageHint: "life insurance",
+  },
+  {
+    name: "SIX Group",
+    sector: "Banking",
+    locations: ["Zurich"],
+    headquarters: "Zurich, Switzerland",
+    headquartersHighlight: "Zurich 🇨🇭 Target destination — market infrastructure",
+    website: "https://www.six-group.com",
+    domain: "six-group.com",
+    tags: ["zurich-hub"],
+    brief:
+      "Swiss exchange / market infrastructure. Surveillance and data products.",
+    europeFocus:
+      "Zurich market-data door — Problem C, not a junior dashboard factory.",
+    sources: [
+      { title: "Official site", url: "https://www.six-group.com" },
+      { title: "Careers", url: "https://www.six-group.com/en/careers.html" },
+    ],
+    imageHint: "exchange data",
+  },
+  {
+    name: "Glencore",
+    sector: "Energy/Commodities",
+    locations: ["Baar", "Zug"],
+    headquarters: "Baar, Switzerland",
+    headquartersHighlight: "Baar 🇨🇭 Target destination — commodity trading",
+    website: "https://www.glencore.com",
+    domain: "glencore.com",
+    tags: ["zurich-hub", "visa-friendly"],
+    brief:
+      "Global commodity trading. Risk, sanctions, and trade-flow analytics. English is the working language. Hard fresher door.",
+    europeFocus:
+      "Zug/Baar trading house — Problem C + B. Not a 2027 Werkstudent plan.",
+    sources: [
+      { title: "Official site", url: "https://www.glencore.com" },
+      { title: "Careers", url: "https://www.glencore.com/careers" },
+    ],
+    imageHint: "commodity trading",
+  },
+  {
+    name: "Roche Diagnostics",
+    sector: "MedTech",
+    locations: ["Rotkreuz", "Zug", "Mannheim"],
+    headquarters: "Rotkreuz, Switzerland (DE site: Mannheim)",
+    headquartersHighlight: "Rotkreuz 🇨🇭 + Mannheim Rhine-Neckar — diagnostics",
+    website: "https://diagnostics.roche.com",
+    domain: "roche.com",
+    tags: ["zurich-hub", "visa-friendly"],
+    brief:
+      "Diagnostics instruments and data. Quality + regulated analytics. English common in specialist / data roles.",
+    europeFocus:
+      "Zug labour region next to Zurich. Regulated MedTech, not Crypto Valley.",
+    sources: [
+      { title: "Official site", url: "https://diagnostics.roche.com" },
+      { title: "Careers", url: "https://careers.roche.com" },
+    ],
+    imageHint: "diagnostics lab",
+  },
+  {
+    name: "Sika",
+    sector: "Industrial/Chemicals",
+    locations: ["Baar", "Zug"],
+    headquarters: "Baar, Switzerland",
+    headquartersHighlight: "Baar 🇨🇭 Target destination — construction chemicals",
+    website: "https://www.sika.com",
+    domain: "sika.com",
+    tags: ["zurich-hub"],
+    brief:
+      "Construction chemicals. Plant, quality, and sales analytics.",
+    europeFocus:
+      "Baar industrial HQ — same labour region as Glencore / Partners Group.",
+    sources: [
+      { title: "Official site", url: "https://www.sika.com" },
+      { title: "Careers", url: "https://www.sika.com/en/career.html" },
+    ],
+    imageHint: "construction chemicals",
+  },
+  {
+    name: "Partners Group",
+    sector: "Banking",
+    locations: ["Baar", "Zug"],
+    headquarters: "Baar, Switzerland",
+    headquartersHighlight: "Baar 🇨🇭 Target destination — private markets",
+    website: "https://www.partnersgroup.com",
+    domain: "partnersgroup.com",
+    tags: ["zurich-hub"],
+    brief:
+      "Private markets. Hard fresher door — research only from Semester 3.",
+    europeFocus:
+      "Zug/Baar asset-management destination. Not a first-job bet.",
+    sources: [
+      { title: "Official site", url: "https://www.partnersgroup.com" },
+      { title: "Careers", url: "https://www.partnersgroup.com/en/careers" },
+    ],
+    imageHint: "private markets",
+  },
+  {
+    name: "Landis+Gyr",
+    sector: "Energy",
+    locations: ["Zug"],
+    headquarters: "Zug, Switzerland",
+    headquartersHighlight: "Zug 🇨🇭 Target destination — smart metering",
+    website: "https://www.landisgyr.com",
+    domain: "landisgyr.com",
+    tags: ["zurich-hub"],
+    brief:
+      "Smart metering. Time-series / grid-adjacent data — cousin of my forecasting story.",
+    europeFocus:
+      "Zug energy-tech door. Stronger ops fit than a Crypto Valley protocol job.",
+    sources: [
+      { title: "Official site", url: "https://www.landisgyr.com" },
+      { title: "Careers", url: "https://www.landisgyr.com/careers" },
+    ],
+    imageHint: "smart metering",
+  },
+  {
+    name: "Booking.com",
+    sector: "Travel-tech",
+    locations: ["Amsterdam"],
+    headquarters: "Amsterdam, Netherlands",
+    headquartersHighlight: "Amsterdam 🇳🇱 Target destination — product / experimentation HQ",
+    website: "https://www.booking.com",
+    domain: "booking.com",
+    tags: ["nl-hub", "visa-friendly"],
+    brief:
+      "World-scale travel marketplace. Product / pricing / A/B analytics. English is the office language. Hard fresher bar.",
+    europeFocus:
+      "Later Amsterdam door after NRW. Same experimentation flavour as Trivago, bigger scale.",
+    sources: [
+      { title: "Official site", url: "https://www.booking.com" },
+      { title: "Careers", url: "https://careers.booking.com" },
+    ],
+    imageHint: "travel marketplace",
+  },
+  {
+    name: "Heineken",
+    sector: "Retail/Consumer",
+    locations: ["Amsterdam"],
+    headquarters: "Amsterdam, Netherlands",
+    headquartersHighlight: "Amsterdam 🇳🇱 Target destination — demand / supply HQ",
+    website: "https://www.theheinekencompany.com",
+    domain: "theheinekencompany.com",
+    tags: ["nl-hub", "visa-friendly"],
+    brief:
+      "Global brewer HQ. Demand, supply, and commercial analytics. English common at HQ.",
+    europeFocus:
+      "Later Amsterdam consumer-analytics door. Not a first-job bet.",
+    sources: [
+      { title: "Official site", url: "https://www.theheinekencompany.com" },
+      { title: "Careers", url: "https://careers.theheinekencompany.com" },
+    ],
+    imageHint: "beverage demand",
+  },
+  {
+    name: "TomTom",
+    sector: "Software/Maps",
+    locations: ["Amsterdam"],
+    headquarters: "Amsterdam, Netherlands",
+    headquartersHighlight: "Amsterdam 🇳🇱 Target destination — maps / traffic data",
+    website: "https://www.tomtom.com",
+    domain: "tomtom.com",
+    tags: ["nl-hub", "visa-friendly"],
+    brief:
+      "Maps and traffic data for auto and logistics clients. Location data pipelines. English.",
+    europeFocus:
+      "Later Amsterdam data door next to Picnic routing and port ETAs.",
+    sources: [
+      { title: "Official site", url: "https://www.tomtom.com" },
+      { title: "Careers", url: "https://www.tomtom.com/careers/" },
+    ],
+    imageHint: "maps traffic",
+  },
+  {
+    name: "Port of Rotterdam",
+    sector: "Logistics",
+    locations: ["Rotterdam"],
+    headquarters: "Rotterdam, Netherlands",
+    headquartersHighlight: "Rotterdam 🇳🇱 Target destination — port authority",
+    website: "https://www.portofrotterdam.com",
+    domain: "portofrotterdam.com",
+    tags: ["nl-hub", "visa-friendly"],
+    brief:
+      "Europe’s largest seaport. Vessel / truck planning, digital twin, congestion data. English common.",
+    europeFocus:
+      "Later Rotterdam ops door — same problem family as duisport / DHL, no German required.",
+    sources: [
+      { title: "Official site", url: "https://www.portofrotterdam.com/en" },
+      { title: "Careers", url: "https://www.portofrotterdam.com/en/work-us" },
+    ],
+    imageHint: "seaport planning",
+  },
+  {
+    name: "Vopak",
+    sector: "Energy/Logistics",
+    locations: ["Rotterdam"],
+    headquarters: "Rotterdam, Netherlands",
+    headquartersHighlight: "Rotterdam 🇳🇱 Target destination — tank storage",
+    website: "https://www.vopak.com",
+    domain: "vopak.com",
+    tags: ["nl-hub", "visa-friendly"],
+    brief:
+      "Tank storage. Ops, safety, and throughput analytics. English at HQ.",
+    europeFocus:
+      "Later Rotterdam energy-logistics door next to Shell / port terminals.",
+    sources: [
+      { title: "Official site", url: "https://www.vopak.com" },
+      { title: "Careers", url: "https://www.vopak.com/careers" },
+    ],
+    imageHint: "tank storage",
+  },
+  {
+    name: "Shell Netherlands",
+    sector: "Energy",
+    locations: ["Rotterdam", "The Hague"],
+    headquarters: "The Hague / Rotterdam, Netherlands",
+    headquartersHighlight: "Rotterdam 🇳🇱 Target destination — energy / trading",
+    website: "https://www.shell.com",
+    domain: "shell.com",
+    tags: ["nl-hub", "visa-friendly"],
+    brief:
+      "Energy and trading with a large NL footprint. Time-series and risk analytics. English.",
+    europeFocus:
+      "Later NL energy door. Hard fresher bar. Same family as Uniper / E.ON, English-first.",
+    sources: [
+      { title: "Official site", url: "https://www.shell.com" },
+      { title: "Careers", url: "https://www.shell.com/careers.html" },
+    ],
+    imageHint: "energy trading",
+  },
+  {
+    name: "BASF",
+    sector: "Industrial/Chemicals",
+    locations: ["Ludwigshafen", "Mannheim"],
+    headquarters: "Ludwigshafen, Germany",
+    headquartersHighlight: "Ludwigshafen / Mannheim Rhine-Neckar — chemicals HQ",
+    website: "https://www.basf.com",
+    domain: "basf.com",
+    brief:
+      "Largest chemical site in the world next to Mannheim. Plant data quality and process analytics — Problem B.",
+    europeFocus:
+      "Rhine-Neckar industrial belt next to SAP Walldorf. Watch, not a 2027 first door.",
+    sources: [
+      { title: "Official site", url: "https://www.basf.com" },
+      { title: "Careers", url: "https://www.basf.com/global/en/careers" },
+    ],
+    imageHint: "chemicals plant",
+  },
+  {
+    name: "Heidelberger Druckmaschinen",
+    sector: "Industrial",
+    locations: ["Heidelberg"],
+    headquarters: "Heidelberg, Germany",
+    headquartersHighlight: "Heidelberg — print / industrial HQ",
+    website: "https://www.heidelberg.com",
+    domain: "heidelberg.com",
+    brief:
+      "Print-press manufacturer. Service, quality, and shop-floor data.",
+    europeFocus:
+      "Heidelberg industrial next to SAP Walldorf. German-heavier than Amsterdam.",
+    sources: [
+      { title: "Official site", url: "https://www.heidelberg.com" },
+      { title: "Careers", url: "https://www.heidelberg.com/global/en/about_heidelberg/careers/careers.jsp" },
+    ],
+    imageHint: "print industrial",
+  },
+  {
+    name: "dm-drogerie markt",
+    sector: "Retail",
+    locations: ["Karlsruhe"],
+    headquarters: "Karlsruhe, Germany",
+    headquartersHighlight: "Karlsruhe — drugstore retail HQ",
+    website: "https://www.dm.de",
+    domain: "dm.de",
+    brief:
+      "Drugstore retail HQ. Assortment, pricing, and store analytics — same family as REWE / Deichmann.",
+    europeFocus:
+      "Karlsruhe retail door. German day-to-day. Not a Target Location city — company map only.",
+    sources: [
+      { title: "Official site", url: "https://www.dm.de" },
+      { title: "Careers", url: "https://www.dm.de/unternehmen/karriere" },
+    ],
+    imageHint: "drugstore retail",
+  },
+  {
+    name: "1&1 / IONOS",
+    sector: "Software/Hosting",
+    locations: ["Karlsruhe", "Montabaur"],
+    headquarters: "Montabaur / Karlsruhe, Germany",
+    headquartersHighlight: "Karlsruhe — hosting / product analytics",
+    website: "https://www.ionos.com",
+    domain: "ionos.com",
+    brief:
+      "Web hosting / cloud (United Internet). Product and reliability analytics.",
+    europeFocus:
+      "Karlsruhe software door next to EnBW. More product than a Stadtwerke shop floor.",
+    sources: [
+      { title: "Official site", url: "https://www.ionos.com" },
+      { title: "Careers", url: "https://www.ionos.com/career" },
+    ],
+    imageHint: "hosting cloud",
+  },
+  {
+    name: "Atruvia",
+    sector: "IT Services/Banking",
+    locations: ["Karlsruhe"],
+    headquarters: "Karlsruhe, Germany",
+    headquartersHighlight: "Karlsruhe — Sparkassen IT",
+    website: "https://www.atruvia.de",
+    domain: "atruvia.de",
+    brief:
+      "IT for the Sparkassen network. Reporting and ops analytics. German-heavy.",
+    europeFocus:
+      "Karlsruhe banking-IT door. Not Frankfurt wholesale. German day-to-day.",
+    sources: [
+      { title: "Official site", url: "https://www.atruvia.de" },
+    ],
+    imageHint: "banking it",
+  },
+  {
+    name: "SEW-EURODRIVE",
+    sector: "Industrial",
+    locations: ["Bruchsal", "Karlsruhe"],
+    headquarters: "Bruchsal, Germany",
+    headquartersHighlight: "Bruchsal / Karlsruhe — drives / industrial",
+    website: "https://www.sew-eurodrive.com",
+    domain: "sew-eurodrive.com",
+    brief:
+      "Drive technology. Plant and service data on the Karlsruhe labour market.",
+    europeFocus:
+      "Same Baden industrial belt as EnBW / INIT. Problem B, German-heavier.",
+    sources: [
+      { title: "Official site", url: "https://www.sew-eurodrive.com" },
+    ],
+    imageHint: "industrial drives",
   },
 ];
 

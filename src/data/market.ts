@@ -243,6 +243,34 @@ export const marketTrendSources: MarketSource[] = [
     myTakeaway:
       "I use LinkedIn Jobs on the Rise as my near-real-time validation layer after I read WEF/Bitkom.",
   },
+  {
+    id: "neuronfeed",
+    number: "17",
+    name: "NeuronFeed Germany",
+    url: "https://neuronfeed.com/country/germany",
+    symbol: "📰",
+    category: "trends",
+    whatItIs:
+      "Germany-focused funding and growth news feed for tech and scale-ups.",
+    howItHelpedMe:
+      "This helped me because I can see who is raising or hiring now in Germany — including NRW — instead of waiting for an annual report. It is useful for me as a weekly news layer on top of WEF/Bitkom.",
+    myTakeaway:
+      "I use NeuronFeed to catch German company news that may change my Tier 2/3 list or NRW job map.",
+  },
+  {
+    id: "tech-eu",
+    number: "18",
+    name: "Tech.eu",
+    url: "https://tech.eu",
+    symbol: "🗞️",
+    category: "trends",
+    whatItIs:
+      "European tech funding and startup journalism across DACH and nearby EU.",
+    howItHelpedMe:
+      "This helped me because my job map is Germany plus Zurich / Zug, not only one city. It is useful for me when I need a news source for European rounds, not only German PDFs.",
+    myTakeaway:
+      "I keep Tech.eu as the European news layer next to NeuronFeed for Germany.",
+  },
 ];
 
 /** Market research via 50–100 job ads — boards I use to read real postings */
@@ -294,7 +322,7 @@ export const marketJobSources: MarketSource[] = [
     number: "41",
     name: "kununu",
     url: "https://www.kununu.com",
-    symbol: "⭐",
+    symbol: "◎",
     category: "jobs",
     whatItIs:
       "Employer review and salary platform widely used in DACH.",
@@ -331,6 +359,90 @@ export const marketJobSources: MarketSource[] = [
     myTakeaway:
       "I keep Denmark as a secondary market lane — not my primary focus, but researched enough that I am not blind to it.",
   },
+  {
+    id: "scaleup-nrw",
+    number: "44",
+    name: "Scale-up.NRW / wirtschaft.nrw",
+    url: "https://www.wirtschaft.nrw/nrw-verlaengert-wachstums-und-skalierungsprogramm-bis-2029",
+    symbol: "📍",
+    category: "jobs",
+    whatItIs:
+      "NRW state programme and news on foundings and scale-ups through 2029.",
+    howItHelpedMe:
+      "This helped me because I am not hunting a job in Leipzig — I study there. NRW is a job region I research. It is useful for me to see which companies are scaling in Düsseldorf, Cologne, and the Ruhr.",
+    myTakeaway:
+      "I use this as my NRW job-region source next to the national boards.",
+  },
+  {
+    id: "fin-connect-nrw",
+    number: "45",
+    name: "Fin.Connect.NRW — AI start-ups",
+    url: "https://www.fin-connect-nrw.de/en/studies/the-relevance-of-ai-start-ups-for-nrw",
+    symbol: "📍",
+    category: "jobs",
+    whatItIs:
+      "NRW study on AI start-up density around Cologne and Düsseldorf.",
+    howItHelpedMe:
+      "This helped me because appliedAI shows NRW has fewer AI startups than Berlin but more corporate buyers. It is useful for me when I compare Cologne / Düsseldorf to Berlin.",
+    myTakeaway:
+      "I read this when I want an NRW-specific AI company signal, not a Berlin-only view.",
+  },
+  {
+    id: "gza",
+    number: "46",
+    name: "Greater Zurich Area",
+    url: "https://www.greaterzuricharea.com/",
+    symbol: "📍",
+    category: "jobs",
+    whatItIs:
+      "Official Zurich / Zug hub map for companies, sectors, and the labour region.",
+    howItHelpedMe:
+      "This helped me because Zurich / Zug is a later job region I research, not a 2027 Werkstudent plan. It is useful for me to keep the company map (Google, UBS, Swiss Re, ABB, K+N) in one place.",
+    myTakeaway:
+      "I use Greater Zurich Area as the destination-hub source next to German boards.",
+  },
+  {
+    id: "sem-ch",
+    number: "47",
+    name: "SEM — working in Switzerland",
+    url: "https://www.sem.admin.ch/sem/en/home/themen/arbeit.html",
+    symbol: "📍",
+    category: "jobs",
+    whatItIs:
+      "Swiss State Secretariat for Migration page on working in Switzerland.",
+    howItHelpedMe:
+      "This helped me because Switzerland has no EU Blue Card — an employer must sponsor. It is useful for me so I do not treat Zurich as a 2027 walk-in market.",
+    myTakeaway:
+      "I keep SEM as the permit rule next to the Zurich company list.",
+  },
+  {
+    id: "techleap",
+    number: "48",
+    name: "Techleap",
+    url: "https://www.techleap.nl/",
+    symbol: "📍",
+    category: "jobs",
+    whatItIs:
+      "Netherlands scale-up map for product, payments, and logistics companies.",
+    howItHelpedMe:
+      "This helped me because Amsterdam / Rotterdam is a later English job region, not a Semester 3 move. It is useful for me to keep Booking, Adyen, Picnic, and Mollie in one place next to the Zurich list.",
+    myTakeaway:
+      "I use Techleap as the NL destination-hub source next to Greater Zurich Area.",
+  },
+  {
+    id: "iamsterdam-business",
+    number: "49",
+    name: "I amsterdam — business",
+    url: "https://www.iamsterdam.com/en/business",
+    symbol: "📍",
+    category: "jobs",
+    whatItIs:
+      "Amsterdam business and talent page for the Randstad labour market.",
+    howItHelpedMe:
+      "This helped me because I want the later English product / payments door after NRW. It is useful for me so I do not mix Amsterdam into the Semester 3 German job hunt.",
+    myTakeaway:
+      "I keep I amsterdam next to Techleap when I research the later NL destination.",
+  },
 ];
 
 export const marketInsights: MarketInsight[] = [
@@ -357,6 +469,12 @@ export const marketInsights: MarketInsight[] = [
     title: "What I do next after Market",
     body: "With Market done, my next deep pass is Sector — using the same professional format. Market told me AI/data demand is real in Germany/Europe; Sector will tell me which industries I personally want to solve problems in, before I refine Business Problems → Role again with fresher detail.",
     linkedSourceNumbers: ["08", "12", "16"],
+  },
+  {
+    id: "insight-5",
+    title: "Where I place myself after Market — NRW, Zurich / Zug, later Amsterdam / Rotterdam",
+    body: "Market told me AI/data demand is real in Germany/Europe. I do not hunt a job in Leipzig — I study there. Job locations I research: NRW first, then Zurich / Zug, then later Amsterdam / Rotterdam (English logistics + product, no German required). Heidelberg / Walldorf / Karlsruhe stay on the company map (SAP, EnBW, dm), not as Target Location cities. Switzerland has no EU Blue Card — Zurich is a sponsored later door.",
+    linkedSourceNumbers: ["03", "05", "12", "17", "18", "38", "44", "46", "47", "48", "49"],
   },
 ];
 

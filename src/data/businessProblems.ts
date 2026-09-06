@@ -702,7 +702,10 @@ export const sectorProblemDeepDives: SectorProblemDeepDive[] = [
       { hub: "Munich", why: "SAP ecosystem, Celonis, Microsoft DE, McKinsey, BCG." },
       { hub: "Berlin", why: "Startup + consulting secondary offices; English-friendly." },
       { hub: "Walldorf", why: "SAP global HQ — thesis/Werkstudent programmes." },
-      { hub: "Leipzig", why: "SAP presence; lower competition than Munich/Berlin." },
+      { hub: "Leipzig", why: "Study city — SAP presence. Not my job-hunt region." },
+      { hub: "Düsseldorf Priority NRW", why: "Big 4 + Capgemini + Cognigy — DAX client delivery and CX agents. Consulting intern lane if I relocate." },
+      { hub: "Cologne / Bonn Priority NRW", why: "DeepL + T-Systems / Telekom. Product AI and sovereign-cloud implementation." },
+      { hub: "Zurich Priority destination", why: "Google + boutique / Big 4. Specialist 2028–30 door; employer must sponsor." },
     ],
     myLoophole:
       "Most consulting applicants are either pure business (no SQL) or pure dev (no business sense). I sit in the middle: full-stack converting to data, with DevOps + Python/SQL + agile leadership. The gap I exploit is the implementation layer — making AI actually work in client environments, not only selling the strategy.",
@@ -741,16 +744,21 @@ export const sectorProblemDeepDives: SectorProblemDeepDive[] = [
       { company: "Deutsche Bahn (DB)", location: "Berlin, Leipzig, Frankfurt, Munich", specificProblem: "AI for dispatch, delay prediction, Digital Track Buddy, SAP Argo, cybersecurity.", myContribution: "My ICE Train Delay project is direct proof — extend with real-time pipeline + dashboard." },
       { company: "DHL Group / DHL Data & AI", location: "Bonn; Leipzig/Halle Airport hub", specificProblem: "Data foundations for agentic AI, demand forecasting, AI monitoring, EU AI Act governance.", myContribution: "Analytics on logistics data; AI monitoring using my DevOps background." },
       { company: "DB Schenker", location: "Essen, Leipzig", specificProblem: "AMR pilots, freight visibility.", myContribution: "IoT/data pipeline skills from Vital Guard." },
-      { company: "Kühne+Nagel", location: "Hamburg", specificProblem: "Global freight visibility, digital platforms.", myContribution: "SQL + Python analytics." },
+      { company: "Kühne+Nagel", location: "Schindellegi / Zurich area; Hamburg DE", specificProblem: "Global freight visibility, digital platforms.", myContribution: "SQL + Python analytics — same exception-management family as DB/DHL." },
       { company: "Flix", location: "Munich", specificProblem: "Route optimization, demand prediction, pricing.", myContribution: "ML forecasting — similar to my DB project." },
       { company: "ORSOFT / MAIA / KnowFab / deepmentation", location: "Leipzig", specificProblem: "Supply-chain planning, industrial/logistics AI, document AI.", myContribution: "Local Tier 2/3 entry; ScaDS.AI ecosystem." },
     ],
     regionalDepth: [
-      { hub: "Leipzig", why: "DHL global hub, DB ICE interchange, BMW/Porsche plants, ScaDS.AI, Data Week — my strategic base." },
-      { hub: "Hamburg", why: "Port, Kühne+Nagel, Hapag-Lloyd." },
-      { hub: "Bonn", why: "DHL Group HQ." },
+      { hub: "Leipzig", why: "Study city — DHL hub, DB, plants, ScaDS.AI. Useful for projects/thesis, not my job-hunt region." },
+      { hub: "Hamburg", why: "Port, Hapag-Lloyd. Kühne+Nagel DE office — HQ is Schindellegi / Zurich area." },
+      { hub: "Bonn Priority NRW", why: "DHL Group HQ — corporate/data HQ of the same group as the Leipzig hub." },
+      { hub: "Cologne Priority NRW", why: "Lufthansa Group HQ — delay/exception analytics, cousin of my DB project." },
+      { hub: "Essen Priority NRW", why: "DB Schenker freight visibility / AMR. Verify live ownership after DSV deal." },
+      { hub: "Dortmund Priority NRW", why: "Fraunhofer IML + Digital Hub Logistics — thesis / research partner next to ScaDS.AI." },
+      { hub: "Duisburg Priority NRW", why: "duisport — Europe’s largest inland port; China–Europe rail/barge." },
       { hub: "Frankfurt", why: "Air cargo, DB Fernverkehr control." },
-      { hub: "Duisburg", why: "Inland port, rail freight." },
+      { hub: "Zurich / Schwyz Priority destination", why: "Kühne+Nagel HQ — control-tower forwarding. Destination, not 2027 warehouse work." },
+      { hub: "Amsterdam / Rotterdam later destination", why: "English freight + port data (Picnic, Port of Rotterdam, Portbase). After a German NRW role." },
     ],
     myLoophole:
       "Everyone applies to Data Scientist at DHL. Almost nobody shows up with a completed ML project on Deutsche Bahn open data, DevOps for production pipelines, and physical proximity to DHL Hub + DB in Leipzig. The gap is not build a better model — it is make the model run reliably, be monitored, and be explained to an operations manager.",
@@ -794,10 +802,11 @@ export const sectorProblemDeepDives: SectorProblemDeepDive[] = [
       { company: "Spread Group", location: "Leipzig", specificProblem: "Print-on-demand forecasting, production scheduling, personalization.", myContribution: "Local Tier 2 — SQL + Python + dashboards; English-friendly." },
     ],
     regionalDepth: [
-      { hub: "Leipzig", why: "Spread Group HQ; Schwarz logistics; retail delivery infrastructure." },
+      { hub: "Leipzig", why: "Study city — Spread Group. Not my job-hunt region." },
       { hub: "Hamburg", why: "Otto Group, About You e-commerce cluster." },
       { hub: "Berlin", why: "Zalando — biggest fashion e-commerce data employer." },
-      { hub: "Cologne", why: "REWE Group HQ + REWE Digital." },
+      { hub: "Cologne Priority NRW", why: "REWE Group HQ + REWE Digital — 200+ AI projects, XGBoost, agentic commerce. Strongest NRW retail door." },
+      { hub: "Essen Priority NRW", why: "Aldi Nord context — grocery scale next to the energy belt." },
       { hub: "Neckarsulm", why: "Schwarz Group HQ." },
     ],
     myLoophole:
@@ -836,12 +845,18 @@ export const sectorProblemDeepDives: SectorProblemDeepDive[] = [
       { company: "Commerzbank", location: "Frankfurt", specificProblem: "Digital transformation; Mittelstand banking analytics.", myContribution: "BI Analyst path." },
       { company: "N26", location: "Berlin", specificProblem: "Data governance + AI-driven compliance.", myContribution: "Data governance analyst; SQL + regulatory awareness." },
       { company: "Trade Republic / Solaris", location: "Berlin", specificProblem: "Real-time data at scale; banking-as-a-service.", myContribution: "Data Engineer / platform analytics." },
+      { company: "ERGO", location: "Düsseldorf", specificProblem: "Insurance CX agents + claims analytics; EU AI Act on high-risk service bots.", myContribution: "Governance documentation + analyst work on claims / service KPIs." },
+      { company: "UBS / Zurich Insurance / Swiss Re", location: "Zurich", specificProblem: "Model risk, explainability, fraud, claims — Decision Scientist function.", myContribution: "2028–30 destination after a German role + permit sponsor. Not 2027 Werkstudent." },
     ],
     regionalDepth: [
       { hub: "Frankfurt", why: "Banking capital — Deutsche Bank, Commerzbank, ECB." },
       { hub: "Berlin", why: "FinTech cluster — N26, Trade Republic, Raisin, Mambu." },
       { hub: "Munich", why: "Insurance + banking back-office." },
-      { hub: "Leipzig", why: "Limited HQ presence; Sparkassen IT / adjacent services." },
+      { hub: "Leipzig", why: "Study city — limited HQ presence. Not my job-hunt region." },
+      { hub: "Cologne Priority NRW", why: "Insurance (Gothaer / DEVK) — regulated path without Frankfurt wholesale banking." },
+      { hub: "Düsseldorf Priority NRW", why: "ERGO + Cognigy — claims/service agents under EU AI Act." },
+      { hub: "Zurich / Zug Priority destination", why: "UBS, Zurich Insurance, Swiss Re. Decision Scientist destination. Zug = commodities + FINMA/MiCA compliance, not a fresher FinTech door." },
+      { hub: "Amsterdam later destination", why: "Adyen / Mollie / ING — English payments and risk analytics after a German role." },
     ],
     myLoophole:
       "Banking is harder for freshers. My angle is not front-office quant — it is data governance, analytics engineering, and AI compliance support. Realistic entry: Berlin FinTech Werkstudent, or consulting financial-services practice — then later Frankfurt.",
@@ -878,12 +893,17 @@ export const sectorProblemDeepDives: SectorProblemDeepDive[] = [
       { company: "Porsche", location: "Stuttgart; Leipzig Macan", specificProblem: "EV production; digital factory.", myContribution: "Local Werkstudent in quality/production analytics." },
       { company: "Siemens / Bosch", location: "Munich / Stuttgart", specificProblem: "Industrial foundation models, predictive maintenance, shopfloor agents.", myContribution: "Business-side analytics, not PLC deep specialist." },
       { company: "KnowFab / MAIA", location: "Leipzig", specificProblem: "Industrial data/AI startups.", myContribution: "Local entry; wear many hats." },
+      { company: "Henkel / Bayer / thyssenkrupp / Ford", location: "Düsseldorf, Leverkusen, Essen, Cologne", specificProblem: "Plant data silos, quality vision, predictive maintenance, SAP on the shop floor.", myContribution: "Secondary NRW industrial lane — production KPI dashboards if a Werkstudent opens." },
+      { company: "ABB", location: "Zurich", specificProblem: "Robotics and process-automation reliability.", myContribution: "Destination industrial-AI story after German plant experience." },
     ],
     regionalDepth: [
-      { hub: "Leipzig", why: "BMW + Porsche plants + supplier ecosystem." },
+      { hub: "Leipzig", why: "Study city — BMW + Porsche plants. Not my job-hunt region." },
       { hub: "Munich", why: "BMW HQ, Siemens HQ." },
       { hub: "Stuttgart", why: "Bosch, Porsche, Mercedes, suppliers." },
       { hub: "Wolfsburg / Ingolstadt", why: "VW / Audi." },
+      { hub: "Düsseldorf / Leverkusen Priority NRW", why: "Henkel + Bayer — chemicals / consumer / pharma data and shop-floor quality." },
+      { hub: "Essen / Cologne Priority NRW", why: "thyssenkrupp + Ford Cologne — Industry 4.0 without a Stuttgart move." },
+      { hub: "Zurich Priority destination", why: "ABB HQ — robotics / electrification. Same problems as Siemens, Swiss bar." },
     ],
     myLoophole:
       "I do not aim to build Siemens Industrial Foundation Model. My angle is business-side analytics: supply-chain dashboards, quality reporting, production KPI tracking at BMW/Porsche Leipzig. Forest Guard connects to sustainability / Catena-X reporting.",
@@ -921,9 +941,12 @@ export const sectorProblemDeepDives: SectorProblemDeepDive[] = [
     ],
     regionalDepth: [
       { hub: "Stuttgart", why: "EnBW HQ." },
-      { hub: "Essen/Ruhr", why: "E.ON HQ — traditional energy belt." },
-      { hub: "Leipzig/Saxony", why: "Wind/solar expansion; ScaDS.AI climate research." },
+      { hub: "Essen / Ruhr Priority NRW", why: "E.ON + RWE HQ — German energy capital. Corporate version of Leipzig VNG/Stadtwerke." },
+      { hub: "Düsseldorf Priority NRW", why: "Uniper + energy-trading overlay." },
+      { hub: "Rheinisches Revier Priority NRW", why: "Coal exit + Microsoft hyperscalers (Bergheim / Bedburg) + AI Village Hürth." },
+      { hub: "Leipzig / Saxony", why: "Study city — VNG / Stadtwerke / ScaDS.AI. Not my job-hunt region." },
       { hub: "Hamburg", why: "Renewable energy trading." },
+      { hub: "Zurich / Zug Priority destination", why: "Swiss Re climate risk, ABB electrification, Zug commodity trading — not German grid ops." },
     ],
     myLoophole:
       "Energy is smaller in Leipzig and often German C1+. Forest Guard is my GreenTech credential — extend toward renewable site monitoring or emissions tracking for thesis with E.ON/EnBW. Secondary sector unless a thesis lands here.",
@@ -1024,7 +1047,7 @@ export const experienceMap: ExperienceMapRow[] = [
     asset: "M.Sc. Big Data & AI — SRH Leipzig",
     problemSolved:
       "Master's focus on Big Data, AI, ML, and Cloud — academic base in Leipzig with thesis partnership potential.",
-    sector: "Maps to · All sectors · Leipzig base",
+    sector: "Maps to · All sectors · study in Leipzig",
     demandEvidence:
       "German employers value a thesis tied to a real company problem; Leipzig supports that path.",
   },
@@ -1054,7 +1077,7 @@ export const developmentPhases = [
     id: "phase2",
     title: "Phase 2 — Sem 3 (Apr – Sep 2027): Werkstudent-ready",
     rows: [
-      { skill: "Werkstudent applications", target: "30+ Leipzig + remote-friendly", why: "Market entry" },
+      { skill: "Werkstudent applications", target: "NRW (Cologne / Düsseldorf / Essen) + remote-friendly", why: "Job hunt is NRW / later Zurich / later Amsterdam — Leipzig is study only" },
       { skill: "Business storytelling", target: "3 case studies written", why: "Interview differentiator" },
       { skill: "A/B testing + experiments", target: "One retail/logistics experiment", why: "Retail/consulting demand" },
       { skill: "AI monitoring basics", target: "One monitored model", why: "DHL production focus" },
@@ -1075,12 +1098,12 @@ export const developmentPhases = [
 ];
 
 export const focusPriorities: FocusPriority[] = [
-  { priority: 1, sector: "Logistics / Mobility", companies: "DHL Leipzig, Deutsche Bahn, MAIA", entryRole: "Analytics Engineer / Business Data Analyst", why: "Strongest project fit (ICE delay); DHL hub local; highest data intensity" },
-  { priority: 2, sector: "Retail / E-commerce", companies: "Spread Group, REWE Digital, Zalando", entryRole: "Business/Data Analyst", why: "Analytics-native; REWE uses XGBoost; Spread Group local" },
-  { priority: 3, sector: "Software / Consulting", companies: "SAP, Capgemini, Celonis", entryRole: "Analytics Consultant / Werkstudent", why: "Broadest entry; DevOps differentiator; SAP Leipzig" },
-  { priority: 4, sector: "Industrial / Auto", companies: "BMW Leipzig, Porsche Leipzig, KnowFab", entryRole: "Production Analytics Werkstudent", why: "Local plants; IoT project fit" },
-  { priority: 5, sector: "Banking / FinTech", companies: "N26, Trade Republic, Deutsche Bank", entryRole: "Data Analyst (governance)", why: "Higher bar; pursue if Berlin move" },
-  { priority: 6, sector: "Energy / GreenTech", companies: "E.ON, EnBW", entryRole: "Data Analyst (forecasting)", why: "Forest Guard angle; secondary unless thesis lands here" },
+  { priority: 1, sector: "Logistics / Mobility", companies: "DHL Leipzig, Deutsche Bahn, MAIA; NRW: Schenker Essen, IML Dortmund, Lufthansa Cologne", entryRole: "Analytics Engineer / Business Data Analyst", why: "Strongest project fit (ICE delay); DHL hub local; NRW is the scale campus of the same problems" },
+  { priority: 2, sector: "Retail / E-commerce", companies: "Spread Group, REWE Digital Cologne, Zalando", entryRole: "Business/Data Analyst", why: "Analytics-native; REWE Cologne is Priority NRW; Spread Group local" },
+  { priority: 3, sector: "Software / Consulting", companies: "SAP, Capgemini Düsseldorf, Celonis, DeepL Cologne", entryRole: "Analytics Consultant / Werkstudent", why: "Broadest entry; NRW consulting belt is the job lane" },
+  { priority: 4, sector: "Industrial / Auto", companies: "BMW Leipzig, Porsche Leipzig, KnowFab; NRW watch: Henkel, Ford Cologne", entryRole: "Production Analytics Werkstudent", why: "Local plants first; NRW chemicals/auto is secondary" },
+  { priority: 5, sector: "Banking / FinTech", companies: "N26, Trade Republic, Deutsche Bank; later Zurich UBS / Swiss Re", entryRole: "Data Analyst (governance)", why: "Higher bar; Berlin first; Zurich is 2028–30 destination" },
+  { priority: 6, sector: "Energy / GreenTech", companies: "E.ON Essen, RWE Essen, EnBW", entryRole: "Data Analyst (forecasting)", why: "Forest Guard angle; Essen is Priority NRW HQ door" },
 ];
 
 export const problemPhaseResources: ProblemResource[] = [
@@ -1108,6 +1131,12 @@ export const problemPhaseResources: ProblemResource[] = [
   { name: "Entgeltatlas", url: "https://web.arbeitsagentur.de/entgeltatlas/", useFor: "Official salary data", group: "career" },
   { name: "Make it in Germany", url: "https://www.make-it-in-germany.com/", useFor: "Visa / Blue Card", group: "career" },
   { name: "StepStone Gehaltsreport", url: "https://www.stepstone.de/gehalt/", useFor: "Market salary benchmarks", group: "career" },
+  { name: "Scale-up.NRW / wirtschaft.nrw", url: "https://www.wirtschaft.nrw/nrw-verlaengert-wachstums-und-skalierungsprogramm-bis-2029", useFor: "NRW job-region scale-ups", group: "career" },
+  { name: "Digital Hub Logistics Dortmund", url: "https://digitalhublogistics.de/ueber-uns/", useFor: "NRW logistics research hub", group: "sector" },
+  { name: "Greater Zurich Area", url: "https://www.greaterzuricharea.com/", useFor: "Zurich / Zug job region", group: "career" },
+  { name: "SEM — working in Switzerland", url: "https://www.sem.admin.ch/sem/en/home/themen/arbeit.html", useFor: "Zurich permit rules", group: "career" },
+  { name: "NeuronFeed Germany", url: "https://neuronfeed.com/country/germany", useFor: "Germany growth / hiring news", group: "career" },
+  { name: "Tech.eu", url: "https://tech.eu", useFor: "European tech news", group: "career" },
 ];
 
 export function getCrossSectorProblem(slug: string) {

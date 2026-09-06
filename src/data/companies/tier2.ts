@@ -119,11 +119,11 @@ const seeds: CompanySeed[] = [
     website: "https://www.deepl.com",
     domain: "deepl.com",
     valuation: "~$2B class (verify)",
-    tags: ["deutschlandsstipendium", "unicorn"],
+    tags: ["deutschlandsstipendium", "unicorn", "nrw-hub", "visa-friendly"],
     brief:
       "Neural machine translation and language AI products used widely by enterprises and consumers.",
     europeFocus:
-      "Cologne-based European AI product success story.",
+      "Cologne Priority NRW — European AI product success story. Strongest NRW software door next to REWE Digital.",
     imageHint: "translation ai",
   },
   {
@@ -151,11 +151,11 @@ const seeds: CompanySeed[] = [
     website: "https://www.cognigy.com",
     domain: "cognigy.com",
     valuation: "~$1B class (verify)",
-    tags: ["deutschlandsstipendium", "unicorn"],
+    tags: ["deutschlandsstipendium", "unicorn", "nrw-hub", "visa-friendly"],
     brief:
       "Enterprise conversational AI / agent orchestration platform (Cognigy, under NiCE).",
     europeFocus:
-      "Düsseldorf conversational AI with enterprise CX focus.",
+      "Düsseldorf Priority NRW — conversational AI; customers include Lufthansa, E.ON, Henkel, ERGO, DHL.",
     imageHint: "conversational ai",
   },
   {
@@ -335,7 +335,8 @@ const seeds: CompanySeed[] = [
     sector: "IT Services",
     locations: ["Stuttgart", "Dortmund", "Munich", "Neckarsulm"],
     headquarters: "Multiple DE HQs (Stuttgart/Dortmund/Munich/Neckarsulm)",
-    headquartersHighlight: "German IT services & system houses",
+    headquartersHighlight: "Dortmund Priority NRW (adesso) + German IT services houses",
+    tags: ["nrw-hub"],
     website: "https://www.gft.com",
     domain: "gft.com",
     brief:
@@ -403,15 +404,20 @@ const seeds: CompanySeed[] = [
   {
     name: "Bol.com",
     sector: "E-commerce",
-    locations: ["Utrecht"],
+    locations: ["Utrecht", "Amsterdam"],
     headquarters: "Utrecht, Netherlands",
-    headquartersHighlight: "Utrecht 🇳🇱",
+    headquartersHighlight: "Utrecht / Amsterdam 🇳🇱 Target destination — marketplace",
+    tags: ["nl-hub", "visa-friendly"],
     website: "https://www.bol.com",
     domain: "bol.com",
     brief:
       "Leading Dutch online marketplace/retailer with sophisticated logistics and ranking systems.",
     europeFocus:
-      "Benelux e-commerce scale player.",
+      "Later Amsterdam / Utrecht marketplace door next to Picnic / Booking.",
+    sources: [
+      { title: "Official site", url: "https://www.bol.com" },
+      { title: "Careers", url: "https://careers.bol.com" },
+    ],
     imageHint: "marketplace ecommerce",
   },
   {
@@ -463,11 +469,12 @@ const seeds: CompanySeed[] = [
   {
     name: "Adyen / Klarna / Revolut / Wise",
     sector: "FinTech",
-    locations: ["Netherlands", "Sweden", "UK"],
-    headquarters: "NL 🇳🇱 / SE 🇸🇪 / UK 🇬🇧",
-    headquartersHighlight: "European fintech giants",
+    locations: ["Amsterdam", "Netherlands", "Sweden", "UK"],
+    headquarters: "Amsterdam 🇳🇱 / SE 🇸🇪 / UK 🇬🇧",
+    headquartersHighlight: "Amsterdam 🇳🇱 Target destination — European fintech giants",
     website: "https://www.adyen.com",
     domain: "adyen.com",
+    tags: ["nl-hub", "visa-friendly"],
     brief:
       "Europe’s leading fintechs spanning payments (Adyen), BNPL/banking (Klarna), super-app finance (Revolut), and cross-border money (Wise).",
     europeFocus:
@@ -577,6 +584,641 @@ const seeds: CompanySeed[] = [
     europeFocus:
       "Franco-German health-tech scale-up with consumer+clinician networks.",
     imageHint: "digital health",
+  },
+  {
+    name: "Trivago",
+    sector: "Travel-tech",
+    locations: ["Düsseldorf"],
+    headquarters: "Düsseldorf, Germany",
+    headquartersHighlight: "Düsseldorf Target NRW — hotel-search HQ",
+    website: "https://www.trivago.com",
+    domain: "trivago.com",
+    tags: ["nrw-hub", "visa-friendly"],
+    brief:
+      "Hotel-search marketplace born in Düsseldorf. Product / pricing / experimentation analytics. English is the office language.",
+    europeFocus:
+      "Strongest Düsseldorf English product door next to Cognigy.",
+    sources: [
+      { title: "Official site", url: "https://www.trivago.com" },
+      { title: "Careers", url: "https://careers.trivago.com" },
+    ],
+    imageHint: "hotel search",
+  },
+  {
+    name: "1NCE",
+    sector: "Software/IoT",
+    locations: ["Cologne", "Bonn"],
+    headquarters: "Cologne, Germany",
+    headquartersHighlight: "Cologne / Bonn Target NRW — IoT connectivity",
+    website: "https://1nce.com",
+    domain: "1nce.com",
+    tags: ["nrw-hub", "visa-friendly"],
+    brief:
+      "IoT connectivity scale-up. Usage analytics, network data, product metrics. English product culture.",
+    europeFocus:
+      "Cologne–Bonn belt English door next to DeepL and DHL Data & AI.",
+    sources: [
+      { title: "Official site", url: "https://1nce.com" },
+      { title: "Careers", url: "https://1nce.com/en-eu/careers" },
+    ],
+    imageHint: "iot connectivity",
+  },
+  {
+    name: "Next Kraftwerke",
+    sector: "Energy",
+    locations: ["Cologne"],
+    headquarters: "Cologne, Germany",
+    headquartersHighlight: "Cologne Target NRW — virtual power plant",
+    website: "https://www.next-kraftwerke.com",
+    domain: "next-kraftwerke.com",
+    tags: ["nrw-hub"],
+    brief:
+      "Virtual power plant. Forecasting and trading — cousin of my time-series / delay-forecast story.",
+    europeFocus:
+      "Cologne energy-tech next to REWE Digital. More English than a Stadtwerke shop floor.",
+    sources: [
+      { title: "Official site", url: "https://www.next-kraftwerke.com" },
+      { title: "Careers", url: "https://www.next-kraftwerke.com/company/career" },
+    ],
+    imageHint: "virtual power plant",
+  },
+  {
+    name: "Ströer",
+    sector: "Software/Adtech",
+    locations: ["Cologne"],
+    headquarters: "Cologne, Germany",
+    headquartersHighlight: "Cologne Target NRW — OOH / adtech HQ",
+    website: "https://www.stroeer.com",
+    domain: "stroeer.com",
+    tags: ["nrw-hub"],
+    brief:
+      "Out-of-home + digital advertising. Measurement and targeting analytics.",
+    europeFocus:
+      "Cologne media/adtech next to RTL — analyst roles, more German than DeepL.",
+    sources: [
+      { title: "Official site", url: "https://www.stroeer.com" },
+      { title: "Careers", url: "https://www.stroeer.com/en/career.html" },
+    ],
+    imageHint: "out of home ads",
+  },
+  {
+    name: "G DATA",
+    sector: "Software/Cybersecurity",
+    locations: ["Bochum", "Essen", "Dortmund"],
+    headquarters: "Bochum, Germany",
+    headquartersHighlight: "Bochum / Ruhr Target NRW — German security vendor",
+    website: "https://www.gdata.de",
+    domain: "gdata.de",
+    tags: ["nrw-hub"],
+    brief:
+      "German security vendor. Product analytics + threat data. Same Ruhr labour market as Essen / Dortmund.",
+    europeFocus:
+      "Ruhr cyber door next to adesso / IML. German-heavier than Zurich AI security.",
+    sources: [
+      { title: "Official site", url: "https://www.gdata.de" },
+      { title: "Careers", url: "https://www.gdata.de/karriere" },
+    ],
+    imageHint: "cybersecurity",
+  },
+  {
+    name: "NetCologne",
+    sector: "Telecom",
+    locations: ["Cologne", "Bonn"],
+    headquarters: "Cologne, Germany",
+    headquartersHighlight: "Cologne Target NRW — regional telecom",
+    website: "https://www.netcologne.de",
+    domain: "netcologne.de",
+    tags: ["nrw-hub"],
+    brief:
+      "Regional telecom. Network and customer analytics. Commute from Bonn.",
+    europeFocus:
+      "Rhine telecom next to Telekom HQ — more local German than Vodafone Düsseldorf.",
+    sources: [
+      { title: "Official site", url: "https://www.netcologne.de" },
+      { title: "Careers", url: "https://www.netcologne.de/karriere" },
+    ],
+    imageHint: "regional telecom",
+  },
+  {
+    name: "ANYbotics",
+    sector: "AI/Robotics",
+    locations: ["Zurich"],
+    headquarters: "Zurich, Switzerland",
+    headquartersHighlight: "Zurich 🇨🇭 Target destination — industrial robots",
+    website: "https://www.anybotics.com",
+    domain: "anybotics.com",
+    tags: ["zurich-hub", "visa-friendly", "ai-focus"],
+    brief:
+      "ETH-rooted industrial inspection robots. Industrial AI — same family as ABB problems. English is normal.",
+    europeFocus:
+      "Zurich product company. English-friendly industrial door, hard fresher bar.",
+    sources: [
+      { title: "Official site", url: "https://www.anybotics.com" },
+      { title: "Careers", url: "https://www.anybotics.com/careers" },
+    ],
+    imageHint: "inspection robot",
+  },
+  {
+    name: "Verity",
+    sector: "AI/Logistics",
+    locations: ["Zurich"],
+    headquarters: "Zurich, Switzerland",
+    headquartersHighlight: "Zurich 🇨🇭 Target destination — warehouse drones",
+    website: "https://www.verity.net",
+    domain: "verity.net",
+    tags: ["zurich-hub", "visa-friendly", "ai-focus"],
+    brief:
+      "Warehouse drones / inventory. Problem B in a Swiss product company. English team.",
+    europeFocus:
+      "Zurich logistics-AI next to K+N. Stronger product fit than a crypto job in Zug.",
+    sources: [
+      { title: "Official site", url: "https://www.verity.net" },
+      { title: "Careers", url: "https://www.verity.net/careers" },
+    ],
+    imageHint: "warehouse drones",
+  },
+  {
+    name: "Scandit",
+    sector: "AI/Software",
+    locations: ["Zurich"],
+    headquarters: "Zurich, Switzerland",
+    headquartersHighlight: "Zurich 🇨🇭 Target destination — computer vision",
+    website: "https://www.scandit.com",
+    domain: "scandit.com",
+    tags: ["zurich-hub", "visa-friendly", "ai-focus"],
+    brief:
+      "Enterprise barcode / computer-vision platform. Product analytics. English.",
+    europeFocus:
+      "Zurich vision product — retail/logistics customers, not a junior dashboard factory.",
+    sources: [
+      { title: "Official site", url: "https://www.scandit.com" },
+      { title: "Careers", url: "https://www.scandit.com/company/careers" },
+    ],
+    imageHint: "computer vision scan",
+  },
+  {
+    name: "Beekeeper",
+    sector: "Software",
+    locations: ["Zurich"],
+    headquarters: "Zurich, Switzerland",
+    headquartersHighlight: "Zurich 🇨🇭 Target destination — workplace SaaS",
+    website: "https://www.beekeeper.io",
+    domain: "beekeeper.io",
+    tags: ["zurich-hub", "visa-friendly"],
+    brief:
+      "Frontline-worker comms SaaS. Product / ops analytics. International English team.",
+    europeFocus:
+      "Zurich SaaS door. Easier language bar than a Swiss insurer HQ.",
+    sources: [
+      { title: "Official site", url: "https://www.beekeeper.io" },
+      { title: "Careers", url: "https://www.beekeeper.io/careers" },
+    ],
+    imageHint: "workplace saas",
+  },
+  {
+    name: "Climeworks",
+    sector: "GreenTech",
+    locations: ["Zurich"],
+    headquarters: "Zurich, Switzerland",
+    headquartersHighlight: "Zurich 🇨🇭 Target destination — direct-air capture",
+    website: "https://climeworks.com",
+    domain: "climeworks.com",
+    tags: ["zurich-hub", "visa-friendly"],
+    brief:
+      "Direct-air-capture. Measurement and operations data. English common.",
+    europeFocus:
+      "Zurich climate-tech. Maps to Forest Guard / GreenTech without Essen grid ops.",
+    sources: [
+      { title: "Official site", url: "https://climeworks.com" },
+      { title: "Careers", url: "https://climeworks.com/careers" },
+    ],
+    imageHint: "direct air capture",
+  },
+  {
+    name: "Lakera",
+    sector: "AI (security)",
+    locations: ["Zurich"],
+    headquarters: "Zurich, Switzerland",
+    headquartersHighlight: "Zurich 🇨🇭 Target destination — LLM security",
+    website: "https://www.lakera.ai",
+    domain: "lakera.ai",
+    tags: ["zurich-hub", "visa-friendly", "ai-focus"],
+    brief:
+      "LLM security scale-up. Governance / risk — Problem C adjacent. English-first.",
+    europeFocus:
+      "Zurich AI-governance door next to Swiss Re / EU AI Act story.",
+    sources: [
+      { title: "Official site", url: "https://www.lakera.ai" },
+      { title: "Careers", url: "https://www.lakera.ai/careers" },
+    ],
+    imageHint: "llm security",
+  },
+  {
+    name: "Sygnum",
+    sector: "FinTech/Banking",
+    locations: ["Zug", "Zurich"],
+    headquarters: "Zurich / Zug, Switzerland",
+    headquartersHighlight: "Zug 🇨🇭 Target destination — digital-asset bank",
+    website: "https://www.sygnum.com",
+    domain: "sygnum.com",
+    tags: ["zurich-hub", "visa-friendly"],
+    brief:
+      "Swiss digital-asset bank. Compliance / KYC analytics — not a crypto-engineer bet. English is normal.",
+    europeFocus:
+      "Zug/Zurich fintech. I only watch analyst / compliance roles.",
+    sources: [
+      { title: "Official site", url: "https://www.sygnum.com" },
+      { title: "Careers", url: "https://www.sygnum.com/careers" },
+    ],
+    imageHint: "digital asset bank",
+  },
+  {
+    name: "AMINA Bank",
+    sector: "FinTech/Banking",
+    locations: ["Zug"],
+    headquarters: "Zug, Switzerland",
+    headquartersHighlight: "Zug 🇨🇭 Target destination — crypto-asset bank",
+    website: "https://aminagroup.com",
+    domain: "aminagroup.com",
+    tags: ["zurich-hub", "visa-friendly"],
+    brief:
+      "Crypto-asset bank. Same compliance lane as Sygnum. English. Not a first-job protocol bet.",
+    europeFocus:
+      "Zug Crypto Valley — KYC / AML / documents only.",
+    sources: [
+      { title: "Official site", url: "https://aminagroup.com" },
+      { title: "Careers", url: "https://aminagroup.com/careers" },
+    ],
+    imageHint: "crypto bank",
+  },
+  {
+    name: "epilot",
+    sector: "Energy/Software",
+    locations: ["Cologne"],
+    headquarters: "Cologne, Germany",
+    headquartersHighlight: "Cologne Target NRW — energy SaaS",
+    website: "https://www.epilot.cloud",
+    domain: "epilot.cloud",
+    tags: ["nrw-hub", "visa-friendly"],
+    brief:
+      "Cloud platform for Stadtwerke / grid operators. Data lake + process analytics on the energy transition. International team; Werkstudent / CS roles exist.",
+    europeFocus:
+      "Cologne energy-software door next to Next Kraftwerke / REWE. Same problem family as E.ON Essen without a Ruhr move.",
+    sources: [
+      { title: "Official site", url: "https://www.epilot.cloud" },
+      { title: "Careers", url: "https://www.epilot.cloud/en/company/careers" },
+    ],
+    imageHint: "energy crm",
+  },
+  {
+    name: "Envelio",
+    sector: "Energy/Software",
+    locations: ["Cologne"],
+    headquarters: "Cologne, Germany",
+    headquartersHighlight: "Cologne Target NRW — smart-grid planning",
+    website: "https://envelio.com",
+    domain: "envelio.com",
+    tags: ["nrw-hub"],
+    brief:
+      "Smart-grid planning software. Time-series and network data — cousin of my forecasting story.",
+    europeFocus:
+      "Cologne grid-tech next to epilot / Next Kraftwerke. More German than a Zurich product shop.",
+    sources: [
+      { title: "Official site", url: "https://envelio.com" },
+      { title: "Careers", url: "https://envelio.com/career" },
+    ],
+    imageHint: "smart grid",
+  },
+  {
+    name: "how.fm",
+    sector: "AI/Logistics",
+    locations: ["Cologne"],
+    headquarters: "Cologne, Germany",
+    headquartersHighlight: "Cologne Target NRW — warehouse training",
+    website: "https://how.fm",
+    domain: "how.fm",
+    tags: ["nrw-hub"],
+    brief:
+      "Warehouse / shop-floor training software. Ops data next to MotionMiners and DHL — Problem B, not a chatbot demo.",
+    europeFocus:
+      "Cologne logistics-software door. Same labour market as DeepL / 1NCE.",
+    sources: [
+      { title: "Official site", url: "https://how.fm" },
+    ],
+    imageHint: "warehouse training",
+  },
+  {
+    name: "Buynomics",
+    sector: "Retail/Software",
+    locations: ["Cologne"],
+    headquarters: "Cologne, Germany",
+    headquartersHighlight: "Cologne Target NRW — pricing / demand analytics",
+    website: "https://www.buynomics.com",
+    domain: "buynomics.com",
+    tags: ["nrw-hub", "visa-friendly"],
+    brief:
+      "Pricing and demand simulation for CPG / retail. Product / data-scientist flavour. English possible. Series B scale-up.",
+    europeFocus:
+      "Strongest Cologne retail-analytics door next to REWE Digital. Werkstudent / intern postings appear.",
+    sources: [
+      { title: "Official site", url: "https://www.buynomics.com" },
+      { title: "Careers", url: "https://www.buynomics.com/careers" },
+    ],
+    imageHint: "pricing analytics",
+  },
+  {
+    name: "Unique",
+    sector: "AI/FinTech",
+    locations: ["Zurich"],
+    headquarters: "Zurich, Switzerland",
+    headquartersHighlight: "Zurich 🇨🇭 Target destination — wealth / KYC AI",
+    website: "https://www.unique.ai",
+    domain: "unique.ai",
+    tags: ["zurich-hub", "visa-friendly", "ai-focus"],
+    brief:
+      "Agentic AI for wealth, research, and KYC. Clients include Pictet, LGT, SIX, Partners Group. English. Hard fresher bar.",
+    europeFocus:
+      "Best Zurich finance-analyst door after Swiss Re / UBS. Research from Semester 3; apply later with a sponsor.",
+    sources: [
+      { title: "Official site", url: "https://www.unique.ai" },
+      { title: "Venturelab — Series A", url: "https://www.venturelab.swiss/Unique-raises-USD-30M-Series-A-to-advance-agentic-AI-in-financial-services" },
+    ],
+    imageHint: "wealth ai",
+  },
+  {
+    name: "Yokoy",
+    sector: "Software/FinTech",
+    locations: ["Zurich"],
+    headquarters: "Zurich, Switzerland",
+    headquartersHighlight: "Zurich 🇨🇭 Target destination — spend analytics",
+    website: "https://www.yokoy.com",
+    domain: "yokoy.com",
+    tags: ["zurich-hub", "visa-friendly"],
+    brief:
+      "Expense / spend analytics (now inside Perk). Product-analyst English door. Verify live Zurich hiring after the Perk deal.",
+    europeFocus:
+      "Zurich SaaS analytics next to Beekeeper. Easier language bar than a Swiss insurer HQ.",
+    sources: [
+      { title: "Official site", url: "https://www.yokoy.com" },
+    ],
+    imageHint: "spend analytics",
+  },
+  {
+    name: "Decentriq",
+    sector: "AI/Data",
+    locations: ["Zurich"],
+    headquarters: "Zurich, Switzerland",
+    headquartersHighlight: "Zurich 🇨🇭 Target destination — confidential data",
+    website: "https://www.decentriq.com",
+    domain: "decentriq.com",
+    tags: ["zurich-hub", "visa-friendly", "ai-focus"],
+    brief:
+      "Confidential data collaboration. Problem C (governance) without becoming a security engineer. English team.",
+    europeFocus:
+      "Zurich data-governance door next to Lakera / Swiss Re.",
+    sources: [
+      { title: "Official site", url: "https://www.decentriq.com" },
+    ],
+    imageHint: "confidential data",
+  },
+  {
+    name: "Squirro",
+    sector: "AI/Software",
+    locations: ["Zurich"],
+    headquarters: "Zurich, Switzerland",
+    headquartersHighlight: "Zurich 🇨🇭 Target destination — insight engine",
+    website: "https://squirro.com",
+    domain: "squirro.com",
+    tags: ["zurich-hub", "visa-friendly", "ai-focus"],
+    brief:
+      "Enterprise insight engine. Analyst / translator flavour — unstructured data to decisions. English.",
+    europeFocus:
+      "Zurich insights product. Same work mode as Decision Scientist, not a junior dashboard factory.",
+    sources: [
+      { title: "Official site", url: "https://squirro.com" },
+      { title: "Careers", url: "https://careers.squirro.com/" },
+    ],
+    imageHint: "insight engine",
+  },
+  {
+    name: "Embotech",
+    sector: "AI/Logistics",
+    locations: ["Zurich"],
+    headquarters: "Zurich, Switzerland",
+    headquartersHighlight: "Zurich 🇨🇭 Target destination — yard / port autonomy",
+    website: "https://embotech.com",
+    domain: "embotech.com",
+    tags: ["zurich-hub", "visa-friendly", "ai-focus"],
+    brief:
+      "Autonomous yard / port vehicles. Logistics + industrial. English-normal. Hard fresher bar.",
+    europeFocus:
+      "Zurich logistics-AI next to Verity / ANYbotics. Ops-decision fit, not a crypto job in Zug.",
+    sources: [
+      { title: "Official site", url: "https://embotech.com" },
+    ],
+    imageHint: "autonomous yard",
+  },
+  {
+    name: "Picnic",
+    sector: "Retail/Logistics",
+    locations: ["Amsterdam", "Dordrecht", "Ridderkerk"],
+    headquarters: "Amsterdam, Netherlands",
+    headquartersHighlight: "Amsterdam 🇳🇱 Target destination — grocery last-mile",
+    website: "https://picnic.app",
+    domain: "picnic.app",
+    tags: ["nl-hub", "visa-friendly"],
+    brief:
+      "Online grocery. Demand forecast and routing — closest cousin of my ICE / last-mile story. English. Expanding FCs in Germany.",
+    europeFocus:
+      "Later Amsterdam / Rotterdam door. Same problems as REWE Digital, no German required.",
+    sources: [
+      { title: "Official site", url: "https://picnic.app" },
+      { title: "Careers", url: "https://jobs.picnic.app" },
+    ],
+    imageHint: "grocery last mile",
+  },
+  {
+    name: "Coolblue",
+    sector: "Retail",
+    locations: ["Rotterdam"],
+    headquarters: "Rotterdam, Netherlands",
+    headquartersHighlight: "Rotterdam 🇳🇱 Target destination — electronics retail",
+    website: "https://www.coolblue.nl",
+    domain: "coolblue.nl",
+    tags: ["nl-hub", "visa-friendly"],
+    brief:
+      "Electronics retail + last-mile. Pricing and fulfilment analytics. English-possible.",
+    europeFocus:
+      "Later Rotterdam retail door next to the port. Same family as Ceconomy / bol.",
+    sources: [
+      { title: "Official site", url: "https://www.coolblue.nl" },
+      { title: "Careers", url: "https://www.coolblue.nl/en/careers" },
+    ],
+    imageHint: "electronics retail",
+  },
+  {
+    name: "Mollie",
+    sector: "FinTech",
+    locations: ["Amsterdam"],
+    headquarters: "Amsterdam, Netherlands",
+    headquartersHighlight: "Amsterdam 🇳🇱 Target destination — payments",
+    website: "https://www.mollie.com",
+    domain: "mollie.com",
+    tags: ["nl-hub", "visa-friendly"],
+    brief:
+      "Payments scale-up. Risk / product analytics. English. Next-Adyen lane, hard fresher bar.",
+    europeFocus:
+      "Later Amsterdam fintech door next to Adyen. Not a Semester 3 move.",
+    sources: [
+      { title: "Official site", url: "https://www.mollie.com" },
+      { title: "Careers", url: "https://jobs.mollie.com" },
+    ],
+    imageHint: "payments",
+  },
+  {
+    name: "Bird",
+    sector: "Software",
+    locations: ["Amsterdam"],
+    headquarters: "Amsterdam, Netherlands",
+    headquartersHighlight: "Amsterdam 🇳🇱 Target destination — comms / product",
+    website: "https://www.bird.com",
+    domain: "bird.com",
+    tags: ["nl-hub", "visa-friendly"],
+    brief:
+      "Cloud communications (ex-MessageBird). Product analytics. English.",
+    europeFocus:
+      "Later Amsterdam SaaS door. Easier language bar than a Swiss insurer.",
+    sources: [
+      { title: "Official site", url: "https://www.bird.com" },
+    ],
+    imageHint: "cloud comms",
+  },
+  {
+    name: "Just Eat Takeaway",
+    sector: "Logistics/Delivery",
+    locations: ["Amsterdam"],
+    headquarters: "Amsterdam, Netherlands",
+    headquartersHighlight: "Amsterdam 🇳🇱 Target destination — delivery ops",
+    website: "https://www.justeattakeaway.com",
+    domain: "justeattakeaway.com",
+    tags: ["nl-hub", "visa-friendly"],
+    brief:
+      "Food-delivery group. Ops, routing, and marketplace analytics. English.",
+    europeFocus:
+      "Later Amsterdam delivery door. Same last-mile family as Picnic / DHL.",
+    sources: [
+      { title: "Official site", url: "https://www.justeattakeaway.com" },
+      { title: "Careers", url: "https://careers.justeattakeaway.com" },
+    ],
+    imageHint: "delivery ops",
+  },
+  {
+    name: "Miro",
+    sector: "Software",
+    locations: ["Amsterdam"],
+    headquarters: "Amsterdam, Netherlands (EU engineering)",
+    headquartersHighlight: "Amsterdam 🇳🇱 Target destination — product analytics",
+    website: "https://miro.com",
+    domain: "miro.com",
+    tags: ["nl-hub", "visa-friendly"],
+    brief:
+      "Collaboration SaaS. Product / experimentation analytics. English EU team.",
+    europeFocus:
+      "Later Amsterdam product door. Not logistics — only if I want a SaaS analyst seat.",
+    sources: [
+      { title: "Official site", url: "https://miro.com" },
+      { title: "Careers", url: "https://miro.com/careers/" },
+    ],
+    imageHint: "collaboration saas",
+  },
+  {
+    name: "Catawiki",
+    sector: "Retail/Marketplace",
+    locations: ["Amsterdam"],
+    headquarters: "Amsterdam, Netherlands",
+    headquartersHighlight: "Amsterdam 🇳🇱 Target destination — auction marketplace",
+    website: "https://www.catawiki.com",
+    domain: "catawiki.com",
+    tags: ["nl-hub", "visa-friendly"],
+    brief:
+      "Auction marketplace. Ranking, pricing, and trust analytics. English.",
+    europeFocus:
+      "Later Amsterdam marketplace door next to Booking / bol.",
+    sources: [
+      { title: "Official site", url: "https://www.catawiki.com" },
+    ],
+    imageHint: "auction marketplace",
+  },
+  {
+    name: "Portbase",
+    sector: "Logistics/Software",
+    locations: ["Rotterdam", "Amsterdam"],
+    headquarters: "Rotterdam, Netherlands",
+    headquartersHighlight: "Rotterdam 🇳🇱 Target destination — port data layer",
+    website: "https://www.portbase.com",
+    domain: "portbase.com",
+    tags: ["nl-hub", "visa-friendly"],
+    brief:
+      "Port community system for Rotterdam and Amsterdam. Dirty EDI → one data layer. Problem B.",
+    europeFocus:
+      "Later NL port-software door. Same family as duisport visibility, English.",
+    sources: [
+      { title: "Official site", url: "https://www.portbase.com/en/" },
+    ],
+    imageHint: "port data",
+  },
+  {
+    name: "INIT SE",
+    sector: "Software/Transit",
+    locations: ["Karlsruhe"],
+    headquarters: "Karlsruhe, Germany",
+    headquartersHighlight: "Karlsruhe — public-transport IT",
+    website: "https://www.initse.com",
+    domain: "initse.com",
+    brief:
+      "Public-transport IT. Punctuality and ridership — closest corporate cousin of my ICE delay project in this city.",
+    europeFocus:
+      "Karlsruhe transit-software door. German-heavier than Amsterdam. Company map only — not a Target Location city.",
+    sources: [
+      { title: "Official site", url: "https://www.initse.com" },
+      { title: "Careers", url: "https://www.initse.com/ende/career.html" },
+    ],
+    imageHint: "transit it",
+  },
+  {
+    name: "CAS Software",
+    sector: "Software",
+    locations: ["Karlsruhe"],
+    headquarters: "Karlsruhe, Germany",
+    headquartersHighlight: "Karlsruhe — Mittelstand CRM",
+    website: "https://www.cas.de",
+    domain: "cas.de",
+    brief:
+      "CRM / Mittelstand software. Product and customer analytics.",
+    europeFocus:
+      "Karlsruhe software next to IONOS / EnBW. German day-to-day.",
+    sources: [
+      { title: "Official site", url: "https://www.cas.de" },
+    ],
+    imageHint: "crm software",
+  },
+  {
+    name: "PTV / Umovity",
+    sector: "Software/Logistics",
+    locations: ["Karlsruhe"],
+    headquarters: "Karlsruhe, Germany",
+    headquartersHighlight: "Karlsruhe — transport planning",
+    website: "https://www.ptvgroup.com",
+    domain: "ptvgroup.com",
+    brief:
+      "Transport planning / traffic software. Route and network analytics.",
+    europeFocus:
+      "Karlsruhe planning door next to INIT. Same delay / network family as ICE.",
+    sources: [
+      { title: "Official site", url: "https://www.ptvgroup.com" },
+      { title: "Careers", url: "https://www.ptvgroup.com/en/company/careers" },
+    ],
+    imageHint: "transport planning",
   },
 ];
 

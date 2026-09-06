@@ -2,7 +2,6 @@ import Link from "next/link";
 import { roadmapPattern } from "@/data/market";
 import {
   crossSectorProblems,
-  experienceMap,
   metaInsight,
   problemPhaseResources,
   sectorProblemDeepDives,
@@ -103,58 +102,6 @@ export default function ProblemsPage() {
                 Open sector problems →
               </p>
             </Link>
-          ))}
-        </div>
-      </section>
-
-      <section className="space-y-4">
-        <div>
-          <h2 className="font-[family-name:var(--font-display)] text-3xl">
-            How my experience maps to these problems
-          </h2>
-          <p className="mt-2 max-w-3xl text-sm text-[var(--muted)]">
-            Open any row to see what I have and why the market cares.
-          </p>
-        </div>
-        <div className="space-y-2">
-          {experienceMap.map((row) => (
-            <details
-              key={row.asset}
-              className="group border border-[var(--border)] bg-[var(--surface)] open:border-[var(--accent)]"
-            >
-              <summary className="flex cursor-pointer list-none items-start justify-between gap-4 p-5 [&::-webkit-details-marker]:hidden">
-                <div className="min-w-0">
-                  <h3 className="font-[family-name:var(--font-display)] text-xl">
-                    {row.asset}
-                  </h3>
-                  <p className="mt-2 text-xs uppercase tracking-[0.14em] text-[var(--accent)]">
-                    {row.sector}
-                  </p>
-                </div>
-                <span className="shrink-0 pt-1 text-xs uppercase tracking-[0.16em] text-[var(--accent)] group-open:hidden">
-                  Open →
-                </span>
-                <span className="hidden shrink-0 pt-1 text-xs uppercase tracking-[0.16em] text-[var(--accent)] group-open:inline">
-                  Close ↑
-                </span>
-              </summary>
-              <div className="space-y-3 border-t border-[var(--border)] px-5 pb-5 pt-4">
-                <div>
-                  <p className="text-[10px] uppercase tracking-[0.18em] text-[var(--muted)]">
-                    What I have
-                  </p>
-                  <p className="mt-1 text-sm leading-relaxed">{row.problemSolved}</p>
-                </div>
-                <div>
-                  <p className="text-[10px] uppercase tracking-[0.18em] text-[var(--muted)]">
-                    Why the market cares
-                  </p>
-                  <p className="mt-1 text-sm leading-relaxed text-[var(--muted)]">
-                    {row.demandEvidence}
-                  </p>
-                </div>
-              </div>
-            </details>
           ))}
         </div>
       </section>

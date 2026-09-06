@@ -13,9 +13,6 @@ export default async function DashboardPage() {
     ...tierMeta[tier as 1 | 2 | 3],
   }));
 
-  const leipzigCount = allCompanies.filter((c) =>
-    c.tags.includes("leipzig-local"),
-  ).length;
   const marketSourceCount =
     marketTrendSources.length + marketJobSources.length;
 
@@ -41,7 +38,6 @@ export default async function DashboardPage() {
         <Stat label="Market sources" value={String(marketSourceCount)} />
         <Stat label="Company sources" value={String(researchSources.length)} />
         <Stat label="Projects catalogued" value={String(allProjects.length)} />
-        <Stat label="Leipzig-local ⭐" value={String(leipzigCount)} />
       </section>
 
       <section className="grid gap-4 md:grid-cols-2 xl:grid-cols-3">

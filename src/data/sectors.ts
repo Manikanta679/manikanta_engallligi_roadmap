@@ -116,13 +116,13 @@ export const sectors: Sector[] = [
         tier: 1,
         companies:
           "SAP, Microsoft, Google, Amazon/AWS, IBM, T-Systems, Accenture, Deloitte, KPMG, PwC, Capgemini, McKinsey (QuantumBlack), BCG (BCG X)",
-        locations: "Munich, Berlin, Frankfurt, Walldorf, Bonn, Dresden, Leipzig",
+        locations: "Munich, Berlin, Frankfurt, Walldorf, Bonn, Düsseldorf, Dresden, Leipzig, Zurich",
       },
       {
         tier: 2,
         companies:
-          "Celonis, Personio, DeepL, Aleph Alpha, n8n, Parloa, GFT, Adesso, Bechtle, msg, Reply, Tietoevry",
-        locations: "Munich, Berlin, Cologne, Heidelberg, Dortmund, Leipzig",
+          "Celonis, Personio, DeepL, Aleph Alpha, n8n, Parloa, GFT, Adesso, Bechtle, msg, Reply, Tietoevry, NiCE Cognigy",
+        locations: "Munich, Berlin, Cologne, Düsseldorf, Heidelberg, Dortmund, Leipzig",
       },
       {
         tier: 3,
@@ -134,10 +134,26 @@ export const sectors: Sector[] = [
       { city: "Berlin", note: "Startups, AI, FinTech clients" },
       { city: "Munich", note: "SAP-region, Siemens, big tech, consulting" },
       { city: "Frankfurt", note: "Finance clients, Accenture HQ-region" },
+      {
+        city: "Düsseldorf Priority NRW",
+        note: "Big 4 + Capgemini + Cognigy — consulting / CX AI delivery for DAX clients. My 2027 consulting intern lane if I relocate.",
+      },
+      {
+        city: "Cologne Priority NRW",
+        note: "DeepL HQ — product AI success story. Strongest NRW city when I want software + retail clients in one place.",
+      },
+      {
+        city: "Dortmund / Bonn Priority NRW",
+        note: "adesso + T-Systems / Telekom. Implementation shops next to Ruhr and Rhine clients.",
+      },
+      {
+        city: "Zurich Priority destination",
+        note: "Google largest EU engineering site. 2028–30 specialist door, not 2027 Werkstudent.",
+      },
       { city: "Karlsruhe / Darmstadt", note: "Research + deep tech" },
       {
         city: "Leipzig / Dresden",
-        note: "Smaller but growing — Amazon Dresden, SAP, local AI startups",
+        note: "Study city + SAP / Amazon Dresden / local AI — not my job-hunt region",
       },
     ],
     outlook2027_2028: [
@@ -157,8 +173,10 @@ export const sectors: Sector[] = [
     myGameNotes: [
       "This is my Priority #1 entry lane.",
       "I use this sector to learn how other industries buy and run AI — then I specialize with clearer conviction.",
+      "Job locations: NRW (Düsseldorf consulting, Cologne DeepL/REWE, Bonn T-Systems) and later Zurich Google / Amsterdam Booking. Leipzig is where I study, not where I hunt the job.",
     ],
-    localLeipzig: "SAP, Amazon Dresden, Adesso, MAIA and other local AI startups",
+    localLeipzig:
+      "DeepL Cologne, Cognigy / Capgemini Düsseldorf, adesso Dortmund, T-Systems Bonn · later Google Zurich, Booking Amsterdam, SAP Walldorf",
     resources: [
       {
         name: "Lünendonk IT Rankings 2026",
@@ -282,12 +300,12 @@ export const sectors: Sector[] = [
         tier: 1,
         companies:
           "DHL Group (hub Leipzig), Deutsche Bahn / DB Systel, DB Schenker, Kühne+Nagel, Lufthansa, Maersk",
-        locations: "Leipzig, Bonn, Hamburg, Cologne, Frankfurt",
+        locations: "Leipzig, Bonn, Hamburg, Cologne, Essen, Frankfurt, Duisburg, Zurich area",
       },
       {
         tier: 2,
-        companies: "Dachser, Hermes, DB Cargo, Hapag-Lloyd, GLS, ORSOFT",
-        locations: "Kempten, Hamburg, Leipzig",
+        companies: "Dachser, Hermes, DB Cargo, Hapag-Lloyd, GLS, ORSOFT, duisport",
+        locations: "Kempten, Hamburg, Leipzig, Duisburg",
       },
       {
         tier: 3,
@@ -296,12 +314,15 @@ export const sectors: Sector[] = [
       },
     ],
     hubs: [
-      { city: "Leipzig", note: "DHL global air hub, DB, ORSOFT — my strongest local logistics lane" },
+      { city: "Leipzig", note: "DHL global air hub, DB, ORSOFT — study-city logistics, not my job-hunt region" },
       { city: "Hamburg", note: "Ports, Hapag-Lloyd, maritime" },
-      { city: "Bonn", note: "DHL HQ" },
+      { city: "Bonn Priority NRW", note: "DHL Group HQ — same group as Leipzig hub, corporate/data HQ lane" },
+      { city: "Cologne Priority NRW", note: "Lufthansa Group HQ; air + cargo analytics next to REWE fulfillment" },
+      { city: "Essen Priority NRW", note: "DB Schenker — freight visibility / AMR. Verify live ownership after DSV deal." },
+      { city: "Dortmund Priority NRW", note: "Digital Hub Logistics / Fraunhofer IML / TU Dortmund — thesis / research door" },
+      { city: "Duisburg Priority NRW", note: "Europe’s largest inland port (duisport) — China–Europe rail/barge gateway" },
       { city: "Frankfurt", note: "Air freight, DB Systel" },
-      { city: "Dortmund", note: "Digital Hub Logistics / Fraunhofer IML" },
-      { city: "Duisburg", note: "From my notes — inland logistics hub to watch" },
+      { city: "Zurich / Schwyz Priority destination", note: "Kühne+Nagel HQ (Schindellegi) — control-tower forwarding, not a warehouse hub" },
     ],
     outlook2027_2028: [
       "German logistics market baseline: ~€540bn revenue, ~2.3M employees (2023).",
@@ -311,6 +332,7 @@ export const sectors: Sector[] = [
       "~5% job growth projected by 2028 in logistics.",
       "Digital logistics expanding — DHL + IBM Watson style partnerships; DB investing in AI.",
       "My DB delay project is a direct, credible entry ticket for 2027 Werkstudent/thesis.",
+      "NRW is the scale campus of the same sector: Dortmund research, Duisburg port, Essen Schenker, Cologne Lufthansa — same problem family as Leipzig DHL/DB.",
     ],
     howItHelpsMe: [
       "This is my strongest sector-specific asset — ICE Train Delay Prediction uses real Deutsche Bahn data.",
@@ -321,8 +343,10 @@ export const sectors: Sector[] = [
     myGameNotes: [
       "Digital freight startups (sennder / Forto / Flexport) are an in-depth lane I marked in my notes.",
       "I treat delay prediction and forecasting as my logistics proof points.",
+      "Leipzig is study only. Job hunt is NRW for the same logistics problems at bigger scale. Zurich K+N is destination control-tower. Amsterdam / Rotterdam is the later English freight door — not Semester 3.",
     ],
-    localLeipzig: "DHL, DB, ORSOFT, Kopernikus Automotive",
+    localLeipzig:
+      "DHL Bonn, Lufthansa Cologne, Schenker Essen, IML Dortmund, duisport · later Kühne+Nagel Zurich, Port of Rotterdam / Picnic",
     resources: [
       {
         name: "GTAI — AI in Logistics",
@@ -468,7 +492,15 @@ export const sectors: Sector[] = [
       { city: "Berlin", note: "Zalando, About You, Delivery Hero, many e-commerce startups" },
       { city: "Hamburg", note: "Otto Group HQ" },
       { city: "Neckarsulm", note: "Schwarz Group (Lidl/Kaufland — huge tech arm)" },
-      { city: "Leipzig", note: "Spread Group, BirdsView" },
+      {
+        city: "Cologne Priority NRW",
+        note: "REWE Group HQ + REWE Digital — 200+ AI projects, XGBoost forecasting, agentic commerce. My strongest NRW retail door.",
+      },
+      {
+        city: "Essen Priority NRW",
+        note: "Aldi Nord context — grocery scale next to the energy belt.",
+      },
+      { city: "Leipzig", note: "Spread Group, BirdsView — study-city options, not my job-hunt region" },
     ],
     outlook2027_2028: [
       "German B2C e-commerce around ~€321–330bn in 2026 with moderate growth.",
@@ -488,8 +520,9 @@ export const sectors: Sector[] = [
     myGameNotes: [
       "From my notes: volume of analyst jobs is higher and often English-friendly.",
       "I treat Zalando-style data culture as the gold standard to learn from.",
+      "Cologne REWE Digital is the NRW flag for this sector. Zurich is weak for retail — I do not pick Switzerland for grocery/e-comm.",
     ],
-    localLeipzig: "Spread Group, BirdsView",
+    localLeipzig: "REWE Digital Cologne, Aldi Nord Essen, dm Karlsruhe · later Picnic / bol Amsterdam",
     resources: [
       {
         name: "KPMG — GenAI in Retail 2026",
@@ -610,8 +643,8 @@ export const sectors: Sector[] = [
       {
         tier: 1,
         companies:
-          "Deutsche Bank, Commerzbank, Allianz, Munich Re, DZ Bank, Deutsche Börse",
-        locations: "Frankfurt, Munich",
+          "Deutsche Bank, Commerzbank, Allianz, Munich Re, DZ Bank, Deutsche Börse, UBS, Zurich Insurance, Swiss Re, ERGO",
+        locations: "Frankfurt, Munich, Düsseldorf, Cologne, Zurich",
       },
       {
         tier: 2,
@@ -629,7 +662,22 @@ export const sectors: Sector[] = [
       { city: "Berlin", note: "FinTechs — N26, Trade Republic, Solaris" },
       { city: "Munich", note: "Insurance — Allianz, Munich Re" },
       { city: "Stuttgart", note: "LBBW agentic AI hiring" },
-      { city: "Cologne", note: "From my notes — also watch Köln" },
+      {
+        city: "Cologne Priority NRW",
+        note: "Insurance (Gothaer / DEVK) — regulated-industry story without moving to Frankfurt. Not wholesale banking.",
+      },
+      {
+        city: "Düsseldorf Priority NRW",
+        note: "ERGO + Cognigy loop — claims/service agents under EU AI Act.",
+      },
+      {
+        city: "Zurich / Zug Priority destination",
+        note: "UBS, Zurich Insurance, Swiss Re, ZKB — Decision Scientist destination. Zug = commodities + compliance, not a fresher FinTech door.",
+      },
+      {
+        city: "Amsterdam later destination",
+        note: "Adyen / Mollie / ING — English payments and risk analytics after a German role. Not Semester 3.",
+      },
     ],
     outlook2027_2028: [
       "Agentic Banking is the 2026–28 buzzword — AI that acts, not just answers (Commerzbank Ava, LBBW blue.gpt, Deutsche Bank Kora).",
@@ -649,8 +697,10 @@ export const sectors: Sector[] = [
     myGameNotes: [
       "From my notes: mainly business + analytics, easier communication, more English-friendly and well-paid analyst jobs — I marked this as my game.",
       "I treat Berlin FinTech as my English entry and Frankfurt as my long-term scale lane.",
+      "NRW is insurance (ERGO, Cologne) not Börse. Zurich / Zug is the premium destination for Decision Scientist — visa is the blocker, not the skill stack. Amsterdam Adyen / Mollie is the later English payments door.",
     ],
-    localLeipzig: "Mostly Frankfurt/Berlin remote or travel — not my strongest local hub",
+    localLeipzig:
+      "ERGO Düsseldorf, Cologne insurance · later UBS / Swiss Re Zurich, Adyen / ING Amsterdam",
     resources: [
       {
         name: "Contextual Solutions — German FinTech 2026",
@@ -759,8 +809,8 @@ export const sectors: Sector[] = [
     companiesByTier: [
       {
         tier: 1,
-        companies: "BMW, Porsche, Mercedes-Benz, VW/CARIAD, Siemens, Bosch, ABB",
-        locations: "Munich, Stuttgart, Wolfsburg, Leipzig, Gerlingen",
+        companies: "BMW, Porsche, Mercedes-Benz, VW/CARIAD, Siemens, Bosch, ABB, thyssenkrupp, Henkel, Bayer, Ford Cologne",
+        locations: "Munich, Stuttgart, Wolfsburg, Leipzig, Gerlingen, Essen, Düsseldorf, Leverkusen, Cologne, Zurich",
       },
       {
         tier: 2,
@@ -778,9 +828,21 @@ export const sectors: Sector[] = [
       { city: "Stuttgart", note: "Mercedes, Porsche, Bosch — automotive core" },
       { city: "Munich", note: "BMW, Siemens" },
       { city: "Wolfsburg / Ingolstadt", note: "VW, Audi" },
-      { city: "Leipzig", note: "BMW plant + Porsche plant — local Werkstudent" },
+      { city: "Leipzig", note: "BMW plant + Porsche plant — study-city plants, not my job-hunt region" },
       { city: "Berlin", note: "Also listed in my hubs notes for industrial AI/data" },
       { city: "Augsburg / Ditzingen", note: "KUKA, Trumpf" },
+      {
+        city: "Düsseldorf / Leverkusen Priority NRW",
+        note: "Henkel adhesives + Bayer — chemicals / consumer / pharma data. Shop-floor + marketing analytics.",
+      },
+      {
+        city: "Essen / Cologne Priority NRW",
+        note: "thyssenkrupp steel + Ford Cologne plant — Industry 4.0 without moving to Stuttgart.",
+      },
+      {
+        city: "Zurich Priority destination",
+        note: "ABB HQ — robotics / electrification. Same industrial-AI problems as Siemens, higher Swiss bar.",
+      },
     ],
     outlook2027_2028: [
       "Industrial AI for automotive factories is a fast-growing market.",
@@ -801,8 +863,10 @@ export const sectors: Sector[] = [
     myGameNotes: [
       "China cheaper EVs → cost pressure → ↑ need for data & AI — that chain is my industrial thesis.",
       "Clean & cutting emissions + Industrial AI Cloud are the policy/tech flags I follow.",
+      "NRW is chemicals + steel + Ford — secondary unless a Werkstudent opens. ABB Zurich is destination, not 2027. Heidelberg / Walldorf / Karlsruhe sit on the company map (SAP, BASF, EnBW), not as Target Location cities.",
     ],
-    localLeipzig: "BMW, Porsche, KnowFab, MAIA, Kopernikus",
+    localLeipzig:
+      "Henkel Düsseldorf, Bayer Leverkusen, thyssenkrupp Essen, Ford Cologne, SAP Walldorf, BASF Mannheim · later ABB Zurich",
     resources: [
       {
         name: "GTAI — AI in Manufacturing",
@@ -915,8 +979,8 @@ export const sectors: Sector[] = [
     companiesByTier: [
       {
         tier: 1,
-        companies: "E.ON, RWE, EnBW, Siemens Energy, 50Hertz, Ørsted",
-        locations: "Essen, Karlsruhe, Berlin, Denmark",
+        companies: "E.ON, RWE, EnBW, Siemens Energy, 50Hertz, Ørsted, Uniper",
+        locations: "Essen, Düsseldorf, Karlsruhe, Berlin, Denmark",
       },
       {
         tier: 2,
@@ -930,11 +994,14 @@ export const sectors: Sector[] = [
       },
     ],
     hubs: [
-      { city: "Essen", note: "E.ON, RWE" },
+      { city: "Essen Priority NRW", note: "E.ON + RWE — German energy capital. Corporate HQ version of Leipzig VNG/Stadtwerke." },
+      { city: "Düsseldorf Priority NRW", note: "Uniper + energy trading / consulting overlay." },
+      { city: "Rheinisches Revier Priority NRW", note: "Coal exit + Microsoft hyperscalers (Bergheim / Bedburg) + AI Village Hürth — digital jobs through 2030." },
       { city: "Karlsruhe", note: "EnBW" },
       { city: "Berlin", note: "50Hertz + many GreenTech startups" },
-      { city: "Leipzig", note: "VNG, Leipziger Stadtwerke" },
+      { city: "Leipzig", note: "VNG, Leipziger Stadtwerke — study-city energy, not my job-hunt region" },
       { city: "Northern Germany", note: "Offshore wind — Bremen/Hamburg coast" },
+      { city: "Zurich / Zug Priority destination", note: "Energy here is risk / insurance / ABB electrification / Zug trading — not German grid ops. Essen stays stronger for operations." },
     ],
     outlook2027_2028: [
       "Energy analytics market growing with solid CAGR into 2031.",
@@ -954,8 +1021,9 @@ export const sectors: Sector[] = [
     myGameNotes: [
       "The balancing problem with renewables is where AI/data becomes the game — that is my energy thesis from the notes.",
       "I keep this as Priority #6: strong optional lane, not my first door.",
+      "If I specialise later, Essen is the HQ door. Forest Guard still maps. Zurich energy is Swiss Re / ABB, not E.ON ops. Karlsruhe EnBW stays on the company map.",
     ],
-    localLeipzig: "VNG, Leipziger Stadtwerke",
+    localLeipzig: "E.ON / RWE Essen, Uniper Düsseldorf, EnBW Karlsruhe · later Swiss Re / ABB Zurich, Shell Rotterdam",
     resources: [
       {
         name: "BDEW",

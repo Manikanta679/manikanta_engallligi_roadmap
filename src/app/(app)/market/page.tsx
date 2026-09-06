@@ -21,7 +21,8 @@ export default function MarketPage() {
         <p className="mt-3 max-w-3xl text-sm leading-relaxed text-[var(--muted)]">
           I researched these sources to ground my roadmap in real labour-market
           and AI demand — especially Germany and nearby Europe — before I lock
-          sectors, problems, roles, and skills.
+          sectors, problems, roles, and skills. Job locations I add here: NRW,
+          Zurich / Zug, and later Amsterdam / Rotterdam. Leipzig is study only.
         </p>
       </section>
 

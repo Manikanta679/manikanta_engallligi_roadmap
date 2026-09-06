@@ -22,7 +22,7 @@ export default async function SectorDetailPage({
         </Link>
         <p className="mt-4 text-[10px] uppercase tracking-[0.22em] text-[var(--accent)]">
           Priority {String(sector.priority).padStart(2, "0")}
-          {sector.starred ? " · ⭐ Core" : " · Optional"}
+          {sector.starred ? " · Core" : " · Optional"}
         </p>
         <h1 className="mt-2 font-[family-name:var(--font-display)] text-4xl tracking-[0.03em] sm:text-5xl">
           {sector.title}
