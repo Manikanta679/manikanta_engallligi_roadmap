@@ -9,6 +9,7 @@ import {
   CartesianGrid,
   Cell,
   ComposedChart,
+  LabelList,
   Legend,
   Line,
   LineChart,
@@ -35,6 +36,11 @@ import {
   salaryVsDemand,
   sectorMarketWeight,
 } from "@/data/analytics";
+import {
+  jobPortalCountByRegion,
+  jobPortals,
+  jobPortalWeightChart,
+} from "@/data/jobPortals";
 import { projectProblemGuide } from "@/data/projects";
 import { roleDemandScores } from "@/data/roles";
 import { screeningBusiness, screeningTech } from "@/data/skills";
@@ -55,7 +61,8 @@ type View =
   | "sectors"
   | "problems"
   | "roles"
-  | "companies";
+  | "companies"
+  | "portals";
 
 export function AnalyticsStudio() {
   const [view, setView] = useState<View>("overview");
@@ -87,6 +94,7 @@ export function AnalyticsStudio() {
             ["problems", "Problems"],
             ["roles", "Roles"],
             ["companies", "Companies"],
+            ["portals", "Job Portals"],
           ] as const
         ).map(([id, label]) => (
           <button
@@ -110,6 +118,7 @@ export function AnalyticsStudio() {
       {view === "problems" ? <ProblemsPanel /> : null}
       {view === "roles" ? <RolesPanel /> : null}
       {view === "companies" ? <CompaniesPanel /> : null}
+      {view === "portals" ? <JobPortalsPanel /> : null}
     </div>
   );
 }
@@ -483,6 +492,86 @@ function CompaniesPanel() {
           </RadarChart>
         </ResponsiveContainer>
       </ChartCard>
+    </div>
+  );
+}
+
+function JobPortalsPanel() {
+  return (
+    <div className="space-y-6">
+      <p className="text-sm text-[var(--muted)]">
+        {jobPortals.length} portals on the Job Portals page. Weight is how
+        useful the site is for my NRW-first hunt. Counts are the number of
+        links in each region.
+      </p>
+      <div className="grid gap-6 lg:grid-cols-2">
+        <ChartCard
+          title="Highest website weights"
+          blurb="Top 12 boards by weight (0–100). Higher means I use it more for DE / NRW ads."
+          tall
+        >
+          <ResponsiveContainer width="100%" height="100%">
+            <BarChart
+              data={jobPortalWeightChart}
+              layout="vertical"
+              margin={{ left: 4, right: 36, top: 4, bottom: 4 }}
+            >
+              <CartesianGrid stroke="var(--border)" horizontal={false} />
+              <XAxis type="number" domain={[0, 100]} tick={tick} />
+              <YAxis
+                type="category"
+                dataKey="name"
+                width={118}
+                tick={{ fill: "var(--foreground)", fontSize: 11 }}
+              />
+              <Tooltip contentStyle={tooltipStyle} />
+              <Bar dataKey="weight" name="Weight" fill={AMBER} radius={[0, 4, 4, 0]}>
+                <LabelList
+                  dataKey="weight"
+                  position="right"
+                  fill="var(--foreground)"
+                  fontSize={11}
+                />
+              </Bar>
+            </BarChart>
+          </ResponsiveContainer>
+        </ChartCard>
+        <ChartCard
+          title="Links per region"
+          blurb="Numeric count of portal links grouped by region — the number on each bar is the link total."
+          tall
+        >
+          <ResponsiveContainer width="100%" height="100%">
+            <BarChart
+              data={jobPortalCountByRegion}
+              margin={{ left: 0, right: 8, bottom: 48, top: 16 }}
+            >
+              <CartesianGrid stroke="var(--border)" vertical={false} />
+              <XAxis
+                dataKey="region"
+                interval={0}
+                angle={-28}
+                textAnchor="end"
+                height={60}
+                tick={{ fill: "var(--muted)", fontSize: 10 }}
+              />
+              <YAxis tick={tick} allowDecimals={false} />
+              <Tooltip contentStyle={tooltipStyle} />
+              <Bar dataKey="count" name="Links" fill={STEEL} radius={[3, 3, 0, 0]}>
+                {jobPortalCountByRegion.map((_, i) => (
+                  <Cell key={i} fill={COLORS[i % COLORS.length]} />
+                ))}
+                <LabelList
+                  dataKey="count"
+                  position="top"
+                  fill="var(--foreground)"
+                  fontSize={12}
+                />
+              </Bar>
+            </BarChart>
+          </ResponsiveContainer>
+        </ChartCard>
+      </div>
     </div>
   );
 }

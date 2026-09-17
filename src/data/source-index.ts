@@ -1,5 +1,6 @@
 import { problemPhaseResources, sectorProblemDeepDives } from "@/data/businessProblems";
 import { allCompanies } from "@/data/companies";
+import { jobPortals } from "@/data/jobPortals";
 import { marketJobSources, marketTrendSources } from "@/data/market";
 import { rolePhaseResources } from "@/data/roles";
 import { crossSectorResources, sectors } from "@/data/sectors";
@@ -13,6 +14,7 @@ export type SourcePlace =
   | "Roles"
   | "Companies"
   | "Target Location"
+  | "Job Portals"
   | "News";
 
 export type CatalogItem = {
@@ -128,6 +130,13 @@ const locationItems = uniqueItems(
   })),
 );
 
+const jobPortalItems = uniqueItems(
+  jobPortals.map((portal) => ({
+    name: portal.name,
+    url: portal.url,
+  })),
+);
+
 export const sourceCatalog: CatalogGroup[] = [
   { place: "Market", href: "/market", items: marketItems },
   { place: "Sectors", href: "/sectors", items: sectorItems },
@@ -135,6 +144,7 @@ export const sourceCatalog: CatalogGroup[] = [
   { place: "Roles", href: "/roles", items: roleItems },
   { place: "Companies", href: "/companies", items: companyItems },
   { place: "Target Location", href: "/locations", items: locationItems },
+  { place: "Job Portals", href: "/job-portals", items: jobPortalItems },
   {
     place: "News",
     href: "/market",

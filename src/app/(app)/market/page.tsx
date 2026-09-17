@@ -80,9 +80,9 @@ export default function MarketPage() {
             My research stack
           </h2>
           <p className="mt-2 max-w-2xl text-sm text-[var(--muted)]">
-            Each source I used for market trends and hiring research — what it
-            is, how it helped me, and my takeaway. Open the official page with
-            the button.
+            Links to where I actually researched: reports, pay tools, and hub
+            pages. What it is, how it helped me, and my takeaway. Job boards
+            live on Job Portals.
           </p>
         </div>
         <div className="space-y-3">

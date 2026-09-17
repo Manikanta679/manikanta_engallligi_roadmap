@@ -52,8 +52,9 @@ export default async function DashboardPage() {
             Market & Trends
           </h3>
           <p className="mt-2 text-sm text-[var(--muted)]">
-            WEF, Bitkom, GTAI, Stanford, job boards — written as my research
-            notes with how each source helped me.
+            WEF, Bitkom, GTAI, Stanford, pay and hub pages — written as my
+            research notes with how each source helped me. Job boards sit on
+            Job Portals.
           </p>
         </Link>
         <Link
@@ -143,6 +144,21 @@ export default async function DashboardPage() {
           </h3>
           <p className="mt-2 text-sm text-[var(--muted)]">
             My company universe across giants, scale-ups, and startups.
+          </p>
+        </Link>
+        <Link
+          href="/job-portals"
+          className="border border-[var(--border)] bg-[var(--surface)] p-6 transition hover:border-[var(--accent)]"
+        >
+          <p className="text-[10px] uppercase tracking-[0.22em] text-[var(--muted)]">
+            Job hunt
+          </p>
+          <h3 className="mt-2 font-[family-name:var(--font-display)] text-3xl">
+            Job Portals
+          </h3>
+          <p className="mt-2 text-sm text-[var(--muted)]">
+            Boards, reviews, and recruiters — including the job links that used
+            to sit on Market.
           </p>
         </Link>
       </section>

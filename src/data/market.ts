@@ -273,22 +273,8 @@ export const marketTrendSources: MarketSource[] = [
   },
 ];
 
-/** Market research via 50–100 job ads — boards I use to read real postings */
+/** Hub / pay research I used on Market — job boards now live on Job Portals */
 export const marketJobSources: MarketSource[] = [
-  {
-    id: "bundesagentur",
-    number: "38",
-    name: "Bundesagentur — Jobsuche",
-    url: "https://www.arbeitsagentur.de/jobsuche/",
-    symbol: "🗂️",
-    category: "jobs",
-    whatItIs:
-      "Official German Federal Employment Agency job board.",
-    howItHelpedMe:
-      "This helped me because official postings show what German employers formally ask for. It is good for me when I collect 50–100 ads — I get clean title, location, and requirement language for Germany.",
-    myTakeaway:
-      "I start many DE searches here so my skill list is grounded in official German job wording.",
-  },
   {
     id: "entgeltatlas",
     number: "39",
@@ -302,62 +288,6 @@ export const marketJobSources: MarketSource[] = [
       "This helped me because salary expectations should be evidence-based. It is useful for me when I compare role families and regions before I negotiate or filter internships/jobs.",
     myTakeaway:
       "I check Entgeltatlas after I shortlist role titles so my compensation picture stays realistic for Germany.",
-  },
-  {
-    id: "stepstone",
-    number: "40",
-    name: "StepStone",
-    url: "https://www.stepstone.de",
-    symbol: "🪜",
-    category: "jobs",
-    whatItIs:
-      "Major German job portal with ads and salary/content pages.",
-    howItHelpedMe:
-      "This helped me because StepStone volume is high for corporate and Mittelstand roles. It is good for me for Tier 1/2 style postings and recurring skill phrases I can count across ads.",
-    myTakeaway:
-      "I use StepStone heavily when I mine repeated skills and tools from German job ads.",
-  },
-  {
-    id: "kununu",
-    number: "41",
-    name: "kununu",
-    url: "https://www.kununu.com",
-    symbol: "◎",
-    category: "jobs",
-    whatItIs:
-      "Employer review and salary platform widely used in DACH.",
-    howItHelpedMe:
-      "This helped me because culture and pay signals matter before I invest application energy. It is useful for me as a soft filter after I like a company on paper.",
-    myTakeaway:
-      "I check kununu when I shortlist companies from my Tier lists — especially before Werkstudent/internship outreach.",
-  },
-  {
-    id: "linkedin-jobs",
-    number: "42",
-    name: "LinkedIn Jobs",
-    url: "https://www.linkedin.com/jobs/",
-    symbol: "💼",
-    category: "jobs",
-    whatItIs:
-      "International and German job marketplace with recruiter-driven postings.",
-    howItHelpedMe:
-      "This helped me because many AI/data roles appear here first, including English-friendly postings. It is good for me for Berlin/Munich/EU comparisons next to German-only boards.",
-    myTakeaway:
-      "I use LinkedIn Jobs for international + DE AI/data ads and to watch which companies post repeatedly.",
-  },
-  {
-    id: "it-jobs-dk",
-    number: "43",
-    name: "IT-Jobs Denmark (work permit guide)",
-    url: "https://www.it-jobs-dk.com/how-to-get-a-work-permit-in-denmark/",
-    symbol: "🇩🇰",
-    category: "jobs",
-    whatItIs:
-      "Denmark tech jobs context plus work-permit orientation for international candidates.",
-    howItHelpedMe:
-      "This helped me because nearby EU options (e.g. Denmark tech) are part of my broader European map. It is useful for me so I understand visa/work-permit paths if I compare DE vs DK opportunities later.",
-    myTakeaway:
-      "I keep Denmark as a secondary market lane — not my primary focus, but researched enough that I am not blind to it.",
   },
   {
     id: "scaleup-nrw",
@@ -449,8 +379,8 @@ export const marketInsights: MarketInsight[] = [
   {
     id: "insight-1",
     title: "Why I follow the market first",
-    body: "I start with Market & Trends because my roadmap is long-term: Market → Sector → Business Problems → Role → Skills → Project/Internship → Master's Thesis → Job. If I skip the market, I risk learning skills that companies are not hiring for. WEF, Bitkom, GTAI, and Stanford give me the trend layer; job boards give me the hiring layer.",
-    linkedSourceNumbers: ["01", "02", "03", "05", "09", "38", "40", "42"],
+    body: "I start with Market & Trends because my roadmap is long-term: Market → Sector → Business Problems → Role → Skills → Project/Internship → Master's Thesis → Job. If I skip the market, I risk learning skills that companies are not hiring for. WEF, Bitkom, GTAI, and Stanford give me the trend layer. Job Portals hold the boards I use to hunt ads.",
+    linkedSourceNumbers: ["01", "02", "03", "05", "09"],
   },
   {
     id: "insight-2",
@@ -461,8 +391,8 @@ export const marketInsights: MarketInsight[] = [
   {
     id: "insight-3",
     title: "How I convert trends into skills and roles",
-    body: "McKinsey/QuantumBlack and PwC show me where AI creates business value and how roles change. IW/KOFA remind me that Fachkräftemangel exists in skilled digital work. Then I validate everything by reading 50–100 ads on Bundesagentur, StepStone, and LinkedIn — counting repeated tools, domain words, and degree expectations. That loop is how I keep Skills (tech + business) tied to real demand.",
-    linkedSourceNumbers: ["10", "13", "14", "15", "16", "38", "39", "40", "42"],
+    body: "McKinsey/QuantumBlack and PwC show me where AI creates business value and how roles change. IW/KOFA remind me that Fachkräftemangel exists in skilled digital work. Then I validate everything by reading 50–100 ads on Job Portals (Bundesagentur, StepStone, LinkedIn) — counting repeated tools, domain words, and degree expectations. That loop is how I keep Skills (tech + business) tied to real demand.",
+    linkedSourceNumbers: ["10", "13", "14", "15", "16", "39"],
   },
   {
     id: "insight-4",
@@ -474,7 +404,7 @@ export const marketInsights: MarketInsight[] = [
     id: "insight-5",
     title: "Where I place myself after Market — NRW, Zurich / Zug, later Amsterdam / Rotterdam",
     body: "Market told me AI/data demand is real in Germany/Europe. I do not hunt a job in Leipzig — I study there. Job locations I research: NRW first, then Zurich / Zug, then later Amsterdam / Rotterdam (English logistics + product, no German required). Heidelberg / Walldorf / Karlsruhe stay on the company map (SAP, EnBW, dm), not as Target Location cities. Switzerland has no EU Blue Card — Zurich is a sponsored later door.",
-    linkedSourceNumbers: ["03", "05", "12", "17", "18", "38", "44", "46", "47", "48", "49"],
+    linkedSourceNumbers: ["03", "05", "12", "17", "18", "44", "46", "47", "48", "49"],
   },
 ];
 

@@ -13,8 +13,9 @@ export default function AnalyticsPage() {
         </h1>
         <p className="mt-3 max-w-2xl text-sm text-[var(--muted)]">
           Comparison views from the same research already on this site — salary
-          bands, sector weight, problems A–F, roles, and the company map
-          including NRW, Zurich / Zug, and later Amsterdam / Rotterdam.
+          bands, sector weight, problems A–F, roles, the company map
+          including NRW, Zurich / Zug, and later Amsterdam / Rotterdam, plus
+          Job Portals by weight and link count.
         </p>
       </section>
 

@@ -66,7 +66,8 @@ export default function SourcesPage() {
         </h2>
         <p className="text-sm text-[var(--muted)]">
           These sit only on this Sources list — no Market, Sector, Problem,
-          Role, Company, Target Location, or News card uses them yet.
+          Role, Company, Target Location, Job Portals, or News card uses them
+          yet.
         </p>
         <div className="divide-y divide-[var(--border)] border border-dashed border-[var(--border)] bg-[var(--surface)]">
           {unusedLibrarySources.map((source) => (
